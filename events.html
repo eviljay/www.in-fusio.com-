@@ -1,0 +1,782 @@
+<HTML>
+<HEAD>
+<TITLE> In-Fusio </TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<SCRIPT language="JavaScript">
+<!--
+if(top==self)self.location.href="index.html";
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_timelineStop(tmLnName) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  if (tmLnName == null)  //stop all
+    for (var i=0; i<document.MM_Time.length; i++) document.MM_Time[i].ID = null;
+  else document.MM_Time[tmLnName].ID = null; //stop one
+}
+
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_initTimelines() {
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(3);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 15;
+    document.MM_Time[0][0] = new String("behavior");
+    document.MM_Time[0][0].frame = 66;
+    document.MM_Time[0][0].value = "MM_timelineStop();MM_showHideLayers('soucoupe','','hide','vaisseaux','','hide')";
+    document.MM_Time[0][1] = new String("sprite");
+    document.MM_Time[0][1].slot = 1;
+    if (ns)
+        document.MM_Time[0][1].obj = document["soucoupe"];
+    else
+        document.MM_Time[0][1].obj = document.all ? document.all["soucoupe"] : null;
+    document.MM_Time[0][1].keyFrames = new Array(1, 13, 24, 35, 45);
+    document.MM_Time[0][1].values = new Array(3);
+    document.MM_Time[0][1].values[0] = new Array(508,493,478,462,446,431,416,402,388,375,364,356,352,356,365,377,391,405,421,437,453,470,486,491,462,435,409,382,355,328,300,271,243,213,182,149,116,83,51,19,-12,-44,-75,-106,-137);
+    document.MM_Time[0][1].values[0].prop = "left";
+    document.MM_Time[0][1].values[1] = new Array(-85,-67,-50,-33,-15,2,20,38,57,77,97,120,143,168,192,215,238,259,281,302,324,346,369,395,385,368,349,330,310,290,271,253,237,223,213,208,208,210,214,219,226,233,241,249,255);
+    document.MM_Time[0][1].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][1].values[0].prop2 = "style";
+        document.MM_Time[0][1].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][1].values[2] = new Array("3","3","3","3","1");
+    document.MM_Time[0][1].values[2].prop = "zIndex";
+    if (!ns)
+        document.MM_Time[0][1].values[2].prop2 = "style";
+    document.MM_Time[0][2] = new String("sprite");
+    document.MM_Time[0][2].slot = 2;
+    if (ns)
+        document.MM_Time[0][2].obj = document["vaisseaux"];
+    else
+        document.MM_Time[0][2].obj = document.all ? document.all["vaisseaux"] : null;
+    document.MM_Time[0][2].keyFrames = new Array(22, 65);
+    document.MM_Time[0][2].values = new Array(2);
+    document.MM_Time[0][2].values[0] = new Array(122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123);
+    document.MM_Time[0][2].values[0].prop = "left";
+    document.MM_Time[0][2].values[1] = new Array(1056,1024,991,959,927,894,862,830,798,765,733,701,668,636,604,571,539,507,475,442,410,378,345,313,281,248,216,184,152,119,87,55,22,-10,-42,-75,-107,-139,-171,-204,-236,-268,-301,-333);
+    document.MM_Time[0][2].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][2].values[0].prop2 = "style";
+        document.MM_Time[0][2].values[1].prop2 = "style";
+    }
+    document.MM_Time[0].lastFrame = 66;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</SCRIPT>
+<SCRIPT language="JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function MM_showHideLayers() { //v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</SCRIPT>
+<STYLE type="text/css">
+<!--
+a {  font-family: Arial; text-decoration: underline}
+-->
+</STYLE>
+</HEAD>
+
+<BODY bgcolor="#008CF5" MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" TOPMARGIN="0" onLoad=";MM_timelinePlay('Timeline1')" class="inter" link="#003366" vlink="#003366" alink="#003366">
+<SPAN id="soucoupe" style="position:absolute; left:508px; top:-85px; width:106px; height:57px; z-index:3"><IMG src="objetAnim/soucoupe.gif" width="122" height="74"></SPAN> 
+<SPAN id="vaisseaux" style="position:absolute; left:122px; top:1056px; width:105px; height:132px; z-index:4"><IMG src="objetAnim/vaisseauxV.gif" width="107" height="132"></SPAN> 
+<TABLE width="755" border="0" cellspacing="0" cellpadding="0" class="nul">
+  <TR align="left" valign="top"> 
+    <TD width="5" height="345">&nbsp;</TD>
+    <TD width="146"> <IMG src="images/imagesGen/calle.gif" width="55" height="55"><BR>
+    </TD>
+    <TD width="604" class="titre"> 
+      <TABLE width="600" border="0" cellspacing="8" cellpadding="0">
+        <TR> 
+          <TD colspan="2"><FONT color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">events<BR>
+            <FONT size="3" color="004590"><B>Your future rendez vous with In Fusio</B></FONT> 
+            </FONT></TD>
+        </TR>
+      </TABLE><TABLE width="600" border="0" cellspacing="8" cellpadding="0">
+        <TR>
+          <TD colspan="2">&nbsp;</TD>
+        </TR>
+        <TR> 
+          <TD colspan="2"><FONT color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">June 
+            2001</FONT></TD>
+        </TR>
+      </TABLE>
+      <TABLE border="0" cellspacing="5" cellpadding="0" width="555">
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/date.gif" width="96" height="16"> 
+            </FONT> </TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/events.gif" width="168" height="16"> 
+            </FONT></TD>
+          <TD width="73" valign="top" align="left"> <FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/location.gif" width="82" height="16"></FONT></TD>
+          <TD width="224" valign="top" align="left"><IMG src="images/imageSom/detail.gif" width="224" height="16"></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">19th to 21st June</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.euroforum.de/tk-europa" target="_blank">Telekommarket Europa</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Bonn</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">Gilles Raymond will be speaker on June 21st and will talk about "How to
+attract gamers&quot;</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        
+        
+        
+        
+        
+        
+        
+        
+      </TABLE><TABLE width="600" border="0" cellspacing="8" cellpadding="0">
+        <TR>
+          <TD colspan="2">&nbsp;</TD>
+        </TR>
+        <TR> 
+          <TD colspan="2"><FONT color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">May 
+            2001</FONT></TD>
+        </TR>
+      </TABLE>
+      <TABLE border="0" cellspacing="5" cellpadding="0" width="555">
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/date.gif" width="96" height="16"> 
+            </FONT> </TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/events.gif" width="168" height="16"> 
+            </FONT></TD>
+          <TD width="73" valign="top" align="left"> <FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/location.gif" width="82" height="16"></FONT></TD>
+          <TD width="224" valign="top" align="left"><IMG src="images/imageSom/detail.gif" width="224" height="16"></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">14th to 17th May</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.iirltd.co.uk" target="_blank">Wireless &amp; Online Gaming</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Juan Les Pins</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">Corinne Nassif (VP Marketing), will talk about Multiplayer games on mobiles</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        
+        
+        
+        
+        
+        
+        
+        
+      </TABLE><TABLE width="600" border="0" cellspacing="8" cellpadding="0">
+        <TR>
+          <TD colspan="2">&nbsp;</TD>
+        </TR>
+        <TR> 
+          <TD colspan="2"><FONT color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">April 
+            2001</FONT></TD>
+        </TR>
+      </TABLE>
+      <TABLE border="0" cellspacing="5" cellpadding="0" width="555">
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/date.gif" width="96" height="16"> 
+            </FONT> </TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/events.gif" width="168" height="16"> 
+            </FONT></TD>
+          <TD width="73" valign="top" align="left"> <FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/location.gif" width="82" height="16"></FONT></TD>
+          <TD width="224" valign="top" align="left"><IMG src="images/imageSom/detail.gif" width="224" height="16"></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">24th to 26th April</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.ibctelecoms.com/mobents/?source=fusiomobent" target="_blank">Mobile Entertainment Conference</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Paris</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">In-Fusio is lead sponsor, and will exhibit on booth 33 &amp; 34. Also Gilles Raymond (C.E.O) will talk about the &quot;Gaming on Mobile&quot;, and Giles Corbett (Managing Director), will be chairman at the &quot;Games, Evolving To Mass MArket for Mobile&quot; panel session</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        
+        
+        
+        
+        
+        
+        
+        
+      </TABLE>
+      <TABLE width="600" border="0" cellspacing="8" cellpadding="0">
+        <TR>
+          <TD colspan="2">&nbsp;</TD>
+        </TR>
+        <TR> 
+          <TD colspan="2"><FONT color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">March 
+            2001</FONT></TD>
+        </TR>
+      </TABLE>
+      <TABLE border="0" cellspacing="5" cellpadding="0" width="555">
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/date.gif" width="96" height="16"> 
+            </FONT> </TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/events.gif" width="168" height="16"> 
+            </FONT></TD>
+          <TD width="73" valign="top" align="left"> <FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/location.gif" width="82" height="16"></FONT></TD>
+          <TD width="224" valign="top" align="left"><IMG src="images/imageSom/detail.gif" width="224" height="16"></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">12th &amp; 13th March</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.ef-telecoms.co.uk" target="_blank">Mobile Games</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">London</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">Thomas Landspurg (C.T.O) will talk about &quot;Determining the success factors for and overcoming the technical challenges of delivering mobile games to the mass market&quot;</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">22nd to
+28th
+March</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.cebit.de" target="_blank">CeBit</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Hannover</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">In-Fusio will exhibit on Philips Consumer Communications booth B06, hall 12</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        
+        
+        
+        
+        
+        
+        
+        
+      </TABLE>
+      <TABLE width="600" border="0" cellspacing="8" cellpadding="0">
+        <TR>
+          <TD colspan="2">&nbsp;</TD>
+        </TR>
+        <TR> 
+          <TD colspan="2"><FONT color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">February 
+            2001</FONT></TD>
+        </TR>
+      </TABLE>
+      <TABLE border="0" cellspacing="5" cellpadding="0" width="555">
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/date.gif" width="96" height="16"> 
+            </FONT> </TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/events.gif" width="168" height="16"> 
+            </FONT></TD>
+          <TD width="73" valign="top" align="left"> <FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/location.gif" width="82" height="16"></FONT></TD>
+          <TD width="224" valign="top" align="left"><IMG src="images/imageSom/detail.gif" width="224" height="16"></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">2nd February</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.ibcusa.com" target="_blank">Mobile Entertainment</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">San Francisco</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">Gilles Raymond (C.E.O.) will talk
+about&quot; Mobile Game Platform" at 10 am
+</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">11th to
+14th
+February</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.milia.com/home/index.shtml" target="_blank">MILIA</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Cannes (Palais des Festivals)</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">In-Fusio will exhibits. Booth number R30.25.</FONT></DIV>
+          </TD>
+        </TR>
+        
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">14th February</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.euroforum.nl" target="_blank">Gaming in Media Market</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Amsterdam</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">Leon Van de Pas (VP Sales) will talk
+about "Content Design and Future Gaming Ideas" at 4.05 pm
+
+</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">20th to
+23th
+February</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.gsmworldcongress.com/" target="_blank">3GSM World Congress</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Cannes</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">In-Fusio exhibits. Booth n&deg;60 and Lady Jersey yacht</FONT></DIV>
+          </TD>
+        </TR>
+        
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">21st  February</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.gsmworldcongress.com/" target="_blank">3GSM World Congress</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Cannes</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">Gilles Raymond (C.E.O.) will talk about
+"Multiplayer mobile games" at 2.55 pm</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        
+        
+        
+        
+        
+        
+        
+        
+      </TABLE>
+      <TABLE width="600" border="0" cellspacing="8" cellpadding="0">
+        <TR>
+          <TD colspan="2">&nbsp;</TD>
+        </TR>
+        <TR> 
+          <TD colspan="2"><FONT color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">January 
+            2001</FONT></TD>
+        </TR>
+      </TABLE>
+      <TABLE border="0" cellspacing="5" cellpadding="0" width="555">
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/date.gif" width="96" height="16"> 
+            </FONT> </TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/events.gif" width="168" height="16"> 
+            </FONT></TD>
+          <TD width="73" valign="top" align="left"> <FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/location.gif" width="82" height="16"></FONT></TD>
+          <TD width="224" valign="top" align="left"><IMG src="images/imageSom/detail.gif" width="224" height="16"></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">24th January</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.icmtelecoms.com" target="_blank">Mobile Entertainment</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">London</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">Leon Van de Pas (VP Sales) will talk about
+"How to Attract Gamers on Mobile ?"</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">31st January</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.euroforum.net" target="_blank">Mobile Entertainment</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Stockholm</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">Giles Corbet (Managing Director) will
+talk about "The Market for the Connected Mobile Games"<BR>
+              at
+12.00 pm
+</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        
+        
+        
+        
+        
+        
+        
+      </TABLE>
+      <TABLE width="600" border="0" cellspacing="8" cellpadding="0">
+        <TR>
+          <TD colspan="2">&nbsp;</TD>
+        </TR>
+        <TR> 
+          <TD colspan="2"><FONT color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">December 
+            2000</FONT></TD>
+        </TR>
+      </TABLE>
+      <TABLE border="0" cellspacing="5" cellpadding="0" width="555">
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/date.gif" width="96" height="16"> 
+            </FONT> </TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/events.gif" width="168" height="16"> 
+            </FONT></TD>
+          <TD width="73" valign="top" align="left"> <FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/location.gif" width="82" height="16"></FONT></TD>
+          <TD width="224" valign="top" align="left"><IMG src="images/imageSom/detail.gif" width="224" height="16"></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">4th 
+              to 9th December</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.itu.int/ASIA2000/exhibition/index.html" target="_blank">ITU Telecom Asia 2000</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Honk Kong</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">In-Fusio exhibits at the</FONT><FONT face="Arial" size="-2" color="#FFFFFF"> <FONT color="#003366">Convention and exhibition center</FONT></FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">7th 
+              December</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.mbf2000.com" target="_blank">Mobile Business Forum</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">RAI AMsterdam</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">Giles Corbet (Managing Director) will
+talk about "Creating Fun for Mobile" at 2.10 pm</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        
+        
+        
+        
+        
+        
+        
+      </TABLE>
+      <TABLE width="600" border="0" cellspacing="8" cellpadding="0">
+        <TR>
+          <TD colspan="2">&nbsp;</TD>
+        </TR>
+        <TR> 
+          <TD colspan="2"><FONT color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">October 
+            2000</FONT></TD>
+        </TR>
+      </TABLE>
+      <TABLE border="0" cellspacing="5" cellpadding="0" width="555">
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/date.gif" width="96" height="16"> 
+            </FONT> </TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/events.gif" width="168" height="16"> 
+            </FONT></TD>
+          <TD width="73" valign="top" align="left"> <FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/location.gif" width="82" height="16"></FONT></TD>
+          <TD width="224" valign="top" align="left"><IMG src="images/imageSom/detail.gif" width="224" height="16"></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">3th 
+              & 4th October</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.mobileinternetexpo.com/?source=wapf" target="_blank">The 
+              Mobile Internet Exhibition</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Paris (CNIT center)</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">Content, 
+              Technology and Applications to Re-Invent the Mobile and Re-Define 
+              the Internet. booth n&deg; 69</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">24th 
+              & 25th October</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.e-deal.com/Euroforum/site.nsf/LesConferencesBody/94DCF56FE57E534FC125690000270B30?OpenDocument" target="_blank">Jeux Video en Ligne show</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Paris 
+              (hotel Le Parc Demeure)</FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">In-Fusio sponsors the Jeux Video en Ligne show</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        
+        
+        
+        
+        
+        
+        
+      </TABLE>
+      <TABLE width="600" border="0" cellspacing="8" cellpadding="0">
+        <TR>
+          <TD colspan="2">&nbsp;</TD>
+        </TR>
+        <TR> 
+          <TD colspan="2"><FONT color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">September 
+            2000</FONT></TD>
+        </TR>
+      </TABLE>
+      <TABLE border="0" cellspacing="5" cellpadding="0" width="555">
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/date.gif" width="96" height="16"> 
+            </FONT> </TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/events.gif" width="168" height="16"> 
+            </FONT></TD>
+          <TD width="73" valign="top" align="left"> <FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/location.gif" width="82" height="16"></FONT></TD>
+          <TD width="224" valign="top" align="left"><IMG src="images/imageSom/detail.gif" width="224" height="16"></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2">5th 
+              & 6th September</FONT></DIV>
+          </TD>
+          <TD width="168" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.ibctelecoms.com/mobents00/?source=infusiomobent" target="_blank">The 
+              Mobile Entertainment<BR>
+              Conference</A></FONT></DIV>
+          </TD>
+          <TD width="73" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Paris 
+              </FONT></DIV>
+          </TD>
+          <TD width="224" valign="top" align="left"> 
+            <DIV align="left"><FONT face="Arial" size="-2" color="#003366">Defining 
+              & Assessing The Content & Services For Mass Market Mobile Entertainment</FONT></DIV>
+          </TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2">5th 
+            & 7th September</FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><A href="http://www.mobilecommerceworld.com" target="_blank">Mobile 
+            Commerce World</A></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF">Hong 
+            Kong </FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#003366">Where 
+            mobiles and e-commerce meet</FONT></TD>
+        </TR>
+        <TR> 
+          <TD width="99" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="98" height="1"></FONT></TD>
+          <TD width="168" valign="top" align="left"><FONT face="Arial" color="#FFFFFF" size="-2"><IMG src="images/imageSom/filetBlanc.gif" width="166" height="1"></FONT></TD>
+          <TD width="73" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="82" height="1"></FONT></TD>
+          <TD width="224" valign="top" align="left"><FONT face="Arial" size="-2" color="#FFFFFF"><IMG src="images/imageSom/filetBlanc.gif" width="220" height="1"></FONT></TD>
+        </TR>
+        <TR>
+          <TD width="99" valign="top" align="left">&nbsp;</TD>
+          <TD width="168" valign="top" align="left">&nbsp;</TD>
+          <TD width="73" valign="top" align="left">&nbsp;</TD>
+          <TD width="224" valign="top" align="right"><FONT face="Arial, Helvetica, sans-serif" size="2"> 
+        Corporate Communication
+contact: <BR>
+        <FONT color="#004590"><B>Agnes Buys </B></FONT><FONT color="#004590"><B><BR>
+              <A href="mailto:agnes.buys@in-fusio.com">agnes.buys@in-fusio.com</A>
+        </B></FONT></FONT></TD>
+        </TR>
+        
+      </TABLE>
+    </TD>
+  </TR>
+</TABLE>
+ </BODY>
+</HTML>

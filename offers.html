@@ -1,0 +1,260 @@
+<html>
+<head>
+<title> In-Fusio </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">function new_browser (src,name,w,h) {
+    size=",width="+w+",height="+h
+    browser=window.open(src, name,"scrollbars=yes,resizable=yes,toolbar=no,status=no,menubar=no,location=no,directories=no"+size)
+  }</script>
+<script language="JavaScript">
+<!--
+if(top==self)self.location.href="index.html";
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_timelineGoto(tmLnName, fNew, numGotos) { //v2.0
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,lastKeyFr,propNum,theObj;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (numGotos != null)
+    if (tmLn.gotoCount == null) tmLn.gotoCount = 1;
+    else if (tmLn.gotoCount++ >= numGotos) {tmLn.gotoCount=0; return}
+  jmpFwd = (fNew > tmLn.curFrame);
+  for (i = 0; i < tmLn.length; i++) {
+    sprite = (jmpFwd)? tmLn[i] : tmLn[(tmLn.length-1)-i]; //count bkwds if jumping back
+    if (sprite.charAt(0) == "s") {
+      numKeyFr = sprite.keyFrames.length;
+      firstKeyFr = sprite.keyFrames[0];
+      lastKeyFr = sprite.keyFrames[numKeyFr - 1];
+      if ((jmpFwd && fNew<firstKeyFr) || (!jmpFwd && lastKeyFr<fNew)) continue; //skip if untouchd
+      for (keyFrm=1; keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]; keyFrm++);
+      for (j=0; j<sprite.values.length; j++) {
+        props = sprite.values[j];
+        if (numKeyFr == props.length) propNum = keyFrm-1 //keyframes only
+        else propNum = Math.min(Math.max(0,fNew-firstKeyFr),props.length-1); //or keep in legal range
+        if (sprite.obj != null) {
+          if (props.prop2 == null) sprite.obj[props.prop] = props[propNum];
+          else        sprite.obj[props.prop2][props.prop] = props[propNum];
+      } }
+    } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+  }
+  tmLn.curFrame = fNew;
+  if (tmLn.ID == 0) eval('MM_timelinePlay(tmLnName)');
+}
+
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_timelineStop(tmLnName) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  if (tmLnName == null)  //stop all
+    for (var i=0; i<document.MM_Time.length; i++) document.MM_Time[i].ID = null;
+  else document.MM_Time[tmLnName].ID = null; //stop one
+}
+
+function MM_initTimelines() {
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(5);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 15;
+    document.MM_Time[0][0] = new String("sprite");
+    document.MM_Time[0][0].slot = 1;
+    if (ns)
+        document.MM_Time[0][0].obj = document["avion"];
+    else
+        document.MM_Time[0][0].obj = document.all ? document.all["avion"] : null;
+    document.MM_Time[0][0].keyFrames = new Array(1, 9, 15, 16, 17, 18, 22);
+    document.MM_Time[0][0].values = new Array(2);
+    document.MM_Time[0][0].values[0] = new Array(24,48,71,94,118,143,169,199,236,302,357,403,441,472,501,497,502,509,511,513,515,517);
+    document.MM_Time[0][0].values[0].prop = "left";
+    document.MM_Time[0][0].values[1] = new Array(-111,-57,-2,52,107,159,208,252,287,286,256,221,188,160,138,137,141,135,93,38,-27,-92);
+    document.MM_Time[0][0].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][0].values[0].prop2 = "style";
+        document.MM_Time[0][0].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][1] = new String("behavior");
+    document.MM_Time[0][1].frame = 18;
+    document.MM_Time[0][1].value = "MM_timelineGoto('Timeline1','15','4')";
+    document.MM_Time[0][2] = new String("behavior");
+    document.MM_Time[0][2].frame = 50;
+    document.MM_Time[0][2].value = "MM_timelineStop();MM_showHideLayers('avion','','hide','vaisseau','','hide')";
+    document.MM_Time[0][3] = new String("sprite");
+    document.MM_Time[0][3].slot = 2;
+    if (ns)
+        document.MM_Time[0][3].obj = document["vaisseau"];
+    else
+        document.MM_Time[0][3].obj = document.all ? document.all["vaisseau"] : null;
+    document.MM_Time[0][3].keyFrames = new Array(20, 22, 25, 26, 27, 28, 29, 49);
+    document.MM_Time[0][3].values = new Array(2);
+    document.MM_Time[0][3].values[0] = new Array(160,165,168,169,168,168,169,171,170,169,169,169,169,169,169,169,169,169,169,169,169,169,170,170,170,170,170,170,170,170);
+    document.MM_Time[0][3].values[0].prop = "left";
+    document.MM_Time[0][3].values[1] = new Array(1078,744,478,390,338,299,298,299,306,307,290,272,253,233,212,190,167,143,117,90,62,33,4,-25,-54,-84,-113,-142,-171,-200);
+    document.MM_Time[0][3].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][3].values[0].prop2 = "style";
+        document.MM_Time[0][3].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][4] = new String("behavior");
+    document.MM_Time[0][4].frame = 29;
+    document.MM_Time[0][4].value = "MM_timelineGoto('Timeline1','25','1')";
+    document.MM_Time[0].lastFrame = 50;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.titre {  font-family: Arial, Helvetica, sans-serif; font-size: 4mm; line-height: 6mm}
+.texte {  font-family: Arial, Helvetica, sans-serif; font-size: 4mm; line-height: 4mm}
+.nul {  font-family: Arial, Helvetica, sans-serif; font-size: 1mm; line-height: 1mm}
+.texte2 {  font-family: Arial, Helvetica, sans-serif; font-size: 3mm; line-height: 4mm}
+.titreTexte {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 11pt; font-weight: normal}
+a {  text-decoration: none}
+.texte2-soul { font-family: Arial, Helvetica, sans-serif; font-size: 4mm; line-height: 4mm ; text-decoration: underline}
+-->
+</style>
+<script language="JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function MM_showHideLayers() { //v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+
+<BODY bgcolor="008CF5" MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" TOPMARGIN="0" onLoad="MM_preloadImages('boutons/boutOffers_on.gif');MM_timelinePlay('Timeline1')" link="#095AA5" vlink="#095AA5" alink="#095AA5">
+<span id="avion" style="position:absolute; left:24px; top:-111px; width:95px; height:46px; z-index:1"><img src="objetAnim/soucoupe.gif" width="122" height="74"></span> 
+<span id="vaisseau" style="position:absolute; left:160px; top:1078px; width:93px; height:111px; z-index:2"><img src="objetAnim/vaisseauxV.gif" width="107" height="132"></span> 
+<table width="761" border="0" cellspacing="0" cellpadding="0" height="200">
+  <tr align="left" valign="top"> 
+    <td width="1">&nbsp;</td>
+    <td width="139"> 
+      <p><img src="images/imagesGen/calle.gif" width="55" height="55"><br>
+      </p>
+      <p align="center">&nbsp;</p>
+    </td>
+    <td width="400"> 
+      <div align="right">
+<table width="350" border="0" cellspacing="3" cellpadding="0" align="left">
+          <tr> 
+            <td width="337"> 
+              <p align="left"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">offers</font><br>
+                <font face="Arial" size="3" color="004590"><b>In-Fusio 
+                is a young start up, set up 2 years ago specialises in entertainment 
+                for mobile phones. Since our creation, In-Fusio has realised 
+                unprecedented world wide firsts.</b></font><font face="Arial" size="2"><br>
+                </font><font face="Arial" size="2">In partnership with SFR, In-Fusio 
+                is the first company to have launched games in pre-WAP. We are 
+                also the first to develop games on SIM cards in partnership with 
+                Schlumberger. Since we began, T-Mobil (Germany), Sunday (Hong 
+                Kong), France Telecom Mobile (France), Telstra (Australia), Telefonica 
+                (Spain) as well as other telecom operators have been seduced by 
+                our creativity and reactivity.</font><font face="Arial" size="2"><br>
+                We are the international leader in our field.</font><font face="Arial, Helvetica, sans-serif" size="2"><br>
+                <br>
+                </font> 
+              </td>
+          </tr>
+          <tr>
+            <td width="337">&nbsp;</td>
+          </tr>
+        </table>
+        <p align="left">&nbsp; </p>
+        <div align="left">
+<p>&nbsp; </p>
+        </div>
+        
+      </div>
+      <p class="titreTexte" align="right">&nbsp;</p>
+    </td>
+    <td class="titre1" width="253"> 
+      <div align="left"> </div>
+      <p>&nbsp;</p>
+      <table width="200" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="4"></td>
+          <td width="217"><font color="#095AA5"><font face="Arial" size="5" color="#FFFFFF">share 
+            our dream :<br>
+            </font></font><font color="#FFFFFF" size="5"><font face="Arial">join 
+            us !</font></font></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p><a href="offers/sales.html" target="bas" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('offers','','boutons/boutOffers_on.gif',1)"><img src="boutons/boutOffers_off.gif" width="63" height="31" border="0" name="offers"></a></p>
+      </td>
+  </tr>
+</table>
+
+<span class="texte2"></span> 
+</body>
+</html>

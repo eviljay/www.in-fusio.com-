@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<TITLE>Midtown Madness® 3 Mobile 3D </TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1" />
+<link href="infusio.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+-->
+</style>
+</HEAD>
+<BODY bgcolor="#FFB41D" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" valign="middle"><TABLE  BORDER=0 align="center" CELLPADDING=0 CELLSPACING=0>
+      <TR>
+        <TD> <IMG SRC="images/mdtab_01.gif" WIDTH=6 HEIGHT=5 /></TD>
+        <TD background="images/mdtab_02.gif"><IMG SRC="images/mdtab_02.gif" width="100%"  HEIGHT=5 /></TD>
+        <TD> <IMG SRC="images/mdtab_03.gif" WIDTH=5 HEIGHT=5 /></TD>
+      </TR>
+      <TR>
+        <TD background="images/mdtab_04.gif"><IMG SRC="images/mdtab_04.gif" WIDTH=6  /></TD>
+        <TD align="center" bgcolor="#FFFFFF"><img src="admin/Jeu/jeu_105/image_03_jeu.gif" ></TD>
+        <TD background="images/mdtab_06.gif"><IMG SRC="images/mdtab_06.gif" WIDTH=5  /></TD>
+      </TR>
+      <TR>
+        <TD> <IMG SRC="images/mdtab_07.gif" WIDTH=6 HEIGHT=21 /></TD>
+        <TD bgcolor="#FFFFFF">
+          <div align="center" class="text">Demo...</div>
+        </TD>
+        <TD> <IMG SRC="images/mdtab_09.gif" WIDTH=5 HEIGHT=21 /></TD>
+      </TR>
+      <TR>
+        <TD> <IMG SRC="images/mdtab_10.gif" WIDTH=6 HEIGHT=5 /></TD>
+        <TD background="images/mdtab_11.gif"> <IMG SRC="images/mdtab_11.gif" width="100%"  HEIGHT=5 /></TD>
+        <TD> <IMG SRC="images/mdtab_12.gif" WIDTH=5 HEIGHT=5 /></TD>
+      </TR>
+    </TABLE></td>
+  </tr>
+</table><!-- phpmyvisites -->
+<a href="http://www.phpmyvisites.net/" title="phpMyVisites : logiciel gratuit de mesure d'audience et de statistiques de sites Internet (licence libre GPL, logiciel en php/MySQL)" onclick="window.open(this.href);return(false);">
+<script type="text/javascript">
+<!--
+var phpmyvisitesSite = 1;
+var phpmyvisitesURL = "http://www.in-fusio.com/phpmyvisites/phpmyvisites.php";
+//-->
+</script>
+<script type="text/javascript" src="http://www.in-fusio.com/phpmyvisites/phpmyvisites.js"></script>
+<noscript>
+<p>
+phpMyVisites : logiciel gratuit de mesure d'audience et de statistiques de sites Internet (licence libre GPL, logiciel en php/MySQL)
+<img src="http://www.in-fusio.com/phpmyvisites/phpmyvisites.php?nojs=1&amp;site=1" alt="phpMyVisites" style="border:0" />
+</p>
+</noscript>
+</a>
+<!-- /phpmyvisites --></BODY>
+</HTML>

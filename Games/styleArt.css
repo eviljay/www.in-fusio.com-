@@ -1,0 +1,15 @@
+body {
+ scrollbar-face-color: #BF69C2; 
+ scrollbar-shadow-color: #9B449E;
+ scrollbar-highlight-color: #9B449E;
+ scrollbar-3dlight-color: #9B449E; 
+ scrollbar-darkshadow-color: #9B449E; 
+ scrollbar-track-color: #9B449E; 
+ scrollbar-arrow-color: #9B449E;
+}
+.titre {  font-family: Arial; font-size: 12pt; line-height: 120%; color: #660066; font-weight: bold}
+.texte {  font-family: Arial; font-size: 9pt; line-height: 115%; color: #FFFFFF}
+
+.nomJeu { font-family: Arial; font-size: 12pt; line-height: 120%; color: #CC99CC; font-weight: bold }
+.sousTitre { font-family: Arial; font-size: 10pt; line-height: 120%; color: #660066; font-weight: bold }
+.nomCategorie { font-family: Arial; font-size: 9pt; line-height: 120%; color: #FFFFFF; font-weight: bold }

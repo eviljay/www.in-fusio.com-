@@ -1,0 +1,193 @@
+<HTML>
+<HEAD>
+<TITLE>Pages_game demo</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_showHideLayers() { //v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.titreGameDemo {  font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 15px; font-weight: bold; color: #FFFFFF; letter-spacing: 1px}
+.jeux {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #336666}
+.jeux2 { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #336666 }
+-->
+</style>
+</HEAD>
+<BODY BGCOLOR=#67B0C5 onLoad="MM_preloadImages('fleche_off-over.gif','fleche_off.gif')" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="409" border="0" cellspacing="0" cellpadding="0" height="364" bgcolor="67B0C5">
+  <tr>
+    <td width="146" valign="top" height="375"> 
+      <table width="136" border="0" cellspacing="0" cellpadding="0" height="80">
+        <tr bgcolor="#469BB2"> 
+          <td height="40" class="titreGameDemo">
+            <center>
+              GAME DEMO
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td height="40">&nbsp;</td>
+        </tr>
+      </table>
+      <br>
+      <table width="142" border="0" cellspacing="0" cellpadding="3">
+        <tr> 
+          <td width="112" class="jeux" align="right" valign="middle">ChicagoGuns<br>
+            <span class="jeux2">ExEn&reg; game</span></td>
+          <td width="18" align="center" valign="middle"><a href="#" onMouseOut="MM_swapImage('Image11','','fleche_off.gif',1)" onMouseOver="MM_swapImage('Image11','','fleche_off-over.gif',1)" 
+          onClick="MM_swapImage('snapshot','','games/ChicagoGuns/demo.gif',1)"><img src="fleche_off.gif" width="12" height="9" border="0" name="Image11"></a></td>
+       </tr>
+      </table>
+    <table width="142" border="0" cellspacing="0" cellpadding="3">
+        <tr> 
+          <td width="112" class="jeux" align="right" valign="middle">CrazyCobra<br>
+            <span class="jeux2">ExEn&reg; game</span></td>
+          <td width="18" align="center" valign="middle"><a href="#" onMouseOut="MM_swapImage('Image11','','fleche_off.gif',1)" onMouseOver="MM_swapImage('Image11','','fleche_off-over.gif',1)" 
+          onClick="MM_swapImage('snapshot','','games/CrazyCobra/demo.gif',1)"><img src="fleche_off.gif" width="12" height="9" border="0" name="Image11"></a></td>
+       </tr>
+      </table>
+    <table width="142" border="0" cellspacing="0" cellpadding="3">
+        <tr> 
+          <td width="112" class="jeux" align="right" valign="middle">CrazyPet2<br>
+            <span class="jeux2">ExEn&reg; game</span></td>
+          <td width="18" align="center" valign="middle"><a href="#" onMouseOut="MM_swapImage('Image11','','fleche_off.gif',1)" onMouseOver="MM_swapImage('Image11','','fleche_off-over.gif',1)" 
+          onClick="MM_swapImage('snapshot','','games/CrazyPet2/demo.gif',1)"><img src="fleche_off.gif" width="12" height="9" border="0" name="Image11"></a></td>
+       </tr>
+      </table>
+    <table width="142" border="0" cellspacing="0" cellpadding="3">
+        <tr> 
+          <td width="112" class="jeux" align="right" valign="middle">DecaChallenge<br>
+            <span class="jeux2">ExEn&reg; game</span></td>
+          <td width="18" align="center" valign="middle"><a href="#" onMouseOut="MM_swapImage('Image11','','fleche_off.gif',1)" onMouseOver="MM_swapImage('Image11','','fleche_off-over.gif',1)" 
+          onClick="MM_swapImage('snapshot','','games/DecaChallenge/demo.gif',1)"><img src="fleche_off.gif" width="12" height="9" border="0" name="Image11"></a></td>
+       </tr>
+      </table>
+    <table width="142" border="0" cellspacing="0" cellpadding="3">
+        <tr> 
+          <td width="112" class="jeux" align="right" valign="middle">DreamQuest<br>
+            <span class="jeux2">ExEn&reg; game</span></td>
+          <td width="18" align="center" valign="middle"><a href="#" onMouseOut="MM_swapImage('Image11','','fleche_off.gif',1)" onMouseOver="MM_swapImage('Image11','','fleche_off-over.gif',1)" 
+          onClick="MM_swapImage('snapshot','','games/DreamQuest/demo.gif',1)"><img src="fleche_off.gif" width="12" height="9" border="0" name="Image11"></a></td>
+       </tr>
+      </table>
+    <table width="142" border="0" cellspacing="0" cellpadding="3">
+        <tr> 
+          <td width="112" class="jeux" align="right" valign="middle">JurassicParkIII<br>
+            <span class="jeux2">ExEn&reg; game</span></td>
+          <td width="18" align="center" valign="middle"><a href="#" onMouseOut="MM_swapImage('Image11','','fleche_off.gif',1)" onMouseOver="MM_swapImage('Image11','','fleche_off-over.gif',1)" 
+          onClick="MM_swapImage('snapshot','','games/JurassicParkIII/demo.gif',1)"><img src="fleche_off.gif" width="12" height="9" border="0" name="Image11"></a></td>
+       </tr>
+      </table>
+    <table width="142" border="0" cellspacing="0" cellpadding="3">
+        <tr> 
+          <td width="112" class="jeux" align="right" valign="middle">KungFuLegend<br>
+            <span class="jeux2">ExEn&reg; game</span></td>
+          <td width="18" align="center" valign="middle"><a href="#" onMouseOut="MM_swapImage('Image11','','fleche_off.gif',1)" onMouseOver="MM_swapImage('Image11','','fleche_off-over.gif',1)" 
+          onClick="MM_swapImage('snapshot','','games/KungFuLegend/demo.gif',1)"><img src="fleche_off.gif" width="12" height="9" border="0" name="Image11"></a></td>
+       </tr>
+      </table>
+    <table width="142" border="0" cellspacing="0" cellpadding="3">
+        <tr> 
+          <td width="112" class="jeux" align="right" valign="middle">Panko<br>
+            <span class="jeux2">ExEn&reg; game</span></td>
+          <td width="18" align="center" valign="middle"><a href="#" onMouseOut="MM_swapImage('Image11','','fleche_off.gif',1)" onMouseOver="MM_swapImage('Image11','','fleche_off-over.gif',1)" 
+          onClick="MM_swapImage('snapshot','','games/Panko/demo.gif',1)"><img src="fleche_off.gif" width="12" height="9" border="0" name="Image11"></a></td>
+       </tr>
+      </table>
+    <table width="142" border="0" cellspacing="0" cellpadding="3">
+        <tr> 
+          <td width="112" class="jeux" align="right" valign="middle">SkateKid<br>
+            <span class="jeux2">ExEn&reg; game</span></td>
+          <td width="18" align="center" valign="middle"><a href="#" onMouseOut="MM_swapImage('Image11','','fleche_off.gif',1)" onMouseOver="MM_swapImage('Image11','','fleche_off-over.gif',1)" 
+          onClick="MM_swapImage('snapshot','','games/SkateKid/demo.gif',1)"><img src="fleche_off.gif" width="12" height="9" border="0" name="Image11"></a></td>
+       </tr>
+      </table>
+    <table width="142" border="0" cellspacing="0" cellpadding="3">
+        <tr> 
+          <td width="112" class="jeux" align="right" valign="middle">SnowKid<br>
+            <span class="jeux2">ExEn&reg; game</span></td>
+          <td width="18" align="center" valign="middle"><a href="#" onMouseOut="MM_swapImage('Image11','','fleche_off.gif',1)" onMouseOver="MM_swapImage('Image11','','fleche_off-over.gif',1)" 
+          onClick="MM_swapImage('snapshot','','games/SnowKid/demo.gif',1)"><img src="fleche_off.gif" width="12" height="9" border="0" name="Image11"></a></td>
+       </tr>
+      </table>
+    <table width="142" border="0" cellspacing="0" cellpadding="3">
+        <tr> 
+          <td width="112" class="jeux" align="right" valign="middle">Tinies<br>
+            <span class="jeux2">ExEn&reg; game</span></td>
+          <td width="18" align="center" valign="middle"><a href="#" onMouseOut="MM_swapImage('Image11','','fleche_off.gif',1)" onMouseOver="MM_swapImage('Image11','','fleche_off-over.gif',1)" 
+          onClick="MM_swapImage('snapshot','','games/Tinies/demo.gif',1)"><img src="fleche_off.gif" width="12" height="9" border="0" name="Image11"></a></td>
+       </tr>
+      </table>
+       <table width="142" border="0" cellspacing="0" cellpadding="3">
+        <tr> 
+          <td width="112" class="jeux" align="right" valign="middle">&nbsp;</td>
+          <td width="18" align="center" valign="middle">&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+    <td width="263" align="center" height="375">&nbsp; </td>
+  </tr>
+</table>
+<p><span id="decachallenge" style="position:absolute; left:206; top:0; width:111px; height:362px; z-index:1;"> 
+  <table width="143" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td><img src="illus_gamesdemo2/tel_haut.gif" width="143" height="92"></td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="143" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="25"><img src="illus_gamesdemo2/tel_gaughe.gif" width="25" height="86"></td>
+            <td width="98" align="center" valign="middle" bgcolor="#A5BDA5"><img src="illus_jeux/DecaChallenge.gif" width="87" height="65" name="snapshot"></td>
+            <td width="20"><img src="illus_gamesdemo2/tel_droit.gif" width="20" height="86"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td><img src="illus_gamesdemo2/tel_bas-.gif" width="143" height="186"></td>
+    </tr>
+  </table>
+  </span></p>
+<p><br>
+</p>
+</BODY>
+</HTML>

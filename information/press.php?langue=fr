@@ -1,0 +1,429 @@
+<HTML><HEAD><TITLE>in-fusio - The mobile game connection</TITLE>
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<SCRIPT LANGUAGE="JavaScript" SRC="../javascript.js"></script>
+<style type="text/css">
+<!--
+a {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #B52D88}
+-->
+</style>
+<link rel="stylesheet" href="press.css">
+</HEAD>
+<BODY BGCOLOR=#FFFFFF ONLOAD="preloadImages();MM_preloadImages('../information_menu/information_02-over.gif','../information_menu/information_04-over.gif','../information_menu/information_06-over.gif','../information_menu/information_08-over.gif','../products_menu/products_off_02-over.gif','../products_menu/products_off_04-over.gif','../products_menu/products_off_06-over.gif','../products_menu/products_off_08-over.gif','../jobs_menu/jobs_off_05-over.gif','../jobs_menu/jobs_off_07-over.gif','illus_press/menu_press/bout_release-over.jpg','illus_press/menu_press/bout_articles-over.jpg','illus_press/menu_press/bout_tv-over.jpg','illus_press/menu_press/bout_images-over.jpg','illus_press/menu_press/bout_pdf-over.jpg','../references_menu/references_off_02-over.gif','../references_menu/references_off_04-over.gif','../references_menu/references_off_06-over.gif','../references_menu/references_off_08-over.gif','../references_menu/references_off_10-over.gif','../references_menu/references_off_12-over.gif');" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<style type="text/css">
+<!--
+.menuadmin {  font-family: Arial; font-size: 11px; line-height: 115%; font-weight: bold; color: #142A59}
+-->
+</style>
+
+
+
+<table width="757" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="95" width="757"><img src="../illus_index_centre/haut_centre.jpg" width=757 height=95 usemap="#Map" border="0"></td></tr>
+<tr><td><table width="757" border="0" cellspacing="0" cellpadding="0">
+		<tr><td width="188"><img src="../illus_index_centre/menu_gauche-.jpg" width=188 height=40></td>
+			<td width="82"><a target="_top" href="../fond_business/business.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('business','','../illus_index_centre/business-over.jpg',1)"><img name="business" src="../illus_index_centre/business.jpg" width=82 height=40 border=0 onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('business','','../illus_index_centre/business-over.jpg',1)"></a></td>
+			<td width="70"><a href="javascript:;" onMouseOver="MM_showHideLayers('games','','show')"><img src="../illus_index_centre/games.jpg" width=70 height=40 border=0></a></td>
+			<td width="71"><a href="javascript:;" onMouseOver="MM_showHideLayers('information','','show')"><img src="../illus_index_centre/information.jpg" width=71 height=40 border=0></a></td>
+			<td width="71" bgcolor="#99A3C2"><a href="javascript:;" onMouseOver="MM_showHideLayers('reference','','show')"><img src="../illus_index_centre/references.jpg" width=71 height=40 border=0></a></td>
+			<td width="71" bgcolor="#99A3C2"><a href="http://developer.in-fusio.com/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','../illus_index_centre/bout_developers_over.gif',1)" target="_blank"><img src="../illus_index_centre/bout_developers.gif" width="71" height="40" border="0" name="Image3"></a></td>
+			<td width="44"><a href="../fond_contact/contactus.php" onMouseOver="MM_swapImage('contact','','../illus_index_centre/contact-business_over.jpg',1)" onMouseOut="MM_swapImgRestore()" target="_top"><img name="contact" src="../illus_index_centre/contact.jpg" width=71 height=40 border=0></a></td>
+			<td width="160">
+				<table width="133" border="0" cellspacing="0" cellpadding="0" height="40">
+				<tr><td width="71" height="40"><img src="../illus_index_centre/jobs-games.jpg" width=71 height=40 onMouseOver="MM_showHideLayers('jobs','','show')"></td>
+					<td>&nbsp;</td></tr>
+				</table>
+			</td></tr>
+		</table></td></tr>
+<tr><td><table width="757" border="0" cellspacing="0" cellpadding="0" height="26">
+		<tr><td width="155"><img src="../illus_index_centre/menu_gauche_bas.jpg" width=188 height=26></td>
+			<td width="365" height="26" bgcolor="#99A3C2">&nbsp;</td>
+			<td width="204">&nbsp;</td>
+			</tr>
+		</table></td></tr>
+</table>
+
+<!--
+<table width="757" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="95" width="757"><img src="../illus_index_centre/haut_centre.jpg" width=757 height=95 usemap="#Map" border="0"></td></tr>
+<tr><td><table width="757" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="188"><img src="../illus_index_centre/menu_gauche-.jpg" width=188 height=40></td>
+          <td width="82"><a target="_top" href="../fond_business/business.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('business','','../illus_index_centre/business-over.jpg',1)"><img name="business" src="../illus_index_centre/business.jpg" width=82 height=40 border=0></a></td>
+          <td width="70"><a href="javascript:;" onMouseOver="MM_showHideLayers('games','','show')"><img src="../illus_index_centre/games.jpg" width=70 height=40 border="0"></a></td>
+          <td width="71"><a href="javascript:;" onMouseOver="MM_showHideLayers('information','','show')"><img src="../illus_index_centre/information.jpg" width=71 height=40 border="0"></a></td>
+          <td width="71"><a href="javascript:;" onMouseOver="MM_showHideLayers('reference','','show')"><img src="../illus_index_centre/references.jpg" width=71 height=40 border="0"></a></td>
+          <td width="71"><a target="_top" href="../fond_contact/contactus.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contact','','../illus_index_centre/contact-business_over.jpg',1)"><img name="contact" src="../illus_index_centre/contact.jpg" width=71 height=40 border=0></a></td>
+          <td width="44"><a href="javascript:;" onMouseOver="MM_showHideLayers('jobs','','show')"><img src="../illus_index_centre/jobs-games.jpg" width=71 height=40 border="0"></a></td>
+          <td width="160">&nbsp;</td>
+        </tr>
+        </table></td></tr>
+<tr><td><table width="757" border="0" cellspacing="0" cellpadding="0" height="26">
+        <tr><td width="155"><img src="../illus_index_centre/menu_gauche_bas.jpg" width=188 height=26></td>
+			<td width="365" height="26" bgcolor="99A3C2">&nbsp;</td>
+			<td width="204">&nbsp;</td>
+			</tr>
+        </table></td></tr>
+</table>
+-->
+
+
+
+<span id="games" style="position:absolute; left:240; top:65; width:179px; height:119px; z-index:1; visibility: hidden">
+<table width="196" border="0" cellspacing="0" cellpadding="0">
+<tr><td width="30"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('games','','hide')"></td>
+	<td width="136"><img src="../illus_index_centre/cale.gif" width="136" height="30" onMouseOver="MM_showHideLayers('games','','hide')"></td>
+	<td width="30"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('games','','hide')"></td></tr>
+<tr><td width="30"><img src="../illus_index_centre/cale.gif" width="30" height="80" onMouseOver="MM_showHideLayers('games','','hide')"></td>
+	<td width="136">
+		<table border=0 cellpadding=0 cellspacing=0>
+		<tr><td><table width="136" border="0" cellspacing="0" cellpadding="0">
+				<tr><td><table width="136" border="0" cellspacing="0" cellpadding="0">
+						<tr><td width="51"><img src="../menu_game/haut_game_gauche.gif" width="70" height="20"></td>
+							<td width="85"><img src="../illus_index_centre/cale.gif" width="58" height="20" onMouseOver="MM_showHideLayers('games','','hide')"></td></tr>
+						</table></td></tr>
+				<tr><td><img src="../menu_game/filet_game.gif" width="136" height="1"></td></tr>
+				</table></td></tr>
+		<tr><td> <a target="_top" href="../Games/games.php"> <img name="zone_game" src="../menu_game/zone_game.gif" width=136 height=15 border=0 onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('zone_game','','../menu_game/zone_game-over.gif',1)"></a></td></tr>
+		<tr><td> <a target="_top" href="../fond_game/technologie_games.php"> <img name="technology_game" src="../menu_game/technology_game.gif" width=136 height=15 border=0 onMouseOver="MM_swapImage('technology_game','','../menu_game/technology_game-zone_game_o.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td></tr>
+		<tr><td> <a target="_top" href="../fond_game/service_games.php"> <img name="service_game" src="../menu_game/service_game.gif" width=136 height=15 border=0 onMouseOver="MM_swapImage('service_game','','../menu_game/service_game-zone_game_over.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td></tr>
+        <tr><td> <a target="_top" href="../fond_game/platform_games.php"> <img name="platform_game" src="../menu_game/platform_game.gif" width=136 height=14 border=0 onMouseOver="MM_swapImage('platform_game','','../menu_game/platform_game-zone_game_ove.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td></tr>
+		</table></td>
+	<td width="30" valign="top"><img src="../illus_index_centre/cale.gif" width="30" height="80" onMouseOver="MM_showHideLayers('games','','hide')"></td></tr>
+<tr><td width="30"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('games','','hide')"></td>
+	<td width="136"><img src="../illus_index_centre/cale.gif" width="136" height="30" onMouseOver="MM_showHideLayers('games','','hide')"></td>
+	<td width="30"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('games','','hide')"></td></tr>
+</table>
+</span>
+<span id="information" style="position:absolute; left:310; top:65; width:271px; height:189px; z-index:1; visibility: hidden">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr><td width="30"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('information','','hide')"></td>
+	<td width="116"><img src="../illus_index_centre/cale.gif" width="116" height="30" onMouseOver="MM_showHideLayers('information','','hide')"></td>
+	<td width="34"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('information','','hide')"></td></tr>
+<tr><td width="30" valign="top"><img src="../illus_index_centre/cale.gif" width="30" height="95" onMouseOver="MM_showHideLayers('information','','hide')"></td>
+	<td width="116">
+		<table width="116" border="0" cellspacing="0" cellpadding="0" height="95">
+		<tr><td height="21" width="116">
+				<table width="87" border="0" cellspacing="0" cellpadding="0">
+				<tr><td><table width="116" border="0" cellspacing="0" cellpadding="0">
+						<tr><td width="71"><img src="../menu_info/haut_info_auche.gif" width="71" height="20"></td>
+							<td width="60"><img src="../illus_index_centre/cale.gif" width="22" height="20" onMouseOver="MM_showHideLayers('information','','hide')"></td></tr>
+						</table></td></tr>
+				<tr><td><img src="../menu_info/filet_info.gif" width="116" height="1"></td></tr>
+				</table></td></tr>
+		<tr><td width="116" height="15"><a target="_top" href="../fond_information/press_info.php"><img src="../menu_info/press_info.gif" width="116" height="15" name="press" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('press','','../menu_info/press_info-over.gif',1)" border="0"></a></td></tr>
+        <tr><td width="116" height="15"><a target="_top" href="../fond_information/events_info.php"><img src="../menu_info/events_info.gif" width="116" height="15" name="events" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('events','','../menu_info/events_info-press_info_over.gif',1)" border="0"></a></td></tr>
+        <tr><td width="116" height="15"><a target="_top" href="../fond_information/vision_info.php"><img src="../menu_info/vision_info.gif" width="116" height="15" name="vision" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('vision','','../menu_info/vision_info-press_info_over.gif',1)" border="0"></a></td></tr>
+        <tr><td width="116" height="15"><a target="_top" href="../fond_information/history_info.php"><img src="../menu_info/history_info.gif" width="116" height="15" name="history" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('history','','../menu_info/history_info-press_info_ove.gif',1)" border="0"></a></td></tr>
+        <tr><td width="116" height="14"><a target="_top" href="#" onClick="MM_openBrWindow('../glossary.php','glossary','scrollbars=yes,resizable=yes,width=500,height=500')"><img src="../menu_info/glossary_info.gif" width="116" height="14" name="glossary" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('glossary','','../menu_info/glossary_info-press_info_ov.gif',1)" border="0"></a></td></tr>
+		</table></td>
+	<td width="34" valign="top"><img src="../illus_index_centre/cale.gif" width="30" height="95" onMouseOver="MM_showHideLayers('information','','hide')"></td></tr>
+<tr><td width="30"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('information','','hide')"></td>
+	<td width="116"><img src="../illus_index_centre/cale.gif" width="116" height="30" onMouseOver="MM_showHideLayers('information','','hide')"></td>
+	<td width="34"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('information','','hide')"></td></tr>
+</table>
+</span>
+<span id="reference" style="position:absolute; left:381; top:65; width:142px; height:119px; z-index:1; visibility: hidden">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr><td width="30"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('reference','','hide')"></td>
+	<td width="130"><img src="../illus_index_centre/cale.gif" width="131" height="30" onMouseOver="MM_showHideLayers('reference','','hide')"></td>
+	<td width="31"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('reference','','hide')"></td></tr>
+<tr><td width="30" valign="top"><img src="../illus_index_centre/cale.gif" width="30" height="126" onMouseOver="MM_showHideLayers('reference','','hide')"></td>
+	<td width="130">
+		<table border=0 cellpadding=0 cellspacing=0>
+		<tr><td><table width="130" border="0" cellspacing="0" cellpadding="0">
+				<tr><td><table width="130" border="0" cellspacing="0" cellpadding="0">
+						<tr><td width="70"><img src="../menu_reference/haut_reference_gauche.gif" width="71" height="20"></td>
+							<td width="60"><img src="../illus_index_centre/cale.gif" width="50" height="20" onMouseOver="MM_showHideLayers('reference','','hide')"></td></tr>
+						</table></td></tr>
+				<tr><td><img src="../menu_reference/filet_reference.gif" width="130" height="1"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr><td> <a target="_top" href="../fond_references/customers_ref.php"> <img name="customer_ref" src="../menu_reference/customer_ref.gif" width=130 height=15 border=0 onMouseOver="MM_swapImage('customer_ref','','../menu_reference/customer_ref-over.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td></tr>
+		<tr><td> <a target="_top" href="../fond_references/players_ref.php"> <img name="players_ref" src="../menu_reference/players_ref.gif" width=130 height=15 border=0 onMouseOver="MM_swapImage('players_ref','','../menu_reference/players_ref-customer_ref_ov.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td></tr>
+		<tr><td> <a target="_top" href="../fond_references/investors_ref.php"> <img name="investors_ref" src="../menu_reference/investors_ref.gif" width=130 height=15 border=0 onMouseOver="MM_swapImage('investors_ref','','../menu_reference/investors_ref-customer_ref_.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td></tr>
+		<tr><td> <a target="_top" href="../fond_references/manufacturers_ref.php"> <img name="manufacturer_ref" src="../menu_reference/manufacturer_ref.gif" width=130 height=15 border=0 onMouseOver="MM_swapImage('manufacturer_ref','','../menu_reference/manufacturer_ref-customer_r.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td></tr>
+		<tr><td> <a target="_top" href="../fond_references/studios_ref.php"> <img name="studio_ref" src="../menu_reference/studio_ref.gif" width=130 height=15 border=0 onMouseOver="MM_swapImage('studio_ref','','../menu_reference/studio_ref-customer_ref_ove.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td></tr>
+		<tr><td> <a target="_top" href="../fond_references/licensors_ref.php"> <img name="licensors" src="../menu_reference/licensors.gif" width=130 height=15 border=0 onMouseOver="MM_swapImage('licensors','','../menu_reference/licensors-customer_ref_over.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td></tr>
+		<tr><td> <a target="_top" href="../fond_references/technology_ref.php"> <img name="technology_ref" src="../menu_reference/technology_ref.gif" width=130 height=14 border=0 onMouseOver="MM_swapImage('technology_ref','','../menu_reference/technology_ref-customer_ref.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td></tr>
+		</table></td>
+	<td width="31" valign="top"><img src="../illus_index_centre/cale.gif" width="30" height="126" onMouseOver="MM_showHideLayers('reference','','hide')"></td></tr>
+<tr><td width="30"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('reference','','hide')"></td>
+	<td width="130"><img src="../illus_index_centre/cale.gif" width="130" height="30" onMouseOver="MM_showHideLayers('reference','','hide')"></td>
+	<td width="31"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('reference','','hide')"></td></tr>
+</table>
+</span>
+<span id="jobs" style="position:absolute; left:594px; top:65px; width:179px; height:119px; z-index:1; visibility: hidden">
+<table width="196" border="0" cellspacing="0" cellpadding="0">
+<tr><td width="30"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('jobs','','hide')"></td>
+	<td width="136"><img src="../illus_index_centre/cale.gif" width="136" height="30" onMouseOver="MM_showHideLayers('jobs','','hide')"></td>
+	<td width="30"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('jobs','','hide')"></td></tr>
+<tr><td width="30" height="38" valign="top"><img src="../illus_index_centre/cale.gif" width="30" height="50" onMouseOver="MM_showHideLayers('jobs','','hide')"></td>
+	<td width="136" height="38">
+		<table border=0 cellpadding=0 cellspacing=0 width="95">
+		<tr><td><table width="102" border="0" cellspacing="0" cellpadding="0">
+				<tr><td><table width="102" border="0" cellspacing="0" cellpadding="0">
+						<tr><td width="69"><img src="../menu_jobs/haut_job_gauche.gif" width="71" height="20"></td>
+							<td width="33"><img src="../illus_index_centre/cale.gif" width="23" height="20" onMouseOver="MM_showHideLayers('jobs','','hide')"></td></tr>
+						</table></td></tr>
+				<tr><td><img src="../menu_jobs/filet_jobs.gif" width="102" height="1"></td></tr>
+				</table></td></tr>
+		<tr><td> <a target="_top" href="../fond_jobs/offers_jobs.php"> <img name="offers_jobs" src="../menu_jobs/offers_jobs.gif" width=102 height=15 border=0 onMouseOver="MM_swapImage('offers_jobs','','../menu_jobs/offers_jobs-over.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td></tr>
+        <tr><td> <a target="_top" href="../fond_jobs/spirit_jobs.php"> <img name="spirit_jobs" src="../menu_jobs/spirit_jobs.gif" width=102 height=14 border=0 onMouseOver="MM_swapImage('spirit_jobs','','../menu_jobs/spirit_jobs-offers_jobs_ove.gif',1)" onMouseOut="MM_swapImgRestore()"></a></td></tr>
+		</table></td>
+	<td width="30" valign="top" height="38"><img src="../illus_index_centre/cale.gif" width="30" height="51" onMouseOver="MM_showHideLayers('jobs','','hide')"></td></tr>
+<tr><td width="30"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('jobs','','hide')"></td>
+	<td width="136"><img src="../illus_index_centre/cale.gif" width="136" height="30" onMouseOver="MM_showHideLayers('jobs','','hide')"></td>
+	<td width="30"><img src="../illus_index_centre/cale.gif" width="30" height="30" onMouseOver="MM_showHideLayers('jobs','','hide')"></td></tr>
+</table>
+</span>
+<!--
+<span id="Layer1" style="position:absolute; left:65px; top:196px; width:127px; height:153px; z-index:2">
+<table width="127" border="0" cellspacing="0" cellpadding="0" height="153">
+<tr><td valign="middle" align="center"><img src="../illus_index_centre/et.gif" width="120" height="144"></td></tr>
+</table>
+</span>
+-->
+
+<map name="Map"> 
+  <area shape="poly" coords="70,92,67,78,76,62,93,48,113,39,135,33,153,34,172,39,185,49,188,62,182,77,163,92" href="../index.php" target="_top">
+  <area shape="poly" coords="158,90" href="#">
+</map>
+<span id="Layer1" style="position:absolute; left:590px; top:200px; width:134px; height:116px; z-index:2"><img src="../illus_index_centre/perso_anim.gif" width="113" height="88" usemap="#Map2" border="0"> 
+<map name="Map2"><area shape="poly" coords="7,19,14,20,15,7,28,10,45,5,46,19,53,35,46,51,34,61,19,53,6,46,7,22" href="../Games/games.php"></map>
+</span>
+
+
+<table width="686" border="0" cellspacing="0" cellpadding="0">
+<tr><td width="76" valign="top"><img src="../technologie/images_tech/fusio_001.jpg" width="76" height="32"></td>
+    <td width="118" valign="bottom">
+        <table width="119" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"><td><img src="../technologie/images_tech/fusio_002.jpg" width="86" height="26"></td></tr>
+        <tr valign="bottom">
+            <td height="70">
+                <table width="119" border="0" cellspacing="0" cellpadding="0">
+                <tr><td width="45"><img src="../technologie/images_tech/fusio_003.jpg" width="35" height="76"></td>
+                    <td width="74" valign="top">
+                        <table width="55" border="0" cellspacing="0" cellpadding="0">
+                        <tr valign="top" align="right"><td><img src="illus_press/menu_press/illus.jpg" width="83" height="67"></td></tr>
+                        <tr><td><table width="77" border="0" cellspacing="0" cellpadding="0">
+                                <tr><td width="10" height="2"><img src="illus_press/menu_press/004.jpg" width="29" height="9"></td>
+                                    <td width="67" height="2"><img src="illus_press/menu_press/005.jpg" width="54" height="9"></td></tr>
+                                </table></td></tr>
+                        </table></td></tr>
+                </table></td></tr>
+        </table></td>
+    <td width="492" valign="top" background="illus_press/menu_press/fusio_006.jpg">
+        <table width="491" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="10" align="left" valign="top" background="../technologie/images_tech/fond_fonce.jpg"><img src="illus_press/menu_press/arondi_gauche.jpg" width="12" height="11"></td>
+            <td width="471" background="../technologie/images_tech/fond_fonce.jpg">&nbsp;</td>
+            <td width="10" valign="top" align="right" background="../technologie/images_tech/fond_fonce.jpg"><img src="illus_press/menu_press/arondi_droit.jpg" width="10" height="11"></td></tr>
+        <tr><td width="10" background="illus_press/menu_press/fond_fonce.jpg" valign="top" align="left"><img src="illus_press/menu_press/fond_fonce.jpg" width="12" height="56"></td>
+            <td width="471" background="illus_press/menu_press/fond_fonce.jpg" valign="top">
+                <table width="464" border="0" cellspacing="0" cellpadding="0">
+                <tr><td width="241" class="titre" align="left" valign="bottom">PRESS RELEASES</td>
+                    <td width="223" class="text-titre" valign="bottom" align="left">All you want to know<BR>about IN-FUSIO.</td></tr>
+                </table></td>
+            <td width="10" background="illus_press/menu_press/fond_fonce.jpg">&nbsp;</td></tr>
+        <tr><td width="10" align="left" valign="top" background="illus_press/menu_press/fusio_007.jpg">&nbsp;</td>
+            <td width="471" background="illus_press/menu_press/fusio_007.jpg" valign="top">
+                <table width="455" border="0" cellspacing="0" cellpadding="0">
+                <tr><td width="90" background="illus_press/menu_press/fusio_007.jpg">&nbsp;</td>
+                    <td width="113" valign="top" align="right"><a href="press.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','illus_press/menu_press/bout_release-over.jpg',1)"><img src="illus_press/menu_press/bout_release.jpg" width="113" height="17" border="0" name="Image1"></a></td>
+                    <td width="75" align="left" valign="top"><a href="articles.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','illus_press/menu_press/bout_articles-over.jpg',1)"><img src="illus_press/menu_press/bout_articles.jpg" width="75" height="17" border="0" name="Image2"></a></td>
+                    <td width="77" background="illus_press/menu_press/fusio_007.jpg" valign="top"><a href="radioTv.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','illus_press/menu_press/bout_tv-over.jpg',1)"><img src="illus_press/menu_press/bout_tv.jpg" width="77" height="17" border="0" name="Image3"></a></td>
+                    <td width="70" background="illus_press/menu_press/fusio_007.jpg" valign="top"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','illus_press/menu_press/bout_images-over.jpg',1)" onClick="MM_openBrWindow('images.php','download','scrollbars=yes,resizable=yes,width=600,height=400')"><img src="illus_press/menu_press/bout_images.jpg" width="65" height="17" border="0" name="Image4"></a></td>
+                    <td width="30" background="illus_press/menu_press/fusio_007.jpg">&nbsp;</td></tr>
+                </table>
+                <img src="illus_press/menu_press/005.jpg" width="110" height="12"></td>
+            <td width="10" background="illus_press/menu_press/fusio_007.jpg">&nbsp;</td></tr>
+        <tr background="../technologie/images_tech/fusio_006.jpg"></tr>
+        </table></td></tr>
+</table>
+<table width="686" border="0" cellspacing="0" cellpadding="0">
+<tr><td width="77" valign="top" height="5"><img src="../technologie/images_tech/fusio_001.jpg" width="76" height="15"></td>
+    <td width="64" valign="top" height="5" align="right"><img src="illus_press/menu_press/fleche.jpg" width="64" height="15"></td>
+    <td width="545" background="illus_press/menu_press/motif.jpg" valign="middle" height="5" nowrap align="right">
+        <table width="519" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="270" height="15" class="titre2" align="right">Other press release available in...    </td>
+                        <td width="15" class="titre2" valign="middle" align="left">&nbsp; </td>
+            <td width="21" class="titre2" valign="middle" align="center">&nbsp;</td>
+            <td width="52" class="titre2" valign="middle" align="left">&nbsp;</td>
+            <td width="21" class="titre2" valign="middle" align="center">&nbsp;</td>
+            <td width="52" class="titre2" valign="middle" align="left">&nbsp;</td>
+            <td width="21" class="titre2" valign="middle" align="center"><a href="press.php"><img src="../product/illus_portfolio/bout_fleche.gif" width="11" height="9" border="0"></a></td>
+            <td width="52" class="titre2" valign="middle" align="left">Return</td>
+            <td width="15" class="titre2" valign="middle" align="left">&nbsp;</td>
+                    </table></td></tr>
+<tr><td width="77">&nbsp;</td>
+    <td width="64">&nbsp;</td>
+    <td width="545" background="illus_press/menu_press/fusio_006.jpg">
+        <table width="530" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="68">&nbsp;</td>
+            <td width="436"><img src="../technologie/images_tech/fusio_006.jpg" width="300" height="16"></td></tr>
+        <tr><td width="68">&nbsp;</td>
+            <td width="436" class="texte" valign="top">
+
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image691','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=91','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image691"></a></td>
+                    <td width="341"><span class="textepress">IN-FUSIO adaptera SOUTH PARK™ sur mobile</span>
+                    <br><span class="texte">Bordeaux, France - 30 avril 2003</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image688','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=88','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image688"></a></td>
+                    <td width="341"><span class="textepress">Premiers chiffres significatifs du secteur des jeux pour mobiles </span>
+                    <br><span class="texte">Bordeaux, France, 13 février 2003</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image686','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=86','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image686"></a></td>
+                    <td width="341"><span class="textepress">ORANGE DESIGNE IN-FUSIO COMME FOURNISSEUR PREFERE POUR SES SERVICES DE JEUX POUR MOBILE</span>
+                    <br><span class="texte">Londres, G-B, 28 novembre 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image683','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=83','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image683"></a></td>
+                    <td width="341"><span class="textepress">LA PREMIERE ETUDE CONSOMMATEURS DE L’INDUSTRIE DES JEUX SUR TELEPHONE PORTABLE REVELE LES HABITUDES ET TENDANCES DES JOUEURS. </span>
+                    <br><span class="texte">Bordeaux, France - 10 Octobre 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image680','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=80','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image680"></a></td>
+                    <td width="341"><span class="textepress">IN-FUSIO lance le premier jeu couleur en 3D pour téléphone mobile</span>
+                    <br><span class="texte">Bordeaux, 9 septembre 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image676','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=76','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image676"></a></td>
+                    <td width="341"><span class="textepress">CHINA MOBILE lance le service de jeux téléchargeables d'IN-FUSIO dans la province de Shanghai</span>
+                    <br><span class="texte">Bordeaux, France, 16 Août 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image674','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=74','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image674"></a></td>
+                    <td width="341"><span class="textepress">In-Fusio s'associe à Native pour proposer le premier moteur de jeux intégrant une animation graphique de type Flash(tm)</span>
+                    <br><span class="texte">Bordeaux, France 7 juin 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image672','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=72','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image672"></a></td>
+                    <td width="341"><span class="textepress">IN-FUSIO DONNE LE COUP D’ENVOI  DU FOOTBALL SUR MOBILE</span>
+                    <br><span class="texte">Bordeaux, France, 29 mai 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image671','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=71','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image671"></a></td>
+                    <td width="341"><span class="textepress">In-Fusio annonce 'Survivor', un jeu I-Appli, basé sur Java(tm), pour le portail I-Mode d'Universal</span>
+                    <br><span class="texte">Bordeaux, France / Shanghai, Chine, May 24 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image667','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=67','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image667"></a></td>
+                    <td width="341"><span class="textepress">Telefonica Moviles Espana choisit la plate-forme de services de jeu d'In-Fusio</span>
+                    <br><span class="texte">Londres, 9 & 10 avril 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image666','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=66','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image666"></a></td>
+                    <td width="341"><span class="textepress">In-Fusio lance la version 2 d'ExEn, le moteur de jeux téléchargeables pour mobiles</span>
+                    <br><span class="texte">Londres, 9 & 10 avril 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image661','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=61','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image661"></a></td>
+                    <td width="341"><span class="textepress">Openwave et In-Fusio rendront les jeux sur mobiles accessibles au plus grand nombre</span>
+                    <br><span class="texte">REDWOOD, Californie, USA / Bordeaux, France – Le 20 février 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image658','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=58','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image658"></a></td>
+                    <td width="341"><span class="textepress">SFR lance le service de jeux téléchargeables d’In-Fusio</span>
+                    <br><span class="texte">Cannes, 19 février 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image656','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=56','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image656"></a></td>
+                    <td width="341"><span class="textepress">In-Fusio apportera son expertise à la plate-forme Java </span>
+                    <br><span class="texte">Cannes, 20 février 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image653','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=53','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image653"></a></td>
+                    <td width="341"><span class="textepress">In-Fusio, le fournisseur de service de jeux pour portables, lance un service de jeux téléchargeables pour portables en Chine</span>
+                    <br><span class="texte">Bordeaux, 16 janvier 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image651','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=51','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image651"></a></td>
+                    <td width="341"><span class="textepress">Siemens adopte le moteur de jeux ExEn d'In-Fusio pour ses téléphones portables SL42</span>
+                    <br><span class="texte">Bordeaux, 8 janvier 2002</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image649','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=49','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image649"></a></td>
+                    <td width="341"><span class="textepress">SAGEM et In-Fusio : des mobiles pour jouer </span>
+                    <br><span class="texte">Paris, 4 octobre 2001</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image647','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=47','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image647"></a></td>
+                    <td width="341"><span class="textepress">In-Fusio et Digiplug associés dans le développement de nouveaux jeux avec son polyphonique pour mobiles. La hi-fi pour les jeux sur portables !</span>
+                    <br><span class="texte">Paris, 25 septembre 2001</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image645','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=45','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image645"></a></td>
+                    <td width="341"><span class="textepress">In-Fusio annonce le lancement commercial des jeux téléchargeables par D2 Vodafone, premier opérateur allemand</span>
+                    <br><span class="texte">Bordeaux, 26 juillet 2001</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image644','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=44','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image644"></a></td>
+                    <td width="341"><span class="textepress">In-Fusio révolutionne le jeu sur téléphone portable</span>
+                    <br><span class="texte">Bordeaux, 3 juillet 2001</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image643','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=43','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image643"></a></td>
+                    <td width="341"><span class="textepress">Mitsubishi Electric Telecom Europe (METE) s&#8217;associe avec In-Fusio et intègre sa technologie ExEn de téléchargement de jeux pour sa marque Trium</span>
+                    <br><span class="texte">Bordeaux, 14 juin 2001</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image622','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=22','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image622"></a></td>
+                    <td width="341"><span class="textepress">Misez à distance et en toute sécurité avec In-Fusio et Oberthur </span>
+                    <br><span class="texte">Cannes, 30 mai 2001-06-0</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image621','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=21','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image621"></a></td>
+                    <td width="341"><span class="textepress">Motorola et In-Fusio développeront en commun une API Java standardisée pour les jeux sur téléphones portables </span>
+                    <br><span class="texte">Bordeaux, 29 mai 2001</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image620','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=20','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image620"></a></td>
+                    <td width="341"><span class="textepress">In-Fusio choisi par Cryonetworks pour distribuer des jeux auprès d'opérateurs mobiles </span>
+                    <br><span class="texte">Bordeaux, 5 mars 2001</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image619','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=19','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image619"></a></td>
+                    <td width="341"><span class="textepress">In-Fusio fournit des jeux WAP pour le portail pan-européen Vizzavi </span>
+                    <br><span class="texte">Bordeaux, 16 février 2001</span>
+                    </td></tr>
+                </table>
+                <table width="410" border="0" cellspacing="4" cellpadding="0">
+                <tr><td width="57" valign="bottom" align="left"><a href="javascript:void(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image618','','illus_press/menu_press/bout_pdf-over.jpg',1)" onClick="MM_openBrWindow('getpdf.php?r=18','pdf','scrollbars=yes,resizable=yes,width=500,height=400')"><img src="illus_press/menu_press/bout_pdf.jpg" width="45" height="17" border="0" name="Image618"></a></td>
+                    <td width="341"><span class="textepress">La société française In-Fusio assure une seconde levée de fonds auprès d'investisseurs internationaux prestigieux </span>
+                    <br><span class="texte">Bordeaux, 5 décembre 2000</span>
+                    </td></tr>
+                </table>
+                <br>
+                <p>&nbsp;</p></td></tr>
+        </table></td></tr>
+</table>
+</BODY></HTML>

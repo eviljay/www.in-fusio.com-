@@ -1,0 +1,418 @@
+<HTML>
+<HEAD>
+<TITLE>in-fusio</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<SCRIPT language="JavaScript">
+<!--
+if(top==self)self.location.href="index.html";
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+//-->
+</SCRIPT>
+<SCRIPT language="JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function MM_showHideLayers() { //v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_timelineStop(tmLnName) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  if (tmLnName == null)  //stop all
+    for (var i=0; i<document.MM_Time.length; i++) document.MM_Time[i].ID = null;
+  else document.MM_Time[tmLnName].ID = null; //stop one
+}
+
+function MM_timelineGoto(tmLnName, fNew, numGotos) { //v2.0
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,lastKeyFr,propNum,theObj;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (numGotos != null)
+    if (tmLn.gotoCount == null) tmLn.gotoCount = 1;
+    else if (tmLn.gotoCount++ >= numGotos) {tmLn.gotoCount=0; return}
+  jmpFwd = (fNew > tmLn.curFrame);
+  for (i = 0; i < tmLn.length; i++) {
+    sprite = (jmpFwd)? tmLn[i] : tmLn[(tmLn.length-1)-i]; //count bkwds if jumping back
+    if (sprite.charAt(0) == "s") {
+      numKeyFr = sprite.keyFrames.length;
+      firstKeyFr = sprite.keyFrames[0];
+      lastKeyFr = sprite.keyFrames[numKeyFr - 1];
+      if ((jmpFwd && fNew<firstKeyFr) || (!jmpFwd && lastKeyFr<fNew)) continue; //skip if untouchd
+      for (keyFrm=1; keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]; keyFrm++);
+      for (j=0; j<sprite.values.length; j++) {
+        props = sprite.values[j];
+        if (numKeyFr == props.length) propNum = keyFrm-1 //keyframes only
+        else propNum = Math.min(Math.max(0,fNew-firstKeyFr),props.length-1); //or keep in legal range
+        if (sprite.obj != null) {
+          if (props.prop2 == null) sprite.obj[props.prop] = props[propNum];
+          else        sprite.obj[props.prop2][props.prop] = props[propNum];
+      } }
+    } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+  }
+  tmLn.curFrame = fNew;
+  if (tmLn.ID == 0) eval('MM_timelinePlay(tmLnName)');
+}
+
+function MM_initTimelines() {
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(37);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 45;
+    document.MM_Time[0][0] = new String("sprite");
+    document.MM_Time[0][0].slot = 1;
+    if (ns)
+        document.MM_Time[0][0].obj = document["b1"];
+    else
+        document.MM_Time[0][0].obj = document.all ? document.all["b1"] : null;
+    document.MM_Time[0][0].keyFrames = new Array(10, 175);
+    document.MM_Time[0][0].values = new Array(1);
+    document.MM_Time[0][0].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][0].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][0].values[0].prop2 = "style";
+    document.MM_Time[0][1] = new String("sprite");
+    document.MM_Time[0][1].slot = 2;
+    if (ns)
+        document.MM_Time[0][1].obj = document["b2"];
+    else
+        document.MM_Time[0][1].obj = document.all ? document.all["b2"] : null;
+    document.MM_Time[0][1].keyFrames = new Array(13, 175);
+    document.MM_Time[0][1].values = new Array(1);
+    document.MM_Time[0][1].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][1].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][1].values[0].prop2 = "style";
+    document.MM_Time[0][2] = new String("sprite");
+    document.MM_Time[0][2].slot = 3;
+    if (ns)
+        document.MM_Time[0][2].obj = document["b3"];
+    else
+        document.MM_Time[0][2].obj = document.all ? document.all["b3"] : null;
+    document.MM_Time[0][2].keyFrames = new Array(17, 175);
+    document.MM_Time[0][2].values = new Array(1);
+    document.MM_Time[0][2].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][2].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][2].values[0].prop2 = "style";
+    document.MM_Time[0][3] = new String("sprite");
+    document.MM_Time[0][3].slot = 4;
+    if (ns)
+        document.MM_Time[0][3].obj = document["b4"];
+    else
+        document.MM_Time[0][3].obj = document.all ? document.all["b4"] : null;
+    document.MM_Time[0][3].keyFrames = new Array(23, 175);
+    document.MM_Time[0][3].values = new Array(1);
+    document.MM_Time[0][3].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][3].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][3].values[0].prop2 = "style";
+    document.MM_Time[0][4] = new String("sprite");
+    document.MM_Time[0][4].slot = 5;
+    if (ns)
+        document.MM_Time[0][4].obj = document["b5"];
+    else
+        document.MM_Time[0][4].obj = document.all ? document.all["b5"] : null;
+    document.MM_Time[0][4].keyFrames = new Array(29, 175);
+    document.MM_Time[0][4].values = new Array(1);
+    document.MM_Time[0][4].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][4].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][4].values[0].prop2 = "style";
+    document.MM_Time[0][5] = new String("sprite");
+    document.MM_Time[0][5].slot = 6;
+    if (ns)
+        document.MM_Time[0][5].obj = document["b6"];
+    else
+        document.MM_Time[0][5].obj = document.all ? document.all["b6"] : null;
+    document.MM_Time[0][5].keyFrames = new Array(34, 175);
+    document.MM_Time[0][5].values = new Array(1);
+    document.MM_Time[0][5].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][5].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][5].values[0].prop2 = "style";
+    document.MM_Time[0][6] = new String("sprite");
+    document.MM_Time[0][6].slot = 7;
+    if (ns)
+        document.MM_Time[0][6].obj = document["b7"];
+    else
+        document.MM_Time[0][6].obj = document.all ? document.all["b7"] : null;
+    document.MM_Time[0][6].keyFrames = new Array(40, 175);
+    document.MM_Time[0][6].values = new Array(1);
+    document.MM_Time[0][6].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][6].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][6].values[0].prop2 = "style";
+    document.MM_Time[0][7] = new String("sprite");
+    document.MM_Time[0][7].slot = 8;
+    if (ns)
+        document.MM_Time[0][7].obj = document["b8"];
+    else
+        document.MM_Time[0][7].obj = document.all ? document.all["b8"] : null;
+    document.MM_Time[0][7].keyFrames = new Array(45, 175);
+    document.MM_Time[0][7].values = new Array(1);
+    document.MM_Time[0][7].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][7].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][7].values[0].prop2 = "style";
+    document.MM_Time[0][8] = new String("sprite");
+    document.MM_Time[0][8].slot = 9;
+    if (ns)
+        document.MM_Time[0][8].obj = document["b9"];
+    else
+        document.MM_Time[0][8].obj = document.all ? document.all["b9"] : null;
+    document.MM_Time[0][8].keyFrames = new Array(52, 175);
+    document.MM_Time[0][8].values = new Array(1);
+    document.MM_Time[0][8].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][8].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][8].values[0].prop2 = "style";
+    document.MM_Time[0][9] = new String("sprite");
+    document.MM_Time[0][9].slot = 10;
+    if (ns)
+        document.MM_Time[0][9].obj = document["b10"];
+    else
+        document.MM_Time[0][9].obj = document.all ? document.all["b10"] : null;
+    document.MM_Time[0][9].keyFrames = new Array(57, 175);
+    document.MM_Time[0][9].values = new Array(1);
+    document.MM_Time[0][9].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][9].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][9].values[0].prop2 = "style";
+    document.MM_Time[0][10] = new String("sprite");
+    document.MM_Time[0][10].slot = 11;
+    if (ns)
+        document.MM_Time[0][10].obj = document["b12"];
+    else
+        document.MM_Time[0][10].obj = document.all ? document.all["b12"] : null;
+    document.MM_Time[0][10].keyFrames = new Array(63, 175);
+    document.MM_Time[0][10].values = new Array(1);
+    document.MM_Time[0][10].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][10].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][10].values[0].prop2 = "style";
+    document.MM_Time[0][11] = new String("sprite");
+    document.MM_Time[0][11].slot = 12;
+    if (ns)
+        document.MM_Time[0][11].obj = document["b13"];
+    else
+        document.MM_Time[0][11].obj = document.all ? document.all["b13"] : null;
+    document.MM_Time[0][11].keyFrames = new Array(70, 175);
+    document.MM_Time[0][11].values = new Array(1);
+    document.MM_Time[0][11].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][11].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][11].values[0].prop2 = "style";
+    document.MM_Time[0][12] = new String("sprite");
+    document.MM_Time[0][12].slot = 13;
+    if (ns)
+        document.MM_Time[0][12].obj = document["b14"];
+    else
+        document.MM_Time[0][12].obj = document.all ? document.all["b14"] : null;
+    document.MM_Time[0][12].keyFrames = new Array(77, 175);
+    document.MM_Time[0][12].values = new Array(1);
+    document.MM_Time[0][12].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][12].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][12].values[0].prop2 = "style";
+    document.MM_Time[0][13] = new String("sprite");
+    document.MM_Time[0][13].slot = 14;
+    if (ns)
+        document.MM_Time[0][13].obj = document["b15"];
+    else
+        document.MM_Time[0][13].obj = document.all ? document.all["b15"] : null;
+    document.MM_Time[0][13].keyFrames = new Array(82, 175);
+    document.MM_Time[0][13].values = new Array(1);
+    document.MM_Time[0][13].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][13].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][13].values[0].prop2 = "style";
+    document.MM_Time[0][14] = new String("sprite");
+    document.MM_Time[0][14].slot = 15;
+    if (ns)
+        document.MM_Time[0][14].obj = document["logoMondeIN"];
+    else
+        document.MM_Time[0][14].obj = document.all ? document.all["logoMondeIN"] : null;
+    document.MM_Time[0][14].keyFrames = new Array(90, 175);
+    document.MM_Time[0][14].values = new Array(1);
+    document.MM_Time[0][14].values[0] = new Array("hidden","hidden");
+    document.MM_Time[0][14].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][14].values[0].prop2 = "style";
+    document.MM_Time[0][15] = new String("behavior");
+    document.MM_Time[0][15].frame = 1;
+    document.MM_Time[0][15].value = "MM_showHideLayers('b1','','hide','logoMondeIN','','hide','b2','','hide','b3','','hide','b4','','hide','b5','','hide','b6','','hide','b7','','hide','b8','','hide','b9','','hide','b10','','hide','b12','','hide','b13','','hide','b14','','hide','b15','','hide');MM_timelineStop('Timeline1')";
+    document.MM_Time[0][16] = new String("behavior");
+    document.MM_Time[0][16].frame = 8;
+    document.MM_Time[0][16].value = "MM_timelinePlay('Timeline1')";
+    document.MM_Time[0][17] = new String("behavior");
+    document.MM_Time[0][17].frame = 10;
+    document.MM_Time[0][17].value = "MM_showHideLayers('b1','','show')";
+    document.MM_Time[0][18] = new String("behavior");
+    document.MM_Time[0][18].frame = 13;
+    document.MM_Time[0][18].value = "MM_showHideLayers('b2','','show')";
+    document.MM_Time[0][19] = new String("behavior");
+    document.MM_Time[0][19].frame = 17;
+    document.MM_Time[0][19].value = "MM_showHideLayers('b3','','show')";
+    document.MM_Time[0][20] = new String("behavior");
+    document.MM_Time[0][20].frame = 23;
+    document.MM_Time[0][20].value = "MM_showHideLayers('b4','','show')";
+    document.MM_Time[0][21] = new String("behavior");
+    document.MM_Time[0][21].frame = 29;
+    document.MM_Time[0][21].value = "MM_showHideLayers('b5','','show')";
+    document.MM_Time[0][22] = new String("behavior");
+    document.MM_Time[0][22].frame = 34;
+    document.MM_Time[0][22].value = "MM_showHideLayers('b6','','show')";
+    document.MM_Time[0][23] = new String("behavior");
+    document.MM_Time[0][23].frame = 40;
+    document.MM_Time[0][23].value = "MM_showHideLayers('b7','','show')";
+    document.MM_Time[0][24] = new String("behavior");
+    document.MM_Time[0][24].frame = 45;
+    document.MM_Time[0][24].value = "MM_showHideLayers('b8','','show')";
+    document.MM_Time[0][25] = new String("behavior");
+    document.MM_Time[0][25].frame = 52;
+    document.MM_Time[0][25].value = "MM_showHideLayers('b9','','show')";
+    document.MM_Time[0][26] = new String("behavior");
+    document.MM_Time[0][26].frame = 57;
+    document.MM_Time[0][26].value = "MM_showHideLayers('b10','','show')";
+    document.MM_Time[0][27] = new String("behavior");
+    document.MM_Time[0][27].frame = 63;
+    document.MM_Time[0][27].value = "MM_showHideLayers('b12','','show')";
+    document.MM_Time[0][28] = new String("behavior");
+    document.MM_Time[0][28].frame = 70;
+    document.MM_Time[0][28].value = "MM_showHideLayers('b13','','show')";
+    document.MM_Time[0][29] = new String("behavior");
+    document.MM_Time[0][29].frame = 77;
+    document.MM_Time[0][29].value = "MM_showHideLayers('b14','','show')";
+    document.MM_Time[0][30] = new String("behavior");
+    document.MM_Time[0][30].frame = 82;
+    document.MM_Time[0][30].value = "MM_showHideLayers('b15','','show')";
+    document.MM_Time[0][31] = new String("behavior");
+    document.MM_Time[0][31].frame = 90;
+    document.MM_Time[0][31].value = "MM_showHideLayers('logoMondeIN','','show')";
+    document.MM_Time[0][32] = new String("behavior");
+    document.MM_Time[0][32].frame = 104;
+    document.MM_Time[0][32].value = "MM_showHideLayers('logoMondeIN','','hide')";
+    document.MM_Time[0][33] = new String("behavior");
+    document.MM_Time[0][33].frame = 114;
+    document.MM_Time[0][33].value = "MM_showHideLayers('logoMondeIN','','show')";
+    document.MM_Time[0][34] = new String("behavior");
+    document.MM_Time[0][34].frame = 134;
+    document.MM_Time[0][34].value = "MM_showHideLayers('logoMondeIN','','hide')";
+    document.MM_Time[0][35] = new String("behavior");
+    document.MM_Time[0][35].frame = 145;
+    document.MM_Time[0][35].value = "MM_showHideLayers('logoMondeIN','','show')";
+    document.MM_Time[0][36] = new String("behavior");
+    document.MM_Time[0][36].frame = 172;
+    document.MM_Time[0][36].value = "MM_timelineStop('Timeline1')";
+    document.MM_Time[0].lastFrame = 175;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</SCRIPT>
+<STYLE type="text/css">
+<!--
+a {  font-family: Arial; font-size: 10px; line-height: 12px; font-weight: bold; color: #FFFFFF; text-decoration: none}
+.legende {  font-family: Arial; font-size: 3mm; line-height: 3mm; color: #FFFFFF; text-decoration: none}
+-->
+</STYLE>
+</HEAD>
+
+<BODY bgcolor="008CF5" onLoad="MM_timelinePlay('Timeline1');MM_timelineGoto('Timeline1','1')" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<SPAN style="position:absolute; left:28px; top:59px; width:80px; height:72px; z-index:1"></SPAN> 
+<SPAN id="Layer1" style="position:absolute; left:183px; top:14px; width:102px; height:96px; z-index:2"> 
+<P align="left"><IMG src="carte/carte_menu_old.gif" width="101" height="113" usemap="#Map" border="0"><MAP name="Map"><AREA shape="rect" coords="5,6,88,17" href="#" onMouseOver="MM_showHideLayers('SubFT','','show','bonhomeFT','','show','FranceTele','','show')" onMouseOut="MM_showHideLayers('SubFT','','hide','bonhomeFT','','hide','FranceTele','','hide')"><AREA shape="rect" coords="9,68,51,77" href="#" onMouseOver="MM_showHideLayers('subTelstart','','show','bonhometelstart','','show','telstra','','show')" onMouseOut="MM_showHideLayers('subTelstart','','hide','bonhometelstart','','hide','telstra','','hide')"><AREA shape="rect" coords="5,19,48,29" href="#" onMouseOver="MM_showHideLayers('sfr','','show','subSFR','','show','bonhomeSFR','','show')" onMouseOut="MM_showHideLayers('sfr','','hide','subSFR','','hide','bonhomeSFR','','hide')"><AREA shape="rect" coords="8,32,69,41" href="#" onMouseOver="MM_showHideLayers('sunday','','show','SUBsunday','','show','bonhomesunday','','show')" onMouseOut="MM_showHideLayers('sunday','','hide','SUBsunday','','hide','bonhomesunday','','hide')"><AREA shape="rect" coords="6,43,64,52" href="#" onMouseOver="MM_showHideLayers('tmobil','','show','subTmobil','','show','bonhometmobil','','show')" onMouseOut="MM_showHideLayers('tmobil','','hide','subTmobil','','hide','bonhometmobil','','hide')"><AREA shape="rect" coords="8,57,65,66" href="#" onMouseOver="MM_showHideLayers('telefonica','','show','subSpain','','show','bonhometelefonica','','show')" onMouseOut="MM_showHideLayers('telefonica','','hide','subSpain','','hide','bonhometelefonica','','hide')"><AREA shape="rect" coords="6,81,45,91" href="#" onMouseOver="MM_timelineGoto('Timeline1','8')" onMouseOut="MM_timelineGoto('Timeline1','1')"></MAP></P>
+</SPAN> <SPAN id="SubFT" style="position:absolute; left:485px; top:13px; width:243px; height:35px; z-index:5; visibility: hidden"> 
+<DIV align="right">
+  <TABLE width="200" border="0" cellspacing="0" cellpadding="0">
+    <TR> 
+      <TD width="10"> 
+        <DIV align="right"><IMG src="carte/FranceteleSub.gif" width="185" height="24"></DIV>
+      </TD>
+    </TR>
+  </TABLE>
+</DIV>
+</SPAN> <SPAN id="Layer3" style="position:absolute; left:293px; top:32px; width:412px; height:134px; z-index:4"><IMG src="images/anim/animcarte.gif" width="427" height="274"></SPAN> 
+<SPAN id="bonhomeFT" style="position:absolute; left:488px; top:133px; width:25px; height:41px; z-index:6; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN><SPAN id="sfr" style="position:absolute; left:182px; top:149px; width:39px; height:39px; z-index:7; visibility: hidden"><IMG src="images/logos/CART_sfr.gif" width="38" height="38"></SPAN><SPAN id="sunday" style="position:absolute; left:184; top:149; width:60px; height:28px; z-index:8; visibility: hidden"><IMG src="images/logos/CART_sundaycom.gif" width="65" height="31"></SPAN><SPAN id="telstra" style="position:absolute; left:184px; top:149; width:34px; height:12px; z-index:9; visibility: hidden"><IMG src="images/logos/CART_telstra.gif" width="64" height="32"></SPAN><SPAN id="tmobil" style="position:absolute; left:184; top:149; width:53px; height:5px; z-index:10; visibility: hidden"><IMG src="images/logos/CART_tmobil.gif" width="75" height="25"></SPAN><SPAN id="telefonica" style="position:absolute; left:184; top:149; width:66px; height:13px; z-index:11; visibility: hidden"><IMG src="images/logos/logo_telefonica.gif" width="78" height="24"></SPAN><SPAN id="subSFR" style="position:absolute; left:551px; top:13px; width:160px; height:16px; z-index:12; visibility: hidden"> 
+<DIV align="right"><IMG src="carte/SubSFR.gif" width="177" height="24" name="subSFR"></DIV>
+</SPAN><SPAN id="subSpain" style="position:absolute; left:531px; top:13px; width:197px; height:25px; z-index:13; visibility: hidden"> 
+<DIV align="right"><IMG src="carte/spainSub.gif" width="167" height="24"></DIV>
+</SPAN><SPAN id="SUBsunday" style="position:absolute; left:506px; top:13px; width:221px; height:9px; z-index:14; visibility: hidden"> 
+<DIV align="right"><IMG src="carte/hongkongSub.gif" width="201" height="23"></DIV>
+</SPAN><SPAN id="subTelstart" style="position:absolute; left:499px; top:13px; width:229px; height:27px; z-index:15; visibility: hidden"> 
+<DIV align="right"><IMG src="carte/australiaSub.gif" width="204" height="22"></DIV>
+</SPAN><SPAN id="subTmobil" style="position:absolute; left:530px; top:13px; width:199px; height:37px; z-index:16; visibility: hidden"> 
+<DIV align="right"><IMG src="carte/germanySub.gif" width="195" height="22"></DIV>
+</SPAN><SPAN id="b1" style="position:absolute; left:328px; top:118px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN><SPAN id="logoMondeIN" style="position:absolute; left:406px; top:98px; width:93px; height:53px; z-index:18; visibility: hidden"><IMG src="mapmonde/logogd.gif"></SPAN><SPAN class="legende"><SPAN id="FranceTele" style="position:absolute; left:184px; top:149px; width:73px; height:46px; z-index:5; visibility: hidden"><A href="http://www.cellnet.co.uk" onMouseOver="MM_showHideLayers('postBT','','show')" onMouseOut="MM_showHideLayers('postBT','','hide')" target="_blank"><IMG src="images/logos/CART_ft.gif" width="75" height="24" border="0"></A></SPAN></SPAN> 
+<SPAN id="bonhomeSFR" style="position:absolute; left:488px; top:133px; width:25px; height:41px; z-index:6; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="bonhomesunday" style="position:absolute; left:641px; top:155px; width:25px; height:41px; z-index:6; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="bonhometmobil" style="position:absolute; left:497px; top:126px; width:25px; height:41px; z-index:6; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="bonhometelstart" style="position:absolute; left:635px; top:233px; width:25px; height:41px; z-index:6; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN><SPAN id="bonhometelefonica" style="position:absolute; left:473px; top:150px; width:25px; height:41px; z-index:6; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="b2" style="position:absolute; left:395px; top:202px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="b3" style="position:absolute; left:523px; top:151px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="b4" style="position:absolute; left:438px; top:88px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN><SPAN id="b5" style="position:absolute; left:682px; top:105px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="b6" style="position:absolute; left:596px; top:195px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="b7" style="position:absolute; left:600px; top:95px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN><SPAN id="b8" style="position:absolute; left:509px; top:227px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="b9" style="position:absolute; left:411px; top:269px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="b10" style="position:absolute; left:391px; top:128px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="b12" style="position:absolute; left:480px; top:178px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="b13" style="position:absolute; left:651px; top:210px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="b14" style="position:absolute; left:568px; top:142px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+<SPAN id="b15" style="position:absolute; left:382px; top:54px; width:23px; height:44px; z-index:17; visibility: hidden"><IMG src="carte/bonhome.gif" width="23" height="38"></SPAN> 
+</BODY>
+</HTML>

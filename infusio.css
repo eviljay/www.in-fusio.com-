@@ -1,0 +1,149 @@
+a {
+
+	color: #37526C;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+a:hover {
+
+	text-decoration: underline;
+}
+.liens {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #0046AE;
+}
+.text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	text-decoration: none;
+}
+.titre {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #FFFFFF;
+}
+.titrehom {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bolder;
+	color: #FF2B2B;
+}
+.gamett1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #AE1400;
+}
+.readmore {
+	color: #41607E;
+	text-decoration: none;
+}
+.readmore:hover {
+	color: #1D5586;
+	text-decoration: underline;
+}
+
+.jtitre {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 	font-size: 11px; 	font-weight: bold; 	color: #9B0000;
+}.gamefeatures {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+}
+.gamecopy {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+.gametips {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+}
+.listtt {
+	color: #37526C;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+
+}
+.listtt:hover {
+	text-decoration: underline;
+}
+.textbld {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;
+
+}
+.newslink {
+
+	color: #37526C;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+.newslink:hover {
+
+	text-decoration: underline;
+}
+.newsteaser {
+
+	color: #37526C;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+.newstitel {
+
+
+	color: #FF2B2B;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+.copyright {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FF6401;
+}
+.rate {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #9B0000;
+}
+.input{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	}
+.inputred{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #9B0000;
+	}
+.liensmoonda {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	color: #003F9D;
+	font-style: normal;
+	font-weight: normal;
+
+}

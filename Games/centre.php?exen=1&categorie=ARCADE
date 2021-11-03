@@ -1,0 +1,329 @@
+<html><head><title>games</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="styleArt.css">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments;
+for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document;
+if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for
+(i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++)
+x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new
+Array; for(i=0;i<(a.length-2);i+=3)
+
+
+ 
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc)
+x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#9B449E" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table width="250" border="0" cellspacing="0" cellpadding="0">
+<tr><td><A HREF="/fond_game/technologie_games.php" target="_top"><img src="illus_centre/titre_exen.jpg" width="171" height="47" border="0"></a></td></tr>
+<tr><td class="texte"> 
+            <table width="151" border="0" cellspacing="0" cellpadding="5">
+        <tr><td><table width="151" border="0" cellspacing="0" cellpadding="0">
+                <tr><td width="21" align="left" valign="middle"><img src="illus_other/fleche_pt.jpg" width="17" height="12"></td>
+                <td class="nomCategorie" width="130" align="left" valign="middle">ARCADE</td></tr>
+                </table></td></tr>
+        </table></td></tr>
+    
+<tr><td class="texte"><img src="illus_centre/espaceur.gif" width="250" height="12"></td></tr>
+</table>
+
+<table width="250" border="0" cellspacing="0" cellpadding="0">
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="21"><a href="centre_fiche.php?clef=53"><img src="illus_centre/fleche.jpg" width="37" height="26" border="0"></a></td>
+            <td width="253"> 
+                <table width="180" border="0" cellspacing="0" cellpadding="0">
+                <tr><td><!--<img src="illus_centre/cadre_haut.jpg" width="179" height="2">--></td></tr>
+                <tr><td height="27"> 
+                    <table width="179" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td height="11" width="4"><!--<img src="illus_centre/cadre_gauche.jpg" width="4" height="50">--></td>
+			<td height="11" valign="middle" align="center"><a href="centre_fiche.php?clef=53"><img src="../getimage.php?get=imagemain&b=gameportfolio2&r=53" border="0"></a></td>
+                        <td height="11" width="4"><!--<img src="illus_centre/cadre_droite.jpg" width="4" height="50">--></td></tr>
+                    </table></td></tr>
+                <tr><td><!--<img src="illus_centre/cadre_bas.jpg" width="179" height="2">--></td></tr>
+                </table></td></tr>
+        </table></td></tr>
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+ 	<tr><td width="31"><img src="illus_centre/new.jpg" width="38" height="24"></td>
+            <td width="8" class="titre" valign="bottom">&nbsp;</td>
+            <td width="219" class="titre" valign="bottom">Crash Bandicoot</td></tr>
+        </table></td></tr>
+<tr><td class="texte">On board a mysterious space station and orbiting high above planet earth, Cortex is putting the finishing touches on his latest and greatest achievement: a shrinking ray of global proportions, this diabolical tool will literally allow him to minimize the planet to a size barely larger than a grapefruit! Finally, the time has arrived, and he’s done it! A massive bolt jolts across space in a blue arc, enveloping the planet and shrinking it only a few yards across. <BR>Has Cortex finally won? </td></tr>
+<tr><td class="texte"><img src="illus_centre/espaceur.gif" width="250" height="12"></td></tr>
+</table>
+
+    <table width="250" border="0" cellspacing="0" cellpadding="0">
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="21"><a href="centre_fiche.php?clef=13"><img src="illus_centre/fleche.jpg" width="37" height="26" border="0"></a></td>
+            <td width="253"> 
+                <table width="180" border="0" cellspacing="0" cellpadding="0">
+                <tr><td><!--<img src="illus_centre/cadre_haut.jpg" width="179" height="2">--></td></tr>
+                <tr><td height="27"> 
+                    <table width="179" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td height="11" width="4"><!--<img src="illus_centre/cadre_gauche.jpg" width="4" height="50">--></td>
+			<td height="11" valign="middle" align="center"><a href="centre_fiche.php?clef=13"><img src="../getimage.php?get=imagemain&b=gameportfolio2&r=13" border="0"></a></td>
+                        <td height="11" width="4"><!--<img src="illus_centre/cadre_droite.jpg" width="4" height="50">--></td></tr>
+                    </table></td></tr>
+                <tr><td><!--<img src="illus_centre/cadre_bas.jpg" width="179" height="2">--></td></tr>
+                </table></td></tr>
+        </table></td></tr>
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+ 	<tr><td width="31"><img src="illus_centre/fleche_cercle.jpg" width="38" height="24"></td>
+            <td width="8" class="titre" valign="bottom">&nbsp;</td>
+            <td width="219" class="titre" valign="bottom">CrazyPet2</td></tr>
+        </table></td></tr>
+<tr><td class="texte">  Help this cute little mouse escape from the cats and eat the maximum number of pieces of cheese. A tip: magic pills are spread around the labyrinth allowing the mouse to eat the cats, but only for a while... You can renew your game by buying new levels.</td></tr>
+<tr><td class="texte"><img src="illus_centre/espaceur.gif" width="250" height="12"></td></tr>
+</table>
+
+    <table width="250" border="0" cellspacing="0" cellpadding="0">
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="21"><a href="centre_fiche.php?clef=48"><img src="illus_centre/fleche.jpg" width="37" height="26" border="0"></a></td>
+            <td width="253"> 
+                <table width="180" border="0" cellspacing="0" cellpadding="0">
+                <tr><td><!--<img src="illus_centre/cadre_haut.jpg" width="179" height="2">--></td></tr>
+                <tr><td height="27"> 
+                    <table width="179" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td height="11" width="4"><!--<img src="illus_centre/cadre_gauche.jpg" width="4" height="50">--></td>
+			<td height="11" valign="middle" align="center"><a href="centre_fiche.php?clef=48"><img src="../getimage.php?get=imagemain&b=gameportfolio2&r=48" border="0"></a></td>
+                        <td height="11" width="4"><!--<img src="illus_centre/cadre_droite.jpg" width="4" height="50">--></td></tr>
+                    </table></td></tr>
+                <tr><td><!--<img src="illus_centre/cadre_bas.jpg" width="179" height="2">--></td></tr>
+                </table></td></tr>
+        </table></td></tr>
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+ 	<tr><td width="31"><img src="illus_centre/fleche_cercle.jpg" width="38" height="24"></td>
+            <td width="8" class="titre" valign="bottom">&nbsp;</td>
+            <td width="219" class="titre" valign="bottom">Elmer</td></tr>
+        </table></td></tr>
+<tr><td class="texte">A pyramidal board game that the player has to cover completely to access to the next level. It is based on the famous Arcade game called Qbert. The player moves with little leaps, each time he lands on a cube of the pyramid the floor changes its appearance. Its course is strewed with monsters. <BR></td></tr>
+<tr><td class="texte"><img src="illus_centre/espaceur.gif" width="250" height="12"></td></tr>
+</table>
+
+    <table width="250" border="0" cellspacing="0" cellpadding="0">
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="21"><a href="centre_fiche.php?clef=38"><img src="illus_centre/fleche.jpg" width="37" height="26" border="0"></a></td>
+            <td width="253"> 
+                <table width="180" border="0" cellspacing="0" cellpadding="0">
+                <tr><td><!--<img src="illus_centre/cadre_haut.jpg" width="179" height="2">--></td></tr>
+                <tr><td height="27"> 
+                    <table width="179" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td height="11" width="4"><!--<img src="illus_centre/cadre_gauche.jpg" width="4" height="50">--></td>
+			<td height="11" valign="middle" align="center"><a href="centre_fiche.php?clef=38"><img src="../getimage.php?get=imagemain&b=gameportfolio2&r=38" border="0"></a></td>
+                        <td height="11" width="4"><!--<img src="illus_centre/cadre_droite.jpg" width="4" height="50">--></td></tr>
+                    </table></td></tr>
+                <tr><td><!--<img src="illus_centre/cadre_bas.jpg" width="179" height="2">--></td></tr>
+                </table></td></tr>
+        </table></td></tr>
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+ 	<tr><td width="31"><img src="illus_centre/fleche_cercle.jpg" width="38" height="24"></td>
+            <td width="8" class="titre" valign="bottom">&nbsp;</td>
+            <td width="219" class="titre" valign="bottom">E.T. Adventure</td></tr>
+        </table></td></tr>
+<tr><td class="texte">Mystery, suspense, adventure and sensation are the key words of the movie. ETTM The Extra-Terrestrial is a real phenomenon. Thanks to the game, you can rediscover the entire atmosphere. This is your chance to be part of the mystery, of the adventure!</td></tr>
+<tr><td class="texte"><img src="illus_centre/espaceur.gif" width="250" height="12"></td></tr>
+</table>
+
+    <table width="250" border="0" cellspacing="0" cellpadding="0">
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="21"><a href="centre_fiche.php?clef=36"><img src="illus_centre/fleche.jpg" width="37" height="26" border="0"></a></td>
+            <td width="253"> 
+                <table width="180" border="0" cellspacing="0" cellpadding="0">
+                <tr><td><!--<img src="illus_centre/cadre_haut.jpg" width="179" height="2">--></td></tr>
+                <tr><td height="27"> 
+                    <table width="179" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td height="11" width="4"><!--<img src="illus_centre/cadre_gauche.jpg" width="4" height="50">--></td>
+			<td height="11" valign="middle" align="center"><a href="centre_fiche.php?clef=36"><img src="../getimage.php?get=imagemain&b=gameportfolio2&r=36" border="0"></a></td>
+                        <td height="11" width="4"><!--<img src="illus_centre/cadre_droite.jpg" width="4" height="50">--></td></tr>
+                    </table></td></tr>
+                <tr><td><!--<img src="illus_centre/cadre_bas.jpg" width="179" height="2">--></td></tr>
+                </table></td></tr>
+        </table></td></tr>
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+ 	<tr><td width="31"><img src="illus_centre/fleche_cercle.jpg" width="38" height="24"></td>
+            <td width="8" class="titre" valign="bottom">&nbsp;</td>
+            <td width="219" class="titre" valign="bottom">Jurassic Park III</td></tr>
+        </table></td></tr>
+<tr><td class="texte">Universal Pictures, Steven Spielberg’s Amblin Entertainment and In-Fusio have joined forces to bring you an authentic arcade/action dinosaur game based on the Jurassic Park III movie. Relive the excitement and the adrenalin rush of the movie as you try to escape dinosaurs in a succession of chases through labyrinths. On foot, by car, plane or boat, you better keep going because your pursuer is right on your tail! Your only goal is to finish the game in one piece!</td></tr>
+<tr><td class="texte"><img src="illus_centre/espaceur.gif" width="250" height="12"></td></tr>
+</table>
+
+    <table width="250" border="0" cellspacing="0" cellpadding="0">
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="21"><a href="centre_fiche.php?clef=10"><img src="illus_centre/fleche.jpg" width="37" height="26" border="0"></a></td>
+            <td width="253"> 
+                <table width="180" border="0" cellspacing="0" cellpadding="0">
+                <tr><td><!--<img src="illus_centre/cadre_haut.jpg" width="179" height="2">--></td></tr>
+                <tr><td height="27"> 
+                    <table width="179" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td height="11" width="4"><!--<img src="illus_centre/cadre_gauche.jpg" width="4" height="50">--></td>
+			<td height="11" valign="middle" align="center"><a href="centre_fiche.php?clef=10"><img src="../getimage.php?get=imagemain&b=gameportfolio2&r=10" border="0"></a></td>
+                        <td height="11" width="4"><!--<img src="illus_centre/cadre_droite.jpg" width="4" height="50">--></td></tr>
+                    </table></td></tr>
+                <tr><td><!--<img src="illus_centre/cadre_bas.jpg" width="179" height="2">--></td></tr>
+                </table></td></tr>
+        </table></td></tr>
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+ 	<tr><td width="31"><img src="illus_centre/fleche_cercle.jpg" width="38" height="24"></td>
+            <td width="8" class="titre" valign="bottom">&nbsp;</td>
+            <td width="219" class="titre" valign="bottom">PileUp</td></tr>
+        </table></td></tr>
+<tr><td class="texte">Don't let the bricklayer build his wall! You are competing against a crazy guy who is throwing piles of bricks at you. The only way to prevent him building the wall is to arrange the bricks in such a way as entire lines disappear. A game in the "Oldies but goodies" category.</td></tr>
+<tr><td class="texte"><img src="illus_centre/espaceur.gif" width="250" height="12"></td></tr>
+</table>
+
+    <table width="250" border="0" cellspacing="0" cellpadding="0">
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="21"><a href="centre_fiche.php?clef=44"><img src="illus_centre/fleche.jpg" width="37" height="26" border="0"></a></td>
+            <td width="253"> 
+                <table width="180" border="0" cellspacing="0" cellpadding="0">
+                <tr><td><!--<img src="illus_centre/cadre_haut.jpg" width="179" height="2">--></td></tr>
+                <tr><td height="27"> 
+                    <table width="179" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td height="11" width="4"><!--<img src="illus_centre/cadre_gauche.jpg" width="4" height="50">--></td>
+			<td height="11" valign="middle" align="center"><a href="centre_fiche.php?clef=44"><img src="../getimage.php?get=imagemain&b=gameportfolio2&r=44" border="0"></a></td>
+                        <td height="11" width="4"><!--<img src="illus_centre/cadre_droite.jpg" width="4" height="50">--></td></tr>
+                    </table></td></tr>
+                <tr><td><!--<img src="illus_centre/cadre_bas.jpg" width="179" height="2">--></td></tr>
+                </table></td></tr>
+        </table></td></tr>
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+ 	<tr><td width="31"><img src="illus_centre/fleche_cercle.jpg" width="38" height="24"></td>
+            <td width="8" class="titre" valign="bottom">&nbsp;</td>
+            <td width="219" class="titre" valign="bottom">Roller kid</td></tr>
+        </table></td></tr>
+<tr><td class="texte">After the huge success of Skate Kid and Snow Kid, the new sport of the "KID" range is roller. The user chooses a rider and goes riding in some cities of the world: Paris, Los Angeles, London ... Make some tricks and get the maximum of wheels of roller and drink bonuses. Be ready for a new riding experience !</td></tr>
+<tr><td class="texte"><img src="illus_centre/espaceur.gif" width="250" height="12"></td></tr>
+</table>
+
+    <table width="250" border="0" cellspacing="0" cellpadding="0">
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="21"><a href="centre_fiche.php?clef=11"><img src="illus_centre/fleche.jpg" width="37" height="26" border="0"></a></td>
+            <td width="253"> 
+                <table width="180" border="0" cellspacing="0" cellpadding="0">
+                <tr><td><!--<img src="illus_centre/cadre_haut.jpg" width="179" height="2">--></td></tr>
+                <tr><td height="27"> 
+                    <table width="179" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td height="11" width="4"><!--<img src="illus_centre/cadre_gauche.jpg" width="4" height="50">--></td>
+			<td height="11" valign="middle" align="center"><a href="centre_fiche.php?clef=11"><img src="../getimage.php?get=imagemain&b=gameportfolio2&r=11" border="0"></a></td>
+                        <td height="11" width="4"><!--<img src="illus_centre/cadre_droite.jpg" width="4" height="50">--></td></tr>
+                    </table></td></tr>
+                <tr><td><!--<img src="illus_centre/cadre_bas.jpg" width="179" height="2">--></td></tr>
+                </table></td></tr>
+        </table></td></tr>
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+ 	<tr><td width="31"><img src="illus_centre/fleche_cercle.jpg" width="38" height="24"></td>
+            <td width="8" class="titre" valign="bottom">&nbsp;</td>
+            <td width="219" class="titre" valign="bottom">SkateKid</td></tr>
+        </table></td></tr>
+<tr><td class="texte">Skate kid is a one player skateboarding game. The player has three lives to finish each level and must jump and crouch to avoid upcoming obstacles and enemies. He must also perform tricks to earn more points. So let's hit the sidewalk!</td></tr>
+<tr><td class="texte"><img src="illus_centre/espaceur.gif" width="250" height="12"></td></tr>
+</table>
+
+    <table width="250" border="0" cellspacing="0" cellpadding="0">
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="21"><a href="centre_fiche.php?clef=51"><img src="illus_centre/fleche.jpg" width="37" height="26" border="0"></a></td>
+            <td width="253"> 
+                <table width="180" border="0" cellspacing="0" cellpadding="0">
+                <tr><td><!--<img src="illus_centre/cadre_haut.jpg" width="179" height="2">--></td></tr>
+                <tr><td height="27"> 
+                    <table width="179" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td height="11" width="4"><!--<img src="illus_centre/cadre_gauche.jpg" width="4" height="50">--></td>
+			<td height="11" valign="middle" align="center"><a href="centre_fiche.php?clef=51"><img src="../getimage.php?get=imagemain&b=gameportfolio2&r=51" border="0"></a></td>
+                        <td height="11" width="4"><!--<img src="illus_centre/cadre_droite.jpg" width="4" height="50">--></td></tr>
+                    </table></td></tr>
+                <tr><td><!--<img src="illus_centre/cadre_bas.jpg" width="179" height="2">--></td></tr>
+                </table></td></tr>
+        </table></td></tr>
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+ 	<tr><td width="31"><img src="illus_centre/fleche_cercle.jpg" width="38" height="24"></td>
+            <td width="8" class="titre" valign="bottom">&nbsp;</td>
+            <td width="219" class="titre" valign="bottom">Splat Boy</td></tr>
+        </table></td></tr>
+<tr><td class="texte">Be a mobile maniac! <BR>Splat Boy brings an arcade-style action game straight to your mobile. A real rough 'em up bruising game for the politically incorrect. Throw objects from buildings to squash pedestrians below. But be careful, Splat Boy has a nasty surprise!</td></tr>
+<tr><td class="texte"><img src="illus_centre/espaceur.gif" width="250" height="12"></td></tr>
+</table>
+
+    <table width="250" border="0" cellspacing="0" cellpadding="0">
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="21"><a href="centre_fiche.php?clef=14"><img src="illus_centre/fleche.jpg" width="37" height="26" border="0"></a></td>
+            <td width="253"> 
+                <table width="180" border="0" cellspacing="0" cellpadding="0">
+                <tr><td><!--<img src="illus_centre/cadre_haut.jpg" width="179" height="2">--></td></tr>
+                <tr><td height="27"> 
+                    <table width="179" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td height="11" width="4"><!--<img src="illus_centre/cadre_gauche.jpg" width="4" height="50">--></td>
+			<td height="11" valign="middle" align="center"><a href="centre_fiche.php?clef=14"><img src="../getimage.php?get=imagemain&b=gameportfolio2&r=14" border="0"></a></td>
+                        <td height="11" width="4"><!--<img src="illus_centre/cadre_droite.jpg" width="4" height="50">--></td></tr>
+                    </table></td></tr>
+                <tr><td><!--<img src="illus_centre/cadre_bas.jpg" width="179" height="2">--></td></tr>
+                </table></td></tr>
+        </table></td></tr>
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+ 	<tr><td width="31"><img src="illus_centre/fleche_cercle.jpg" width="38" height="24"></td>
+            <td width="8" class="titre" valign="bottom">&nbsp;</td>
+            <td width="219" class="titre" valign="bottom">Tinies</td></tr>
+        </table></td></tr>
+<tr><td class="texte">  This is a game developed by Kalisto. Guide your Tiny and, thanks to its gaz (hence the name!), make it land on a landing pad. Any collision with the environment will be fatal for you.</td></tr>
+<tr><td class="texte"><img src="illus_centre/espaceur.gif" width="250" height="12"></td></tr>
+</table>
+
+    <table width="250" border="0" cellspacing="0" cellpadding="0">
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tr><td width="21"><a href="centre_fiche.php?clef=34"><img src="illus_centre/fleche.jpg" width="37" height="26" border="0"></a></td>
+            <td width="253"> 
+                <table width="180" border="0" cellspacing="0" cellpadding="0">
+                <tr><td><!--<img src="illus_centre/cadre_haut.jpg" width="179" height="2">--></td></tr>
+                <tr><td height="27"> 
+                    <table width="179" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td height="11" width="4"><!--<img src="illus_centre/cadre_gauche.jpg" width="4" height="50">--></td>
+			<td height="11" valign="middle" align="center"><a href="centre_fiche.php?clef=34"><img src="../getimage.php?get=imagemain&b=gameportfolio2&r=34" border="0"></a></td>
+                        <td height="11" width="4"><!--<img src="illus_centre/cadre_droite.jpg" width="4" height="50">--></td></tr>
+                    </table></td></tr>
+                <tr><td><!--<img src="illus_centre/cadre_bas.jpg" width="179" height="2">--></td></tr>
+                </table></td></tr>
+        </table></td></tr>
+<tr><td><table width="250" border="0" cellspacing="0" cellpadding="0">
+ 	<tr><td width="31"><img src="illus_centre/fleche_cercle.jpg" width="38" height="24"></td>
+            <td width="8" class="titre" valign="bottom">&nbsp;</td>
+            <td width="219" class="titre" valign="bottom">Wall Breaker</td></tr>
+        </table></td></tr>
+<tr><td class="texte">The original game. The aim is to clear levels of bricks by destroying them with the help of a ball bouncing off a pad controlled by the player. <BR>With 100 levels to clear before you finish, the game is a real challenge for beginners and experts alike!</td></tr>
+<tr><td class="texte"><img src="illus_centre/espaceur.gif" width="250" height="12"></td></tr>
+</table>
+
+    
+<table width="250" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="illus_centre/espaceur.gif" width="250" height="15"></td></tr>
+<tr><td><a href="centre.php?exen=1&promo=1" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','illus_fiche/back_on.jpg',1)" target="centre"><img src="illus_fiche/back.jpg" width="50" height="30" border="0" name="Image1"></a></td></tr>
+<tr><td><img src="illus_centre/espaceur.gif" width="250" height="15"></td></tr>
+</table>
+</body></html>

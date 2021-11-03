@@ -1,0 +1,14 @@
+.texteEncart {  font-family: Arial; font-size: 11px; line-height: 115%; font-weight: bold; color: #780F49}
+.titre {  font-family: Arial; font-size: 16px; line-height: 125%; font-weight: bold; color: #FF99CC}
+.titreArticle {  font-family: Arial; font-size: 16px; line-height: 125%; font-weight: bold; color: #FF99CC}
+.texteTableau {  font-family: Verdana; font-size: 9px; line-height: 115%; color: #FF99CC; font-weight: normal}
+.texteEvents {  font-family: Verdana; font-size: 9px; line-height: 115%; color: #000000}
+a {  font-family: Verdana; font-size: 9px; line-height: 115%; color: #FF99CC; text-decoration: none}
+a:hover {  font-family: Verdana; font-size: 9px; line-height: 115%; color: #FFFFFF; text-decoration: underline}
+.nom {  font-family: Verdana; font-size: 10px; line-height: 115%; font-weight: bold; color: #FFFFFF}
+.rubrique {  font-family: Arial; font-size: 11px; line-height: 115%; font-weight: bold; color: 
+#780F49}
+.legende {  font-family: Verdana; font-size: 10px; line-height: 115%; color: #000000}
+.titrePress {  font-family: Arial; font-size: 11px; line-height: 125%; font-weight: bold; color: #FF99CC}
+.date {  font-family: Verdana; font-size: 12px; font-weight: bold; color: #FF99CC}
+.texteHistory {  font-family: Verdana; font-size: 10px; line-height: 115%; color: #000000}

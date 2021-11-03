@@ -1,0 +1,308 @@
+<html>
+<head>
+<title> In-Fusio </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" src="js/news.js">
+</script>
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_timelineStop(tmLnName) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  if (tmLnName == null)  //stop all
+    for (var i=0; i<document.MM_Time.length; i++) document.MM_Time[i].ID = null;
+  else document.MM_Time[tmLnName].ID = null; //stop one
+}
+
+function MM_showHideLayers() { //v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+function MM_initTimelines() {
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(3);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 15;
+    document.MM_Time[0][0] = new String("sprite");
+    document.MM_Time[0][0].slot = 1;
+    if (ns)
+        document.MM_Time[0][0].obj = document["turbo"];
+    else
+        document.MM_Time[0][0].obj = document.all ? document.all["turbo"] : null;
+    document.MM_Time[0][0].keyFrames = new Array(3, 5, 10, 18, 28);
+    document.MM_Time[0][0].values = new Array(3);
+    document.MM_Time[0][0].values[0] = new Array(3,43,92,127,167,212,256,289,292,284,271,258,245,234,228,231,242,258,276,296,318,341,364,388,412,435);
+    document.MM_Time[0][0].values[0].prop = "left";
+    document.MM_Time[0][0].values[1] = new Array(588,571,546,529,511,489,462,421,392,364,336,309,282,251,217,180,148,115,83,50,17,-17,-50,-83,-116,-150);
+    document.MM_Time[0][0].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][0].values[0].prop2 = "style";
+        document.MM_Time[0][0].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][0].values[2] = new Array("inherit","inherit","inherit","inherit","inherit");
+    document.MM_Time[0][0].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][0].values[2].prop2 = "style";
+    document.MM_Time[0][1] = new String("behavior");
+    document.MM_Time[0][1].frame = 53;
+    document.MM_Time[0][1].value = "MM_timelineStop();MM_showHideLayers('Layer1','','hide','turbo','','hide')";
+    document.MM_Time[0][2] = new String("sprite");
+    document.MM_Time[0][2].slot = 2;
+    if (ns)
+        document.MM_Time[0][2].obj = document["Layer1"];
+    else
+        document.MM_Time[0][2].obj = document.all ? document.all["Layer1"] : null;
+    document.MM_Time[0][2].keyFrames = new Array(24, 26, 27, 28, 29, 30, 33, 37, 42, 47, 52);
+    document.MM_Time[0][2].values = new Array(2);
+    document.MM_Time[0][2].values[0] = new Array(629,623,617,607,611,613,610,591,565,531,501,467,430,392,376,368,361,351,325,283,242,200,155,106,61,20,-17,-53,-89);
+    document.MM_Time[0][2].values[0].prop = "left";
+    document.MM_Time[0][2].values[1] = new Array(-70,39,121,115,113,118,112,117,123,129,128,124,123,136,165,199,235,272,302,295,275,251,232,227,249,282,319,358,396);
+    document.MM_Time[0][2].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][2].values[0].prop2 = "style";
+        document.MM_Time[0][2].values[1].prop2 = "style";
+    }
+    document.MM_Time[0].lastFrame = 53;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.titre {  font-family: Arial, Helvetica, sans-serif; font-size: 4mm; line-height: 6mm}
+.texte {  font-family: Arial, Helvetica, sans-serif; font-size: 4mm; line-height: 4mm}
+.nul {  font-family: Arial, Helvetica, sans-serif; font-size: 1mm; line-height: 1mm}
+.texte2 {  font-family: Arial, Helvetica, sans-serif; font-size: 3mm; line-height: 4mm}
+.titreTexte {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 11pt; font-weight: normal}
+a {  text-decoration: none}
+-->
+</style>
+<script language="JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+</head>
+
+<BODY bgcolor="#FFFFFF" MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" TOPMARGIN="0" background="images/imageSom/fond.gif" onLoad="MM_preloadImages('images/imageSom/contact_on.gif','images/imageSom/mailing_on.gif','images/imageSom/global_on.gif','images/imageSom/games_on.gif','images/imageSom/techno_on.gif','images/imageSom/future_on.gif','images/imageSom/operators_on.gif','images/imageSom/investors_on.gif','images/imageSom/press_on.gif','images/imageSom/sponsors_on.gif','images/imageSom/developers_on.gif','images/imageSom/telco_on.gif','images/imageSom/manufacturers_on.gif','images/imageSom/offers_on.gif','images/imageSom/spirit_on.gif','images/anim/letsplayroll.gif','images/imagesGen/ico-glossary.gif','images/imagesGen/ico-press.gif','images/imagesGen/ico-logo.gif','images/imagesGen/ico-work.gif','images/imageSom/competiters_on.gif');MM_timelinePlay('Timeline1')" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF">
+<table width="740" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="bottom"> 
+    <td width="232"><img src="images/imageSom/HAUT0.gif" width="232" height="30"></td>
+    <td width="239"><img src="images/imageSom/haut1.gif" width="239" height="30"></td>
+    <td width="92"><a href="contact.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contact','','images/imageSom/contact_on.gif',1)" target="_top"><img src="images/imageSom/contact_off.gif" width="92" height="30" name="contact" border="0"></a></td>
+    <td width="80"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('mailing','','images/imageSom/mailing_on.gif',1)" onClick="MM_openBrWindow('mailinglist/mailinglist.html','mailingList','scrollbars=yes,resizable=yes,width=320,height=350');MM_swapImgRestore()"><img src="images/imageSom/mailing_off.gif" width="90" height="30" name="mailing" border="0"></a></td>
+    <td width="97"><img src="images/imageSom/haut3.gif" width="103" height="30"></td>
+  </tr>
+</table>
+<table width="746" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="top"> 
+    <td width="232"><img src="images/imageSom/logosom.gif" width="232" height="139" usemap="#Map" border="0" alt="back to homepage"><map name="Map"><area shape="poly" coords="104,3,132,8,151,14,168,24,180,38,184,55,179,73,169,84,141,98,118,105,117,92,103,75,79,66,58,65,41,72,30,85,13,66,12,45,21,29,42,14,72,4,102,4" href="index.html" target="_top"></map></td>
+    <td width="108"><img src="images/imageSom/flpro_off.gif" width="107" height="24" name="flproduct"><br>
+      <img src="images/imageSom/product.gif" width="107" height="23"><br>
+      <a href="global.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('global','','images/imageSom/global_on.gif',1)" target="_top"><img src="images/imageSom/global_off.gif" width="107" height="13" name="global" border="0"></a><br>
+      <a href="games.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('games','','images/imageSom/games_on.gif',1)" target="_top"><img src="images/imageSom/games_off.gif" width="107" height="14" name="games" border="0"></a><br>
+      <a href="technologies.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('techno','','images/imageSom/techno_on.gif',1)" target="_top"><img src="images/imageSom/techno_off.gif" width="107" height="13" name="techno" border="0"></a><br>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('future','','images/imageSom/future_on.gif',1)"><img src="images/imageSom/future_off.gif" width="107" height="13" name="future" border="0"></a><br>
+      <img src="images/imageSom/baspro.gif" width="107" height="13"></td>
+    <td width="18"><img src="images/imageSom/001.gif" width="18" height="139"></td>
+    <td width="146"><img src="images/imageSom/flinfo_off.gif" width="145" height="24" name="flinfo"><br>
+      <img src="images/imageSom/information.gif" width="145" height="23"><br>
+      <a href="operators.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('operators','','images/imageSom/operators_on.gif',1)" target="_top"><img src="images/imageSom/operators_off.gif" width="145" height="13" name="operators" border="0"></a><br>
+      <a href="investors.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('investors','','images/imageSom/investors_on.gif',1)" target="_top"><img src="images/imageSom/investors_off.gif" width="145" height="14" name="investors" border="0"></a><br>
+      <a href="press.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('press','','images/imageSom/press_on.gif',1)" target="_top"><img src="images/imageSom/press_off.gif" width="145" height="13" name="press" border="0"></a><br>
+      <a href="sponsors.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sponsors','','images/imageSom/sponsors_on.gif',1)" target="_top"><img src="images/imageSom/sponsors_off.gif" width="145" height="13" name="sponsors" border="0"></a><br>
+      <a href="developers.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('developers','','images/imageSom/developers_on.gif',1)" target="_top"><img src="images/imageSom/developers_off.gif" width="145" height="13" name="developers" border="0"></a><br>
+      <a href="competiters.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('competiters','','images/imageSom/competiters_on.gif',1)"><img src="images/imageSom/competiters_off.gif" width="145" height="14" name="competiters" border="0"></a><br>
+      <img src="images/imageSom/basinfo.gif" width="145" height="12"></td>
+    <td width="22"><img src="images/imageSom/002.gif" width="22" height="139"></td>
+    <td width="106"><img src="images/imageSom/flrefe_off.gif" width="105" height="24" name="flrefe"><br>
+      <img src="images/imageSom/references.gif" width="105" height="23"><br>
+      <a href="telco.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('telco','','images/imageSom/telco_on.gif',1)" target="_top"><img src="images/imageSom/telco_off.gif" width="105" height="13" name="telco" border="0"></a><br>
+      <a href="manufacturers.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('manufacturers','','images/imageSom/manufacturers_on.gif',1)" target="_top"><img src="images/imageSom/manufacturers_off.gif" width="105" height="14" name="manufacturers" border="0"></a><br>
+      <img src="images/imageSom/basrefe.gif" width="105" height="13"></td>
+    <td width="43"><img src="images/imageSom/003.gif" width="43" height="87"></td>
+    <td width="79"><img src="images/imageSom/fljob_off.gif" width="79" height="24" name="fljobs"><br>
+      <img src="images/imageSom/jobs.gif" width="79" height="23"><br>
+      <a href="offers.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('offers','','images/imageSom/offers_on.gif',1)" target="_top"><img src="images/imageSom/offers_off.gif" width="79" height="13" name="offers" border="0"></a><br>
+      <a href="spirit.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('spirit','','images/imageSom/spirit_on.gif',1)" target="_top"><img src="images/imageSom/spirit_off.gif" width="79" height="14" name="spirit" border="0"></a><br>
+      <img src="images/imageSom/basjobs.gif" width="79" height="13"></td>
+    <td width="10"><img src="images/imageSom/004.gif" width="6" height="87"></td>
+  </tr>
+</table>
+<table width="761" border="0" cellspacing="0" cellpadding="0" height="200">
+  <tr align="left" valign="top"> 
+    <td width="6">&nbsp;</td>
+    <td width="149"> 
+      <p><img src="images/imagesGen/calle.gif" width="55" height="55"><br>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('play1','','images/anim/letsplayroll.gif',1)"><img src="images/anim/letsplay.gif" width="138" height="87" border="0" name="play1"></a></p>
+      <p align="center">&nbsp;</p>
+    </td>
+    <td width="243"> 
+      <p><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">press<br>
+        </font><font color="004590" face="Arial, Helvetica, sans-serif" size="3"><b>Everything 
+        you always wanted to know about In-Fusio</b></font><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5"><img src="images/imagesGen/calle.gif" width="233" height="6" border="0"><br>
+        </font><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><b><font color="#FFFFFF">August 
+        98 :</font></b> In-Fusio is founded.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><b><font color="#FFFFFF">October 
+        98 :</font></b> In-Fusio trials<b><font color="#004590"> the first connected 
+        games on mobile in the world</font></b> with SFR (french operator) using 
+        pre WAP technology.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><b><font color="#FFFFFF">February 
+        99 :</font></b> In-Fusio develops<font color="#004590"> <b>the first connected 
+        games for sim cards</b></font> with Schlumberger.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><b><font color="#FFFFFF">April 
+        99 :</font></b> In-Fusio carries out the world's <b><font color="#004590">first 
+        full commercial deployment of games for mobile</font></b> with SFR.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><b><font color="#FFFFFF">September 
+        99 :</font></b> In-Fusio raises first round financing.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif" color="#000000"><b><font color="#FFFFFF">Today:</font></b> 
+        In-Fusio has since established worldwide leadership offering games in 
+        France, Hong Kong, Germany, Australia and the United Kingdom. It is preparing 
+        for the future, trialling GPRS and animated 256-colour connected games.</font></p>
+      <p class="titreTexte"><font face="Arial, Helvetica, sans-serif" size="2">Press 
+        contact: <br>
+        <b><font color="#004590">Brodeur SRRP 9</font></b><br>
+        <font color="#004590"><b>Yuyen LIN<br>
+        </b></font><font color="#FFFFFF"><b><a href="mailto:yuyen.lin@srrp.com">yuyen.lin@srrp.com</a></b></font></font></p>
+    </td>
+    <td class="titre1" width="363"> 
+      <div align="left"> 
+        <table width="357" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="87">&nbsp;</td>
+            <td width="270"> 
+              <table width="170" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td width="42" height="2" align="left" valign="top"> 
+                    <div align="center"></div>
+                  </td>
+                  <td width="128" height="2" align="left" valign="top"><img src="images/imagesGen/NEWStitre.gif" width="92" height="20"></td>
+                </tr>
+              </table>
+              <table width="170" border="0" cellspacing="0" cellpadding="0" bgcolor="F5C200" vspace="0" hspace="0">
+                <tr> 
+                  <td align="left" valign="top" width="8" height="2"><img src="images/imagesGen/angleGauchehaut.gif" width="8" height="7"></td>
+                  <td width="162" height="2" class="nul">&nbsp;</td>
+                  <td width="10" align="right" valign="top" height="2"><img src="images/imagesGen/angleDroitHaut.gif" width="9" height="7"></td>
+                </tr>
+                <tr> 
+                  <td width="8" height="7">&nbsp;</td>
+                  <td width="162" height="7"> 
+                    <p><img src="images/imagesGen/calleOrange.gif" width="129" height="49"></p>
+                  </td>
+                  <td width="10" height="7">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="8" align="left" valign="bottom"><img src="images/imagesGen/angleGaucheBas.gif" width="8" height="8"></td>
+                  <td width="162" class="nul"><font color="#F5C200">d</font><font color="#F5C200">d</font> 
+                  </td>
+                  <td width="10" align="right" valign="bottom"> <img src="images/imagesGen/angleDroitBas.gif" width="9" height="8"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div align="left"></div>
+      <table width="356" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="37">&nbsp;</td>
+          <td width="319"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5"> 
+            <br>
+            creators of the Connected<br>
+            Mobile Gaming concept.</font></td>
+        </tr>
+      </table>
+      <table width="356" border="0" cellspacing="15" cellpadding="0">
+        <tr> 
+          <td width="30"><a href="press_releases.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('keydates','','images/imagesGen/ico-press.gif',1)" target="_top"><img src="images/imagesGen/ico7.gif" width="30" height="31" name="pressrelease" border="0"></a></td>
+          <td width="30"><a href="press_articles.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('keydates','','images/imagesGen/ico-article.gif',1)" target="_top"><img src="images/imagesGen/ico1.gif" width="30" height="30" name="article" border="0"></a></td>
+          <td width="30"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('keydates','','images/imagesGen/ico-logo.gif',1)" onClick="MM_openBrWindow('press_logo.html','','width=590,height=165');MM_swapImgRestore()"><img src="images/imagesGen/ico2.gif" width="30" height="30" name="logo" border="0"></a></td>
+          <td width="10"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('keydates','','images/imagesGen/ico-glossary.gif',1)" onClick="MM_openBrWindow('glossary.html','','scrollbars=yes,resizable=yes,width=476,height=400');MM_swapImgRestore()"><img src="images/imagesGen/ico6.gif" width="30" height="30" name="glossary" border="0"></a></td>
+          <td width="191"><img src="images/imagesGen/fondbleu.gif" width="100" height="30" name="keydates"></td>
+        </tr>
+      </table>
+      <p align="right">&nbsp;</p>
+      <p align="right">&nbsp; </p>
+    </td>
+  </tr>
+</table>
+<br>
+<span class="texte2"><span id="turbo" style="position:absolute; left:3px; top:588px; width:133px; height:58px; z-index:1; visibility: inherit"><img src="objetAnim/turbo.gif" width="202" height="125"></span></span><span id="Layer1" style="position:absolute; left:629px; top:-70px; width:79px; height:49px; z-index:2"><img src="objetAnim/superman.gif" width="90" height="57"></span> 
+<script language="JavaScript" src="js/boite.js">
+</script>
+</body>
+</html>

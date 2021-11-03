@@ -1,0 +1,478 @@
+<HTML>
+<HEAD>
+<TITLE>In-Fusio games use many new wireless technologies : wap, exen, connected embedded games</TITLE>
+<META name="keywords" content="wireless connected games, wireless and mobile technologies, gaming community, wireless solutions, games on mobile phone, exen technology, wap phones, internet on mobile phone, wireless games, connected mobile games, wap games, real-time games, wireless communications, wap technology, games animation">
+<META name="description" content="Here is the In-fusio games portfolio : football fans, in-spirit, blackjack, poker, jackpot... many kind of games in many categories : gambling, adventure, sports, arcade, strategy and trivia.">
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<SCRIPT language="JavaScript">
+<!--
+if(top==self)self.location.href="index.html";
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+function MM_timelineStop(tmLnName) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  if (tmLnName == null)  //stop all
+    for (var i=0; i<document.MM_Time.length; i++) document.MM_Time[i].ID = null;
+  else document.MM_Time[tmLnName].ID = null; //stop one
+}
+
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_initTimelines() {
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(3);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 15;
+    document.MM_Time[0][0] = new String("behavior");
+    document.MM_Time[0][0].frame = 66;
+    document.MM_Time[0][0].value = "MM_timelineStop();MM_showHideLayers('soucoupe','','hide','vaisseaux','','hide')";
+    document.MM_Time[0][1] = new String("sprite");
+    document.MM_Time[0][1].slot = 1;
+    if (ns)
+        document.MM_Time[0][1].obj = document["soucoupe"];
+    else
+        document.MM_Time[0][1].obj = document.all ? document.all["soucoupe"] : null;
+    document.MM_Time[0][1].keyFrames = new Array(1, 13, 24, 35, 45);
+    document.MM_Time[0][1].values = new Array(3);
+    document.MM_Time[0][1].values[0] = new Array(508,493,478,462,446,431,416,402,388,375,364,356,352,356,365,377,391,405,421,437,453,470,486,491,462,435,409,382,355,328,300,271,243,213,182,149,116,83,51,19,-12,-44,-75,-106,-137);
+    document.MM_Time[0][1].values[0].prop = "left";
+    document.MM_Time[0][1].values[1] = new Array(-85,-67,-50,-33,-15,2,20,38,57,77,97,120,143,168,192,215,238,259,281,302,324,346,369,395,385,368,349,330,310,290,271,253,237,223,213,208,208,210,214,219,226,233,241,249,255);
+    document.MM_Time[0][1].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][1].values[0].prop2 = "style";
+        document.MM_Time[0][1].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][1].values[2] = new Array("3","3","3","3","1");
+    document.MM_Time[0][1].values[2].prop = "zIndex";
+    if (!ns)
+        document.MM_Time[0][1].values[2].prop2 = "style";
+    document.MM_Time[0][2] = new String("sprite");
+    document.MM_Time[0][2].slot = 2;
+    if (ns)
+        document.MM_Time[0][2].obj = document["vaisseaux"];
+    else
+        document.MM_Time[0][2].obj = document.all ? document.all["vaisseaux"] : null;
+    document.MM_Time[0][2].keyFrames = new Array(22, 65);
+    document.MM_Time[0][2].values = new Array(2);
+    document.MM_Time[0][2].values[0] = new Array(122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,122,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123,123);
+    document.MM_Time[0][2].values[0].prop = "left";
+    document.MM_Time[0][2].values[1] = new Array(1056,1024,991,959,927,894,862,830,798,765,733,701,668,636,604,571,539,507,475,442,410,378,345,313,281,248,216,184,152,119,87,55,22,-10,-42,-75,-107,-139,-171,-204,-236,-268,-301,-333);
+    document.MM_Time[0][2].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][2].values[0].prop2 = "style";
+        document.MM_Time[0][2].values[1].prop2 = "style";
+    }
+    document.MM_Time[0].lastFrame = 66;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</SCRIPT>
+<STYLE type="text/css">
+<!--
+.titre {  font-family: Arial, Helvetica, sans-serif; font-size: 4mm; line-height: 6mm}
+.texte {  font-family: Arial, Helvetica, sans-serif; font-size: 4mm; line-height: 4mm}
+.nul {  font-family: Arial, Helvetica, sans-serif; font-size: 1mm; line-height: 1mm}
+.texte2 {  font-family: Arial, Helvetica, sans-serif; font-size: 3mm; line-height: 4mm}
+.titreTexte {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 11pt; font-weight: normal}
+-->
+</STYLE>
+<SCRIPT language="JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function MM_showHideLayers() { //v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</SCRIPT>
+</HEAD>
+
+<BODY bgcolor="#008CF5" MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" TOPMARGIN="0" onLoad="MM_preloadImages('images/imagesGen/boutWeb_on.gif','images/imagesGen/detail_on.gif');MM_timelinePlay('Timeline1')">
+<!--wireless connected games, wireless and mobile technologies, gaming community, wireless solutions, games on mobile phone, exen technology, wap phones, internet on mobile phone, wireless games, connected mobile games, wap games, real-time games, wireless communications, wap technology -->
+<SPAN id="soucoupe" style="position:absolute; left:508px; top:-85px; width:106px; height:57px; z-index:3"><IMG src="objetAnim/soucoupe.gif" width="122" height="74"></SPAN> 
+<SPAN id="vaisseaux" style="position:absolute; left:122px; top:1790px; width:105px; height:132px; z-index:4"><IMG src="objetAnim/vaisseauxV.gif" width="107" height="132"></SPAN> 
+<TABLE width="754" border="0" cellspacing="0" cellpadding="0" height="200">
+  <TR align="left" valign="top"> 
+    <TD width="12">&nbsp;</TD>
+    <TD width="158"> 
+      <P><IMG src="images/imagesGen/calle.gif" width="55" height="55"><BR>
+      </P>
+      <P align="center">&nbsp;</P>
+    </TD>
+    <TD width="555"> 
+      <TABLE width="540" border="0" cellspacing="0" cellpadding="0">
+        <TR>
+          <TD width="506"><FONT color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="5">games 
+            portfolio - some examples</FONT></TD>
+          <BR>
+          <TD width="34">&nbsp;</TD>
+        </TR>
+      </TABLE>
+      <BR>
+      <TABLE width="540" border="0" cellspacing="8" cellpadding="0">
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/pileup_couleur.gif" width="113" height="81" alt="Pile-Up"></TD>
+          <TD valign="top"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><B>Pile-Up</B></FONT><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><FONT face="Arial, Helvetica, sans-serif" size="3" color="#FFFFFF"><BR>
+            Don't let the bricklayer build up the wall! </FONT><FONT face="Arial, Helvetica, sans-serif" size="2">You 
+            are competing against a crazy guy who is throwing piles of bricks 
+            at you. The only way to prevent him building the wall is to arrange 
+            the pieces so that entire lines disappear. But the bricklayer never 
+            gets tired and throws bricks faster and faster..<BR>
+            <FONT face="Verdana" size="3"><FONT face="Arial, Helvetica, sans-serif"><FONT size="2">A 
+            game in the "Oldies but goodies" category.<BR>
+            </FONT><FONT face="Arial, Helvetica, sans-serif" size="2"><I>Supported 
+            technologies : Exen</I></FONT><FONT size="2"> </FONT></FONT></FONT></FONT></TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/wataraider_couleur.gif" width="113" height="81" alt="Wata Raider"></TD>
+          <TD><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><B>Wata 
+            Raider</B></FONT><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><BR>
+            <FONT face="Arial, Helvetica, sans-serif" size="3" color="#FFFFFF">It's 
+            a long way to the oasis! </FONT><FONT face="Arial, Helvetica, sans-serif" size="2">That's 
+            surely what Wata the Vizir thinks when he is dodging all the traps 
+            and wicked mummies on his way. Hopefully, he can use his sword to 
+            fight them off and to gain some free time to pick up objects in the jars.<BR>
+            A platform game with an oriental taste.</FONT><BR>
+            <FONT face="Arial, Helvetica, sans-serif" size="2"><FONT face="Verdana" size="3"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif" size="2"><I>Supported 
+            technologies : Exen</I></FONT><FONT size="2"> </FONT></FONT></FONT></FONT> 
+          </TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/3dmaze_couleur.gif" width="113" height="81" alt="3 D Maze"></TD>
+          <TD><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><B>3D 
+            Maze</B><B><BR>
+            </B><FONT color="#FFFFFF">Don't get lost and stay in control, it's only 
+            a game! </FONT><FONT size="2">Parts of a puzzle are scattered in the 
+            chests you can find in the labyrinth. But have you already found the 
+            keys to open the chests?<BR>
+            A fantastic 3D game that will challenge your navigation skills.<BR>
+            </FONT><FONT face="Arial, Helvetica, sans-serif" size="2"><FONT face="Verdana" size="3"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif" size="2"><I>Supported 
+            technologies : Exen</I></FONT></FONT></FONT></FONT><FONT size="2"> 
+            </FONT></FONT></TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/jungle.gif" width="113" height="81" alt="Jungle"></TD>
+          <TD valign="top"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><B>Jungle</B><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B><BR>
+            </B> <FONT color="#FFFFFF">2 snakes are better than one! <FONT size="2" color="#000000">Move 
+            your snake to eat the apples without touching your tail or 
+            the other snake!<BR>
+            A crazy game where ability and speed are required.<BR>
+            </FONT><FONT face="Arial, Helvetica, sans-serif" size="2"><FONT face="Verdana" size="3"><FONT face="Arial, Helvetica, sans-serif"><FONT face="Arial, Helvetica, sans-serif" size="2"><I><FONT color="#000000">Supported 
+            technologies : Exen</FONT></I></FONT></FONT></FONT></FONT><FONT size="2" color="#000000"> 
+            </FONT> </FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/pharo.gif" width="113" height="81" alt="Pharo"></TD>
+          <TD><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><B>Pharo</B></FONT><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><BR>
+            <FONT face="Arial, Helvetica, sans-serif" size="3" color="#FFFFFF">Welcome 
+            to a fantastic world where you are the hero!</FONT><FONT face="Arial, Helvetica, sans-serif" size="2"> 
+            Save the world from an invasion by the Army of Darkness. A devil and 
+            its henchmen have besieged a lighthouse and you must find a way to 
+            stop them and to switch off the light in the tower.<BR>
+            Pharo is the first game of In-Fusio's Adventure range, a sequel of 
+            complete non-linear Adventure games where players will always have 
+            the choice between different ways to progress in the story. Each new 
+            adventure game will place players in a different context (fantastic, 
+            history, cartoon, cultural, etc.)<BR>
+            <I>Supported technologies : WAP</I></FONT></TD>
+        </TR>
+        <TR>
+          <TD valign="top" align="left"><IMG src="images/games/katchem.gif" width="113" height="81" alt="Katch'em"></TD>
+          <TD><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><FONT color="#000000" face="Arial, Helvetica, sans-serif">Katch'em</FONT></B><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><FONT color="#000000" face="Arial, Helvetica, sans-serif"><BR>
+            <FONT color="#FFFFFF">The first game based on location technology. 
+            </FONT><FONT size="2">It's Innovative, it's a Community massive multiplayer 
+            game, it's a Federation game for any player, any age, It's Easy and 
+            Accessible, it's a tribal game, IT IS KATCH'EM...<BR>
+            </FONT><FONT face="Arial, Helvetica, sans-serif" size="2"><I>Supported 
+            technologies : WAP</I></FONT><FONT size="2"> </FONT></FONT></FONT></TD>
+        </TR>
+        <TR> 
+          <TD valign="top"><IMG src="images/games/blackjack.gif" alt="Blackjack"></TD>
+          <TD><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><FONT size="3" face="Arial, Helvetica, sans-serif"><B>Blackjack</B></FONT><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><BR>
+            <FONT face="Arial, Helvetica, sans-serif" size="3" color="#FFFFFF">A 
+            card game that requires self control.</FONT><FONT face="Arial, Helvetica, sans-serif" size="2"> 
+            When you subscribe to the game, you will receive an amount of dummy money 
+            is use for betting against the bank. Never mind if you run out of 
+            money, In-Fusio registers your highest score and organises contests between 
+            players.<BR>
+            <I>Supported technologies : WAP</I></FONT></TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left" width="111"><IMG src="images/games/footballfan.gif" width="113" height="81" alt="Football Fans"></TD>
+          <TD width="405"><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><FONT size="3" face="Arial, Helvetica, sans-serif"><B>Football 
+            Fans</B></FONT><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><FONT size="3" face="Arial, Helvetica, sans-serif"><B><BR>
+            </B><FONT color="#FFFFFF">An on-line derivative of the very successful 
+            Fantasy League games, so popular in the UK and now invading the rest of the 
+            world.</FONT><FONT size="2"> Be the manager of your own football team: 
+            select a squad of real football players, set up the team before fixtures 
+            and gain points according the performance of each of your players in 
+            real life. Participate in a global league or make up your own private 
+            league to play with your colleagues and friends. Of course, prizes 
+            are rewarded to the best managers !<BR>
+            </FONT><FONT face="Arial, Helvetica, sans-serif" size="2"><I>Supported 
+            technologies :</I></FONT><FONT size="2"><I> WAP and IVR</I></FONT></FONT></TD>
+        </TR>
+        <TR> 
+          <TD valign="top" width="111"><IMG src="images/games/crazypet.gif" width="113" height="81" alt="Crazypet"></TD>
+          <TD width="405"> 
+            <P><FONT size="3" face="Arial, Helvetica, sans-serif"><B><A href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('webCrazy3','','images/imagesGen/boutWeb_on.gif',1)" onClick="MM_openBrWindow('http://infusio-web.cvf.fr','Crazypet','toolbar=yes,scrollbars=yes,resizable=yes,width=600,height=400');MM_swapImgRestore()"><IMG src="images/imagesGen/boutWeb_off.gif" width="44" height="31" align="right" name="webCrazy3" border="0"></A>Crazypet 
+              <BR>
+              </B><FONT color="#FFFFFF">Help this nice little mouse to escape 
+              from the cats and eat the maximum number of cheese pieces.</FONT><FONT size="2"> 
+              A tip: magic pills are spread around the labyrinth allowing the mouse 
+              to eat the cats, but only for a while... You can buy new levels 
+              of the game, register your highest scores and win prizes if you're the 
+              best !<BR>
+              </FONT><FONT face="Arial, Helvetica, sans-serif" size="2"><I>Supported 
+              technologies :</I></FONT><FONT size="2"><I> connected (SMS) embedded 
+              game</I></FONT></FONT></P>
+          </TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/in_spirit.gif" width="113" height="81" alt="In-Spirit"></TD>
+          <TD><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B><A href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('webCrazy111','','images/imagesGen/boutWeb_on.gif',1)" onClick="MM_openBrWindow('http://www.in-spirit.net','Crazypet','toolbar=yes,scrollbars=yes,resizable=yes,width=600,height=400');MM_swapImgRestore()"><IMG src="images/imagesGen/boutWeb_off.gif" width="44" height="31" align="right" name="webCrazy111" border="0"></A></B><FONT size="3" face="Arial, Helvetica, sans-serif"><B><A href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('more','','images/imagesGen/detail_on.gif',1)" onClick="MM_openBrWindow('download/pdf/fiche_inspirit.pdf','InSpirit','scrollbars=yes,resizable=yes,width=700,height=500')"><IMG src="images/imagesGen/detail_off.gif" width="68" height="31" align="right" name="more" border="0"></A></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><B>In 
+            Spirit<BR>
+            </B><FONT color="#FFFFFF">The 1st worldwide multiplayer game.</FONT><FONT color="#000000" size="2"><BR>
+            This is year 3038. The last human beings have left their physical 
+            body to an ethereal-envelop called "Spirits".</FONT><FONT size="2"> 
+            In Spirit is a role playing combat game that offers players from all 
+            over the world the opportunity to fight each other while connected. 
+            In Spirit has already been launched by operators in Germany, Australia 
+            and Hong Kong.<BR>
+            </FONT><FONT face="Arial, Helvetica, sans-serif" size="2"><I>Supported 
+            technologies :</I></FONT><FONT size="2"><I> WAP</I></FONT></FONT></TD>
+        </TR>
+        <TR> 
+          <TD valign="top"><IMG src="images/games/jackpot.gif" alt="Jackpot"></TD>
+          <TD> 
+            <P><FONT face="Arial" size=4><FONT face="Arial" size=4><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><FONT size="3"><B>Jackpot</B></FONT><FONT size="2"></FONT><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT><FONT size="2"><BR>
+              <FONT size="3" color="#FFFFFF">Can you ear the sound of the slot 
+              machines&#133;</FONT> Ever been to the Las Vegas casinos?<BR>
+              Never mind. Get ready to launch your own slot machine on your mobile 
+              and win the jackpot&#133;<BR>
+              In-Fusio registers your score and organises contests with prizes 
+              between players.<BR>
+              <I>Supported technologies: WAP</I></FONT></FONT><FONT size="3" face="Arial, Helvetica, sans-serif"></FONT></P>
+          </TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/push.gif" alt="Push"></TD>
+          <TD> 
+            <P><FONT size="3" face="Arial, Helvetica, sans-serif"><B><A href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('webCrazy21','','images/imagesGen/boutWeb_on.gif',1)" onClick="MM_openBrWindow('http://infusio-web.cvf.fr','Crazypet','toolbar=yes,scrollbars=yes,resizable=yes,width=600,height=400');MM_swapImgRestore()"><IMG src="images/imagesGen/boutWeb_off.gif" width="44" height="31" align="right" name="webCrazy21" border="0"></A>Push<BR>
+              </B> <FONT color="#FFFFFF">Place the ice-cubes in their final position.</FONT><FONT size="2"> 
+              Not as easy as it seems at first glance when you discover that they can only be pushed push and that the ground is icy here and there. A terrific 
+              puzzle game, especially at level 47. The minimum moves the penguin 
+              makes, the maximum points you get. You can buy new game levels, 
+              register your highest scores and win prizes if you're the best!<BR>
+              </FONT><FONT face="Arial, Helvetica, sans-serif" size="2"><I>Supported 
+              technologies :</I></FONT><FONT size="2"><I> connected (SMS) embedded 
+              game </I></FONT></FONT></P>
+          </TD>
+        </TR>
+        <TR> 
+          <TD valign="top"><IMG src="images/games/quizz.gif" alt="Quizz"></TD>
+          <TD valign="top"> 
+            <P><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><FONT size="3" face="Arial, Helvetica, sans-serif"><B>Quizz</B></FONT><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><FONT size="3" face="Arial, Helvetica, sans-serif"><B><BR>
+              </B><FONT color="#FFFFFF">Simple and accessible to a large audience, 
+              Quizz is the best way to entertain a large number of subscribers.</FONT><FONT size="3"> 
+              </FONT><FONT size="2">Questions must be answered in different categories, 
+              prizes are awarded to  the best competitors. The questions are regularly updated by In-Fusio.<BR>
+              </FONT><FONT face="Arial, Helvetica, sans-serif" size="2"><I>Supported 
+              technologies :</I></FONT><FONT size="2"><I> WAP</I></FONT></FONT></P>
+          </TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/reshape.gif" width="113" height="81" alt="Reshape"></TD>
+          <TD valign="top"> 
+            <P><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><FONT size="3" face="Arial, Helvetica, sans-serif"><B>Reshape</B></FONT><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><FONT size="3" face="Arial, Helvetica, sans-serif"><B><BR>
+              </B> <FONT color="#FFFFFF">The famous puzzle game.</FONT><FONT size="2"> 
+              Are you smart enough to re-arrange the icons as shown on the left 
+              side of the screen ? Don't take too long, time is limited... <BR>
+              </FONT><FONT face="Arial, Helvetica, sans-serif" size="2"><I>Supported 
+              technologies :</I></FONT><FONT size="2"><I> connected (SMS) embedded 
+              game</I></FONT></FONT></P>
+          </TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/tacin.gif" width="113" height="81" alt="Tac-In"></TD>
+          <TD valign="top"> 
+            <P><FONT face="Arial" size=4><FONT face="Arial" size=4><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT></FONT><FONT size="3"><B>Tac-in</B><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B><BR>
+              <FONT color="#FFFFFF">Can you reconstruct the puzzle.</FONT></FONT><FONT size="2"> 
+              The player moves a white square which in turn pushes the other pieces of 
+              the picture. There are several levels of difficulty adapted to each 
+              player.<BR>
+              <I>Supported technologies: WAP</I></FONT></FONT></P>
+          </TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/colormind.gif" width="113" height="81" alt="Colormind"></TD>
+          <TD valign="top"> 
+            <P><FONT face="Arial" size=4><FONT face="Arial" size=4><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT></FONT><FONT size="3"><B>Colormind</B></FONT><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><FONT size="2"><BR>
+              <FONT size="3" color="#FFFFFF">Crack the code</FONT>. The aim of 
+              this game is to discover the combination of a secret code composed 
+              of 4 symbols chosen at random among 6. For each attempt, the player 
+              receives a tip on correct symbols and positions. With 2 levels of difficulty, 
+              beginners as well as confirmed players will discover the fun of 
+              this famous game.<I><BR>
+              Supported technologies: WAP</I></FONT></FONT></P>
+          </TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/matches.gif" width="113" height="81" alt="Matches Match"></TD>
+          <TD valign="top"> 
+            <P><FONT face="Arial" size=4><FONT face="Arial" size=4><FONT size="3"><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT></FONT></FONT><FONT size="3"><B>Matches 
+              Match</B><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><FONT color="#FFFFFF"><BR>
+              Ready to brainstorm?</FONT></FONT><FONT size="2"> 23 matches are 
+              placed on the screen of your mobile. Each player take turns taking 
+              either one, two or three matches. The winner is the one who take 
+              the last matches. Ready to brainstorm&#133;<BR>
+              <I>Supported technologies: WAP</I></FONT></FONT></P>
+          </TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/rectoverso.gif" width="113" height="81" alt="Recto Verso"></TD>
+          <TD valign="top"> 
+            <P><FONT face="Arial" size=4><FONT size="2"><B><FONT face="Arial" size=4><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT></FONT><FONT size="3">Recto 
+              Verso</FONT></B></FONT><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><FONT size="2"><BR>
+              <FONT size="3" color="#FFFFFF">A minute to learn. A lifetime to 
+              master! </FONT>Recto Verso (face off) is a draughtboard game with 
+              reversible pieces. Each player puts in turns one piece on the draughtboard 
+              and returns opponents&#146; pieces placed between his piece and 
+              his other pieces already present on the draughtboard.<BR>
+              You win when you have the highest number of your pieces on the board 
+              at the end of the game. <BR>
+              <I>Supported technologies: WAP</I></FONT></FONT></P>
+          </TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/p4.gif" width="113" height="81" alt="P4"></TD>
+          <TD valign="top"> 
+            <P><FONT face="Arial" size=4><FONT face="Arial" size=4><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT></FONT><FONT size="3"><B>P4</B><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B><BR>
+              <FONT color="#FFFFFF">The famous four-in-a-row game. </FONT><FONT color="#000000" size="2">The 
+              aim of this famous game is to align 4 of your coloured discs in a vertically </FONT></FONT><FONT size="2">framework with 7x6 sites. 
+              Players use pawns of colour that they make slip the high of the 
+              framework, and fall to put in place. The winner is the first to 
+              align 4 paws of its colour horizontally, vertically or in diagonal.<BR>
+              <I>Supported technologies: WAP</I></FONT></FONT></P>
+          </TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/yams.gif" width="113" height="81" alt="Yam's"></TD>
+          <TD valign="top"> 
+            <P><FONT face="Arial" size=4><FONT size="2"><B><FONT face="Arial" size=4><FONT size="2"><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT></FONT></FONT><FONT size="3">Yam&#146;s</FONT></B><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><FONT color="#FFFFFF"><BR>
+              <FONT size="3">A well-known dice game.</FONT></FONT> The goal 
+              is to score by rolling 5 dice. As it is a gambling game, the player 
+              receives an amount of dummy points (a kitty) and place a bet before playing.<BR>
+              Be the best and In-Fusio will register your score and organise contests 
+              with prizes between players.<BR>
+              <I>Supported technologies: WAP</I></FONT></FONT></P>
+          </TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/poker.gif" width="113" height="81" alt="Poker"></TD>
+          <TD valign="top"> 
+            <P><FONT face="Arial" size=4><FONT face="Arial" size=4><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT></FONT><FONT size="3"><B>Poker</B></FONT><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><FONT size="2"><BR>
+              <FONT color="#FFFFFF" size="3">Don't bluff your mobile!</FONT><FONT color="#000000"> 
+              As with our Blackjack game, when you subscribe to this game,</FONT> you receive 
+              a kitty and can play the most famous casino game  as many times as you want. Are you a real player? Register your best score and enter In-Fusio contests.<BR>
+              <I>Supported technologies: WAP</I></FONT></FONT></P>
+          </TD>
+        </TR>
+        <TR> 
+          <TD valign="top" align="left"><IMG src="images/games/dragon_chase.gif" width="113" height="81" alt="Dragon chase"></TD>
+          <TD valign="top"><FONT face="Arial" size=4> 
+            <P><FONT size="2"><B><FONT face="Arial" size=4><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT></FONT><FONT size="3">Dragon 
+              Chase</FONT></B></FONT><FONT size="3"><B><FONT size="3"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><FONT size="3" face="Arial, Helvetica, sans-serif"><B></B></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></B></FONT><FONT size="2"><BR>
+              <FONT color="#FFFFFF" size="3"> In a 3D labyrinth, find a sword 
+              to kill the dragon.</FONT> You must have an excellent sense of direction 
+              so that you do not get lost, or come across the dragon before you 
+              have found the sword&#133;<BR>
+              <I>Supported technologies: WAP</I></FONT></P>
+            </FONT> </TD>
+        </TR>
+      </TABLE>
+      
+    </TD>
+    <TD class="titre1" width="29"> 
+      <DIV align="left"> </DIV>
+      <DIV align="left"></DIV>
+      <P align="right"> <MAP name="Map2"><AREA shape="circle" coords="39,11,7" href="games2.html" target="_top"></MAP> 
+      </P>
+      </TD>
+  </TR>
+</TABLE>
+ 
+</BODY>
+</HTML>
