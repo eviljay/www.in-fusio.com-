@@ -146,7 +146,7 @@ function MM_swapImage() { //v3.0
       <td width="32">&nbsp;</td>
       <td>
       <table  border="0" cellpadding="0" cellspacing="0" class="textbld">
-	   <form name="formrev" method="post" action="/popup_reviews.php?701583494">
+	   <form name="formrev" method="post" action="/popup_reviews.php?1775805668">
         <tr>
           <td colspan="3" class="gamett1">Review Wall Breaker...</td>
         </tr>
@@ -286,21 +286,22 @@ function MM_swapImage() { //v3.0
     <td height="50" valign="top" bgcolor="#313A61"><img src="images/p_popup_sepafin.gif" width="420" height="22"></td>
   </tr>
 </table>
-<br><!-- phpmyvisites -->
-<a href="http://www.phpmyvisites.net/" title="phpMyVisites : logiciel gratuit de mesure d'audience et de statistiques de sites Internet (licence libre GPL, logiciel en php/MySQL)" onclick="window.open(this.href);return(false);">
-<script type="text/javascript">
+<br><div id="Layer1" style="position:absolute; width:1px; height:1px; z-index:1; visibility: hidden; left: -1; top: -1; overflow: hidden;"><a href="http://www.xiti.com/xiti.asp?s=159070" TARGET="_top">
+<script language="JavaScript1.1">
 <!--
-var phpmyvisitesSite = 1;
-var phpmyvisitesURL = "http://www.in-fusio.com/phpmyvisites/phpmyvisites.php";
+hsh = new Date();
+hsd = document;
+hsr = hsd.referrer.replace(/[<>]/g, '');
+hsi = '<img width="39" height="25" border=0 ';
+hsi += 'src="http://logv25.xiti.com/hit.xiti?s=159070';
+hsi += '&p=Game_Pop-up-Reviews';
+hsi += '&hl=' + hsh.getHours() + 'x' + hsh.getMinutes() + 'x' + hsh.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xiti_s=screen;hsi += '&r=' + Xiti_s.width + 'x' + Xiti_s.height + 'x' + Xiti_s.pixelDepth + 'x' + Xiti_s.colorDepth;}
+hsd.writeln(hsi + '&ref=' + hsr.replace(/&/g, '$') + '" title="Mesurez votre audience"><\!--');
 //-->
 </script>
-<script type="text/javascript" src="http://www.in-fusio.com/phpmyvisites/phpmyvisites.js"></script>
 <noscript>
-<p>
-phpMyVisites : logiciel gratuit de mesure d'audience et de statistiques de sites Internet (licence libre GPL, logiciel en php/MySQL)
-<img src="http://www.in-fusio.com/phpmyvisites/phpmyvisites.php?nojs=1&amp;site=1" alt="phpMyVisites" style="border:0" />
-</p>
-</noscript>
-</a>
-<!-- /phpmyvisites --></BODY>
+analyse mesure frequentation internet par <img width="39" height="25" border=0 src="http://logv25.xiti.com/hit.xiti?s=159070&p=Game_Pop-up-Reviews&" title="Mesurez votre audience">
+</noscript><!--//--></a></div></BODY>
 </HTML>

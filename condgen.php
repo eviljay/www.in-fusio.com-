@@ -634,11 +634,11 @@ MM_preloadImages('images/bd_if_05b.gif');
 
             <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" id="menu_mysql2" width="276" height="638" align="top">
               <param name="allowScriptAccess" value="sameDomain" />
-              <param name="movie" value="menu_mysql2.swf?animation=kenny.swf" />
+              <param name="movie" value="menu_mysql2.swf?animation=flynn.swf" />
               <param name="quality" value="high" />
               <param name="scale" value="exactfit" />
               <param name="bgcolor" value="#1d5586" />
-              <embed src="menu_mysql2.swf?animation=kenny.swf" quality="high" scale="exactfit" bgcolor="#1d5586" width="276" height="638" swLiveConnect=true id="menu_mysql2" name="menu_mysql2" align="top" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />            
+              <embed src="menu_mysql2.swf?animation=flynn.swf" quality="high" scale="exactfit" bgcolor="#1d5586" width="276" height="638" swLiveConnect=true id="menu_mysql2" name="menu_mysql2" align="top" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />            
 </object></TD>
       </TR>
       <TR>

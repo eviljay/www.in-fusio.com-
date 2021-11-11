@@ -234,7 +234,7 @@ MM_preloadImages('images/bd_if_05b.gif');
               <blockquote>
               <p>            <a href="#" onClick="MM_openBrWindow('game_demo.php?id_jeu=105','','width=250,height=250')">  <img src="images/playdemo.gif" width="149" height="26" border=0>   </a>         <br>
                 <br>
-								                 </p>
+                <!--<a href="howtodownload.php"><img src="images/howto.gif" width="149" height="49" border="0"></a>--> </p>
               </blockquote></td>
             <td width="5%">&nbsp;</td>
             </tr>
@@ -385,7 +385,7 @@ MM_preloadImages('images/bd_if_05b.gif');
       </tr>
 	  <tr>
         <td><blockquote>
-        <div align="center" class="copyright">Portions © 2004 Microsoft Corporation. All rights reserved. Microsoft, Midtown Madness and the Microsoft Games Studios logo, are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries and are used under license. © 2005 Microsoft Corporation. All Rights Reserved. Microsoft, the Microsoft Game Studios logo, Banjo&Kazooie ® are either trademarks or registered trademarks of Microsoft Corporation or Rare limited in the United States and/or other countries. Rare limited is a subsidiary of Microsoft Corporation - © IN-FUSIO 2004 <br><a href='#' onClick=MM_openBrWindow('microsoft_eula/eula_midtown_madness_3_mobile_game.php','eula','width=550,height=250') >END-USER LICENSE AGREEMENT</a></div>
+        <div align="center" class="copyright">Portions © 2004 Microsoft Corporation. All rights reserved. Microsoft, Midtown Madness and the Microsoft Games Studios logo, are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries and are used under license.</div>
         <br>
 &nbsp;</blockquote></td>
     </tr>
@@ -400,11 +400,11 @@ MM_preloadImages('images/bd_if_05b.gif');
 
             <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" id="menu_mysql2" width="276" height="638" align="top">
               <param name="allowScriptAccess" value="sameDomain" />
-              <param name="movie" value="menu_mysql2.swf?animation=roller.swf" />
+              <param name="movie" value="menu_mysql2.swf?animation=flynn.swf" />
               <param name="quality" value="high" />
               <param name="scale" value="exactfit" />
               <param name="bgcolor" value="#1d5586" />
-              <embed src="menu_mysql2.swf?animation=roller.swf" quality="high" scale="exactfit" bgcolor="#1d5586" width="276" height="638" swLiveConnect=true id="menu_mysql2" name="menu_mysql2" align="top" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />            
+              <embed src="menu_mysql2.swf?animation=flynn.swf" quality="high" scale="exactfit" bgcolor="#1d5586" width="276" height="638" swLiveConnect=true id="menu_mysql2" name="menu_mysql2" align="top" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />            
 </object></TD>
       </TR>
       <TR>

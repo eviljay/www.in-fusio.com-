@@ -234,7 +234,7 @@ MM_preloadImages('images/bd_if_05b.gif');
               <blockquote>
               <p>            <a href="#" onClick="MM_openBrWindow('game_demo.php?id_jeu=1','','width=250,height=250')">  <img src="images/playdemo.gif" width="149" height="26" border=0>   </a>         <br>
                 <br>
-								                 </p>
+                <!--<a href="howtodownload.php"><img src="images/howto.gif" width="149" height="49" border="0"></a>--> </p>
               </blockquote></td>
             <td width="5%">&nbsp;</td>
             </tr>
@@ -325,8 +325,6 @@ MM_preloadImages('images/bd_if_05b.gif');
         <td><img src="images/p_sepa001.gif" width="497" height="25" border="0" usemap="#mappy"></td>
       </tr> -->
 
-
-
 <tr>
           <td valign="top"><table width="497" border="0" cellspacing="0" cellpadding="0">
               <tr>
@@ -337,17 +335,17 @@ MM_preloadImages('images/bd_if_05b.gif');
               </tr>
               <tr>
                 <td rowspan="8">&nbsp;</td>
-                <td colspan="3"><p><span class="rate">Rating</span><span class="newstitel"> </span><span class="gamefeatures">1                      Reviews </span></p>
+                <td colspan="3"><p><span class="rate">Rating</span><span class="newstitel"> </span><span class="gamefeatures">0 reviews </span></p>
                 </td>
               </tr>
               <tr>
                 <td nowrap><table width="1%" border="0" cellspacing="2" cellpadding="0">
                     <tr>
-                      <td><img src="images/etoile_pleine.gif" width="16" height="16"></td>
-                      <td><img src="images/etoile_pleine.gif" width="16" height="16"></td>
-                      <td><img src="images/etoile_pleine.gif" width="16" height="16"></td>
-                      <td><img src="images/etoile_pleine.gif" width="16" height="16"></td>
-
+                      <td><img src="images/etoile_vide.gif" width="16" height="16"></td>
+                      <td><img src="images/etoile_vide.gif" width="16" height="16"></td>
+                      <td><img src="images/etoile_vide.gif" width="16" height="16"></td>
+                      <td><img src="images/etoile_vide.gif" width="16" height="16"></td>
+                      <td>&nbsp;</td>
                     </tr>
                   </table>
                 </td>
@@ -359,45 +357,14 @@ MM_preloadImages('images/bd_if_05b.gif');
                 <td colspan="3"><img src="images/spacer.gif" width="1" height="5"></td>
               </tr>
               <tr>
-                <td colspan="3" class="textbld">Last reviews:<br>
-                &nbsp;</td>
+                <td colspan="3" class="textbld">This game has not been reviewed yet...</td>
               </tr>
               <tr>
-                <td colspan="3" class="textbld">
-
-
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                      <td rowspan="4"><img src="images/spacer.gif" width="5" height="1"></td>
-                      <td nowrap class="rate">mustapha 
- </td>
-                      <td><img src="images/spacer.gif" width="2" height="1"></td>
-                      <td nowrap class="newslink"> (France) 2004-11-16 17:15:43</td>
-                      <td><img src="images/spacer.gif" width="2" height="1"></td>
-                      <td width="100%" nowrap class="newsteaser"><table width="1%" border="0" cellspacing="2" cellpadding="0">
-                        <tr>
-                      <td><img src="images/p_etoile_pleine.gif" width="15" height="13"></td>
-                      <td><img src="images/p_etoile_pleine.gif" width="15" height="13"></td>
-                      <td><img src="images/p_etoile_pleine.gif" width="15" height="13"></td>
-                      <td><img src="images/p_etoile_pleine.gif" width="15" height="13"></td>
-                   
-                        </tr>
-                      </table></td>
-                    </tr>
-                    <tr>
-                      <td colspan="6" class="text">this game is verry good	<br>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="6" class="text"><img src="images/spacer.gif" width="1" height="10"></td>
-                    </tr>
-                  </table>
-
-
+                <td colspan="3"><span class="text">Be the first to write a review !</span><br>
                 </td>
               </tr>
               <tr>
-                <td colspan="3" class="textbld" align="center"></td>
+                <td colspan="3"></td>
               </tr>
               <tr>
                 <td colspan="3" class="textbld"><br>
@@ -452,29 +419,27 @@ MM_preloadImages('images/bd_if_05b.gif');
       <TR>
         <TD width="7">&nbsp; </TD>
         <TD width="276" bgcolor="313A61" class="liens"><a href="condgen.php" class="liens">Terms and Conditions</a><br>
-&copy; In-Fusio 2004<br>
-<br>
-<br>
-<a href="http://www.moonda.com/" target="_blank" class="liensmoonda">R&eacute;alisation, Cr&eacute;ation du site web:  MOONDA</a></TD>
+&copy; In-Fusio 2004</TD>
       </TR>
     </TABLE>
-    <p class="infusio">&nbsp;</p><!-- phpmyvisites -->
-<a href="http://www.phpmyvisites.net/" title="phpMyVisites : logiciel gratuit de mesure d'audience et de statistiques de sites Internet (licence libre GPL, logiciel en php/MySQL)" onclick="window.open(this.href);return(false);">
-<script type="text/javascript">
+    <p class="infusio">&nbsp;</p><div id="Layer1" style="position:absolute; width:1px; height:1px; z-index:1; visibility: hidden; left: -1; top: -1; overflow: hidden;"><a href="http://www.xiti.com/xiti.asp?s=159070" TARGET="_top">
+<script language="JavaScript1.1">
 <!--
-var phpmyvisitesSite = 1;
-var phpmyvisitesURL = "http://www.in-fusio.com/phpmyvisites/phpmyvisites.php";
+hsh = new Date();
+hsd = document;
+hsr = hsd.referrer.replace(/[<>]/g, '');
+hsi = '<img width="39" height="25" border=0 ';
+hsi += 'src="http://logv25.xiti.com/hit.xiti?s=159070';
+hsi += '&p=Game_Page-DJ+Bubble';
+hsi += '&hl=' + hsh.getHours() + 'x' + hsh.getMinutes() + 'x' + hsh.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xiti_s=screen;hsi += '&r=' + Xiti_s.width + 'x' + Xiti_s.height + 'x' + Xiti_s.pixelDepth + 'x' + Xiti_s.colorDepth;}
+hsd.writeln(hsi + '&ref=' + hsr.replace(/&/g, '$') + '" title="Mesurez votre audience"><\!--');
 //-->
 </script>
-<script type="text/javascript" src="http://www.in-fusio.com/phpmyvisites/phpmyvisites.js"></script>
 <noscript>
-<p>
-phpMyVisites : logiciel gratuit de mesure d'audience et de statistiques de sites Internet (licence libre GPL, logiciel en php/MySQL)
-<img src="http://www.in-fusio.com/phpmyvisites/phpmyvisites.php?nojs=1&amp;site=1" alt="phpMyVisites" style="border:0" />
-</p>
-</noscript>
-</a>
-<!-- /phpmyvisites --></td>
+analyse mesure frequentation internet par <img width="39" height="25" border=0 src="http://logv25.xiti.com/hit.xiti?s=159070&p=Game_Page-DJ+Bubble&" title="Mesurez votre audience">
+</noscript><!--//--></a></div></td>
   </tr>
 </table>
 <map name="mappy" id="mappy">

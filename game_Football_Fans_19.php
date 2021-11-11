@@ -234,7 +234,7 @@ MM_preloadImages('images/bd_if_05b.gif');
               <blockquote>
               <p>            <a href="#" onClick="MM_openBrWindow('game_demo.php?id_jeu=19','','width=250,height=250')">  <img src="images/playdemo.gif" width="149" height="26" border=0>   </a>         <br>
                 <br>
-								                 </p>
+                <!--<a href="howtodownload.php"><img src="images/howto.gif" width="149" height="49" border="0"></a>--> </p>
               </blockquote></td>
             <td width="5%">&nbsp;</td>
             </tr>
@@ -484,11 +484,11 @@ MM_preloadImages('images/bd_if_05b.gif');
 
             <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" id="menu_mysql2" width="276" height="638" align="top">
               <param name="allowScriptAccess" value="sameDomain" />
-              <param name="movie" value="menu_mysql2.swf?animation=roller.swf" />
+              <param name="movie" value="menu_mysql2.swf?animation=flynn.swf" />
               <param name="quality" value="high" />
               <param name="scale" value="exactfit" />
               <param name="bgcolor" value="#1d5586" />
-              <embed src="menu_mysql2.swf?animation=roller.swf" quality="high" scale="exactfit" bgcolor="#1d5586" width="276" height="638" swLiveConnect=true id="menu_mysql2" name="menu_mysql2" align="top" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />            
+              <embed src="menu_mysql2.swf?animation=flynn.swf" quality="high" scale="exactfit" bgcolor="#1d5586" width="276" height="638" swLiveConnect=true id="menu_mysql2" name="menu_mysql2" align="top" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />            
 </object></TD>
       </TR>
       <TR>

@@ -1,61 +1,350 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<title>IN-FUSIO - connected communities </title>
-<link href="src/landing.css" rel="stylesheet" type="text/css">
-<script language="JavaScript" src="src/user.js"></script>
-</head>
-<body>
-<table width="715" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr align="center">
-  <td colspan="2"><img src="src/lander/mainlogo.gif" width="444" height="233"></td>
-  </tr>
-<tr>
+<HTML>
+<HEAD>
+<TITLE>mobile games, phone games</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1" />
+<META NAME="description" content="IN-FUSIO is a mobile game publisher and phone game service provider. At present IN-FUSIO's portfolio of 70 mobile titles has been enjoyed by 12 million players worldwide">
+<META NAME="keywords" content="mobile games, games mobile phone, mobile phone games, download mobile games, download game for mobile, play on your mobile, video games, mobile software, demo mobile games, online games, games online, download games, play games, Midtown Madness 3 Mobile, Zoo Tycoon 2 Mobile, Sabre Wulf, Age of Empire 2 Gold Edition, Banjo and Kazooie, It's Mr Pants, Terminator I'm back, Golden Tee Golf, Football Fans 2005, South Park, Jurassic Park III, The Lords of the Ring, Eagle Squadron, Shado Fighter, South Park, Boomerang Joe, Tomb Raider, Zoo Tycoon, Football Fans, the Terminator">
+<link href="infusio.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
-<tr bgcolor="#F5000A">
-  <td colspan="2"><img src="src/lander/spacer.gif" width="1" height="1"></td>
-</tr>
-<tr>
-  <td colspan="2"><img src="src/lander/spacer.gif" width="10" height="20"></td>
-</tr>
-<tr>
-  <td><a href="http://www.mobilescope.com/index2.php" target="_top"><img src="src/lander/solutions.jpg" width="352" height="178" border="0"></a></td>
-  <td><a href="http://www.in-fusio.com/games.php" target="_top"><img src="src/lander/games.jpg" width="353" height="178" border="0"></a></td>
-</tr>
-</table>	
-<br>
-<br>
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
 
-<br>
-<br>
-<table width="715" border="0" align="center" cellpadding="0" cellspacing="0" background="src/lander/linebg.gif">
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+
+</HEAD>
+<BODY bgcolor="#FFDA82" background="images/bkg_IF_h.gif" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 onLoad="MM_preloadImages('images/bd_if_05b.gif')">
+ <table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-	<td>
-			<table width="100%" border="0" cellpadding="0" cellspacing="0">
-				  <tr>
-					<td colspan="2" align="left"><img src="src/lander/spacer.gif" width="5" height="20">
-					<a href="http://www.mobilescope.com/corporate.html">About Us</a> | 
-					<a href="http://www.in-fusio.com/start.php">Games</a> | 
-					<a href="http://www.mobilescope.com/solutions.html">Solutions</a> | 
-					<a href="http://www.mobilescope.com/press.html">Press</a> | 
-					<a href="http://www.mobilescope.com/careers.html">Jobs</a> | 
-					<a href="javascript:popWin('http://www.in-fusio.com/contact.php?Topic=games','contact','scrollbars=yes,width=480,height=650');">Contact Us</a> </td>
-				  </tr>
-				  <tr>
-					<td colspan="2"><img src="src/lander/spacer.gif" width="10" height="20"></td>
-				  </tr>
-			</table>
-	</td>
-    <td width="142" align="right"><img src="src/lander/grouplogofooter.gif" width="142" height="58"></td>
+    <td colspan="2"><script language="JavaScript" type="text/JavaScript"><!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+MM_preloadImages('images/bd_if_05b.gif');
+//--></script>
+<TABLE WIDTH=780 BORDER=0 align="center" CELLPADDING=0 CELLSPACING=0 background="images/bkg_bd.gif">
+  <TR>
+    <TD><IMG SRC="images/spacer.gif" WIDTH=11 HEIGHT=1 /></TD>
+    <TD><IMG SRC="images/spacer.gif" WIDTH=194 HEIGHT=1 /></TD>
+    <TD><IMG SRC="images/spacer.gif" WIDTH=156 HEIGHT=1 /></TD>
+    <TD><IMG SRC="images/spacer.gif" WIDTH=34 HEIGHT=1 /></TD>
+    <TD><IMG SRC="images/spacer.gif" WIDTH=23 HEIGHT=1 /></TD>
+    <TD><IMG SRC="images/spacer.gif" WIDTH=67 HEIGHT=1 /></TD>
+    <TD><IMG SRC="images/spacer.gif" WIDTH=70 HEIGHT=1 /></TD>
+    <TD><IMG SRC="images/spacer.gif" WIDTH=23 HEIGHT=1 /></TD>
+    <TD><IMG SRC="images/spacer.gif" WIDTH=79 HEIGHT=1 /></TD>
+    <TD><IMG SRC="images/spacer.gif" WIDTH=14 HEIGHT=1 /></TD>
+    <TD><IMG SRC="images/spacer.gif" WIDTH=9 HEIGHT=1 /></TD>
+    <TD><IMG SRC="images/spacer.gif" WIDTH=73 HEIGHT=1 /></TD>
+    <TD><IMG SRC="images/spacer.gif" WIDTH=27 HEIGHT=1 /></TD>
+  </TR>
+  <TR>
+    <TD><IMG SRC="images/bd_if_01.gif" WIDTH=11 HEIGHT=37 /></TD>
+    <TD ROWSPAN=4><a href="index.php"><IMG SRC="images/bd_if_02.gif" WIDTH=194 HEIGHT=102 border="0" /></a></TD>
+    <TD width="156" height="37"></TD>
+    <TD><IMG SRC="images/bd_if_04.gif" WIDTH=34 HEIGHT=37 /></TD>
+    <TD><IMG SRC="images/bd_if_05.gif" name="cho" WIDTH=23 HEIGHT=37 id="cho" /></TD>
+    <TD COLSPAN=2><a href="http://corporate.in-fusio.com/fond_jobs/offers_jobs.php" target="_blank" onMouseOver="MM_swapImage('cho','','images/bd_if_05b.gif',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="images/bd_if_06.gif" alt="" WIDTH=137 HEIGHT=37 border="0" /></a></TD>
+    <TD><IMG SRC="images/bd_if_05.gif" name="corpo" WIDTH=23 HEIGHT=37 id="corpo" /></TD>
+    <TD><a href="http://corporate.in-fusio.com/corpweb/" target="_blank" onMouseOver="MM_swapImage('corpo','','images/bd_if_05b.gif',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="images/bd_if_08.gif" WIDTH=79 HEIGHT=37 border="0" /></a></TD>
+    <TD COLSPAN=2><IMG SRC="images/bd_if_05.gif" name="dev" WIDTH=23 HEIGHT=37 id="dev" /></TD>
+    <TD><a href="http://developer.in-fusio.com/" target="_top" onMouseOver="MM_swapImage('dev','','images/bd_if_05b.gif',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="images/bd_if_10.gif" WIDTH=73 HEIGHT=37 border="0" /></a></TD>
+    <TD><IMG SRC="images/bd_if_11.gif" WIDTH=27 HEIGHT=37 /></TD>
+  </TR>
+  <TR>
+    <TD width="11" height="65" ROWSPAN=3></TD>
+    <TD ROWSPAN=3><IMG SRC="images/bd_if_13.gif" WIDTH=156 HEIGHT=65 /></TD>
+    <TD COLSPAN=2 ROWSPAN=3><IMG SRC="images/bd_if_14.gif" WIDTH=57 HEIGHT=65 /></TD>
+    <TD ROWSPAN=3><IMG SRC="images/bd_if_15.gif" WIDTH=67 HEIGHT=65 /></TD>
+    <TD COLSPAN=4><IMG SRC="images/bd_if_16.gif" WIDTH=186 HEIGHT=20 /></TD>
+    <TD ROWSPAN=3><IMG SRC="images/bd_if_17.gif" WIDTH=9 HEIGHT=65 /></TD>
+    <TD ROWSPAN=3><IMG SRC="images/bd_if_18.gif" WIDTH=73 HEIGHT=65 /></TD>
+    <TD width="27" height="65" ROWSPAN=3></TD>
+  </TR>
+  <TR>
+    <TD COLSPAN=4><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" id="compteur_mgc1" width="186" height="20" align="middle">
+            <param name="allowScriptAccess" value="sameDomain" />
+            <param name="movie" value="compteur_mgc1.swf" />
+            <param name="quality" value="high" />
+            <param name="scale" value="exactfit" />
+            <embed src="compteur_mgc1.swf" quality="high" scale="exactfit" width="186" height="20" swLiveConnect=true id="compteur_mgc1" name="compteur_mgc1" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+          </object>
+      </TD>
+  </TR>
+  <TR>
+    <TD COLSPAN=4><IMG SRC="images/bd_if_21.gif" WIDTH=186 HEIGHT=25 /></TD>
+  </TR>
+  <TR>
+    <TD width="11" height="17"></TD>
+    <TD width="194" height="17"><div align="center"><img src="images/mgconn1.gif" width="120" height="8"></div>
+      </TD>
+    <TD width="156" height="17"></TD>
+    <TD COLSPAN=2 valign="top"><IMG SRC="images/bd_if_25.gif" WIDTH=57 HEIGHT=17 /></TD>
+    <TD COLSPAN=6 valign="top"><IMG SRC="images/bd_if_26.gif" WIDTH=262 HEIGHT=17 /></TD>
+    <TD width="73" height="17"></TD>
+    <TD width="27" height="17"></TD>
+  </TR>
+</TABLE>
+</td>
+  </tr>
+  <tr valign="top">
+  <td width="497" bgcolor="#313A61"><table width="497" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="9" background="images/h_hom.gif" bgcolor="FFD932"></td>
+      </tr>
+     <tr>
+        <td valign="top" bgcolor="FFD932"><div align="center">
+          <br>
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="468" height="60">
+            <param name="movie" value="swf/AOE_WebBannier_%5B468x60%5D.swf">
+            <param name="quality" value="high">
+            <embed src="swf/AOE_WebBannier_%5B468x60%5D.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="468" height="60"></embed>
+          </object>
+        </div></td>
+  </tr>
+      <tr>
+        <td bgcolor="FFD932"><img src="images/h_sepa001b.gif"></td>
+      </tr>  <tr>
+        <td valign="top" bgcolor="FFD932">
+          <TABLE WIDTH=497 BORDER=0 CELLPADDING=0 CELLSPACING=0 bgcolor="#FFD732">
+            <TR valign="top">
+              <TD width="16" ROWSPAN=2>&nbsp; </TD>
+              <TD height="65"> <IMG SRC="images/tab_hom_02.gif" /></TD>
+              <TD width="7" ROWSPAN=2>&nbsp; </TD>
+              <TD width="280" ROWSPAN=2 valign="top"><div align="right"><br>
+                  <a href="game_Age_of_Empires®_II_Mobile_114.php"><img src="admin/Accueil/image_01_accueil.jpg" border=0></a><br>
+                <br>
+                <br> 
+                </div></TD>
+              <TD width="11" ROWSPAN=2>&nbsp; </TD>
+            </TR>
+            <TR>
+              <TD width="183" valign="top"><span class="titrehom">Age of Empires®II:Mobile<br>
+                <br>
+                </span><span class="textbld">The greatest strategy game ever and a legend in the history of videogames will be available THIS SUMMER on mobile. Age of Empires®II:Mobile. A new “AGE” is upon you!  </span><span class="text"><br>
+                <br>
+                </span> </TD>
+            </TR>
+          </TABLE>
+      </td>
+      </tr>
+      <tr>
+        <td bgcolor="FFD932"><img src="images/h_sepa001.gif"></td>
+      </tr>
+      <tr>
+        <td valign="top" bgcolor="FFC92E">          <TABLE WIDTH=497 BORDER=0 CELLPADDING=0 CELLSPACING=0 bgcolor="#FFC92E">
+            <TR valign="top">
+              <TD width="16" ROWSPAN=2>&nbsp; </TD>
+              <TD height="45"><img src="images/bt_new.gif"> </TD>
+              <TD width="7" ROWSPAN=2>&nbsp; </TD>
+              <TD width="280" ROWSPAN=2 valign="middle"><div align="right"><br>
+                  <a href="http://www.in-fusio.com/tourdefrance/" target="_blank"><img src="admin/Accueil/image_02_accueil.jpg" border=0></a> </div></TD>
+              <TD width="11" ROWSPAN=2>&nbsp; </TD>
+            </TR>
+            <TR>
+              <TD width="183" valign="top" ><span class="titrehom">
+			  Le Tour de France</span><br>
+                <br><span class="textbld">Race and advance your team through all 21 stages of one of the world's most famous cycling competitions.</span> </TD>
+            </TR>
+          </TABLE>
+          <p>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td bgcolor="FFC92E"><img src="images/h_sepa002.gif"></td>
+      </tr>
+      <tr>
+        <td valign="top" bgcolor="FFBA2E"> <img src="images/bt_feat.gif"><TABLE WIDTH=497 BORDER=0 CELLPADDING=0 CELLSPACING=0 background="images/bkg_scr.gif">
+          <TR>
+            <TD COLSPAN=7 bgcolor="#FFBA2E"> <img src="images/scr_home_.gif" width=497 height=5 /></TD>
+          </TR>
+          <TR>
+            <TD width="35">&nbsp; </TD>
+            <TD width="128"><a href="game_Midtown_Madness®_3_Mobile_3D_105.php"><img src="admin/Accueil/image_03_accueil.gif" border=0></a></TD>
+            <TD width="21">&nbsp; </TD>
+            <TD width="128"><a href="game_Zoo_Tycoon_2_Mobile_94.php"><img src="admin/Accueil/image_04_accueil.gif" border=0></a></TD>
+            <TD width="21">&nbsp; </TD>
+            <TD width="128"><a href="game_Etch_A_Sketch_115.php"><img src="admin/Accueil/image_05_accueil.gif" border=0></a></TD>
+            <TD width="36">
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+            </TD>
+          </TR>
+          <TR bgcolor="#FFBA2E">
+            <TD COLSPAN=7 valign="middle"> <IMG SRC="images/scr_home_-09.gif" WIDTH=497 HEIGHT=13 /></TD>
+          </TR>
+          <TR bgcolor="#FFBA2E">
+            <TD width="35" height="60">&nbsp;</TD>
+            <TD width="128" valign="top" bgcolor="#FFBA2E"><span class="titrehom">
+			Midtown Madness® 3 Mobile 3D version</span><br>
+              <span class="text"><br>              
+              Wheel-to-wheel, pedal to the metal racing. Go anywhere, do anything… but get there first !</span></TD>
+            <TD width="21" valign="top" bgcolor="#FFBA2E">&nbsp; </TD>
+            <TD width="128" valign="top" bgcolor="#FFBA2E"><span class="titrehom">
+			Zoo Tycoon® 2 Mobile</span><br>
+              <span class="text"><br>              
+              Design, build and manage your ultimate zoo in this mobile version of the PC blockbuster hit! </span></TD>
+            <TD width="21" valign="top" bgcolor="#FFBA2E">&nbsp; </TD>
+            <TD width="128" valign="top" bgcolor="#FFBA2E"><span class="titrehom"> 
+			Etch A Sketch</span><br>
+              <span class="text"><br>              
+              Etch A Sketch, the legendary drawing toy finally on your mobile!</span></TD>
+            <TD width="35">&nbsp; </TD>
+          </TR>
+        </TABLE>          
+          <p>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td bgcolor="FFBA2E"><img src="images/h_sepa003.gif"></td>
+      </tr>
+      <tr>
+        <td valign="top" bgcolor="FFB32E"><img src="images/bt_com.gif">          <TABLE WIDTH=497 BORDER=0 CELLPADDING=0 CELLSPACING=0 background="images/bkg_scr.gif">
+          <TR>
+            <TD COLSPAN=7 bgcolor="#FFB32E"> <img src="images/scr_home_.gif" width=497 height=5 /></TD>
+          </TR>
+          <TR>
+            <TD width="35" height="128">&nbsp; </TD>
+            <TD width="128" height="128"><a href="game_Banjo-Kazooie_Mobile_102.php"><img src="admin/Accueil/image_06_accueil.jpg" border=0></a></TD>
+            <TD width="21" height="128">&nbsp; </TD>
+            <TD width="128" height="128"><a href="game_Tomb_Raider_3_:_Elixir_of_Life_117.php"><img src="admin/Accueil/image_07_accueil.gif" border=0></a></TD>
+            <TD width="21" height="128">&nbsp; </TD>
+            <TD width="128" height="128"><a href="game_Red_Out_Racer_123.php"><img src="admin/Accueil/image_08_accueil.gif" border=0></a></TD>
+            <TD width="36" height="128">
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+            </TD>
+          </TR>
+          <TR>
+            <TD COLSPAN=7 bgcolor="#FFB32E"> <IMG SRC="images/scr_home_-09.gif" WIDTH=497 HEIGHT=13 /></TD>
+          </TR>
+          <TR>
+            <TD width="35" height="60" bgcolor="#FFB32E">&nbsp;</TD>
+            <TD width="128" valign="top" bgcolor="#FFB32E"><span class="textbld">
+			Banjo-Kazooie® Grunty`s Revenge: Mobile</span><br>
+              <br><span class="text">Banjo-Kazooie Mobile! Play Banjo and rescue your feathery pal Kazooie</span></TD>
+            <TD width="21" valign="top" bgcolor="#FFB32E">&nbsp; </TD>
+            <TD width="128" valign="top" bgcolor="#FFB32E"><span class="textbld">
+			Tomb Raider : Elixir of Life</span><br>
+              <br><span class="text">Lara Croft must infiltrate a scottish castle and discover who is her mysterious employer.</span></TD>
+            <TD width="21" valign="top" bgcolor="#FFB32E">&nbsp; </TD>
+            <TD width="128" valign="top" bgcolor="#FFB32E"><span class="textbld">
+			Red Out Racer<br>
+              </span>
+              <br>
+              <span class="text">The future of 3D-racing to be experienced on you mobile phone. </span></TD>
+            <TD width="35" bgcolor="#FFB32E">&nbsp; </TD>
+          </TR>
+        </TABLE>          </td>
+      </tr>
+	  <tr>
+          <td valign="top" bgcolor="FFB32E">&nbsp;</td>
+  </tr>
+        <tr> 
+          <td valign="top" bgcolor="FFB32E"> 
+            <p align="center" class="text">In Fusio : <a href="list_games_ref.php" class="text">Mobile Games Connection</a><b>
+              - </b>The best Mobile Games for download<br>
+              <a href="mobile_games.php" class="text">Mobile Games</a> for Alcatel, LG, Mitsubishi, Motorola, NEC, Nokia,
+              Panasonic, Philips, Sagem, Samsung, Sony Ericsson</p>
+
+        </td>
+        </tr>
+      <tr>
+        <td height="40" valign="bottom" bgcolor="FFB32E"><img src="images/h_sepafin.gif"></td>
+      </tr>
+    </table><br>
+    <a href="http://www.moonda.com/" target="_blank"><img src="images/moonda_website_production.gif" alt="Création du site web par MOONDA" border="0"></a></td>
+    <td width="283" bgcolor="313A61"><TABLE WIDTH=283 BORDER=0 CELLPADDING=0 CELLSPACING=0 bgcolor="313A61">
+      <TR>
+        <TD valign="top"> <IMG SRC="images/m_home_if_01.gif" WIDTH=7 HEIGHT=30 /></TD>
+        <TD width="276" ROWSPAN=2 bgcolor="1D5586"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" id="menu_mysql_princ" width="276" height="638" align="top">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="menu_mysql_princ.swf?animation=roller.swf" />
+<param name="quality" value="high" />
+<param name="scale" value="exactfit" />
+<param name="bgcolor" value="#1d5586" />
+<embed src="menu_mysql_princ.swf?animation=roller.swf" quality="high" scale="exactfit" bgcolor="#1d5586" width="276" height="638" swLiveConnect=true id="menu_mysql_princ" name="menu_mysql_princ" align="top" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object></TD>
+      </TR>
+      <TR>
+        <TD width="7" bgcolor="313A61">&nbsp; </TD>
+      </TR>
+      <TR>
+        <TD width="7" height="15">&nbsp; </TD>
+        <TD valign="top"><IMG SRC="images/m_home_if_05.gif" WIDTH=276 HEIGHT=15 /></TD>
+      </TR>
+      <TR>
+        <TD width="7">&nbsp; </TD>
+        <TD width="276" bgcolor="313A61" class="liens" align="left">
+		<a href="condgen.php" class="liens">Terms and Conditions</a><br>
+&copy; In-Fusio 2004<br>
+<br>
+<br>
+<a href="http://www.moonda.com/" target="_blank" class="liensmoonda">R&eacute;alisation, Cr&eacute;ation du site web:  MOONDA</a></TD>
+      </TR>
+    </TABLE>
+    <p class="infusio">&nbsp;</p>
+<!-- phpmyvisites -->
+<a href="http://www.phpmyvisites.net/" title="phpMyVisites : logiciel gratuit de mesure d'audience et de statistiques de sites Internet (licence libre GPL, logiciel en php/MySQL)" onclick="window.open(this.href);return(false);">
+<script type="text/javascript">
+<!--
+var phpmyvisitesSite = 1;
+var phpmyvisitesURL = "http://www.in-fusio.com/phpmyvisites/phpmyvisites.php";
+//-->
+</script>
+<script type="text/javascript" src="http://www.in-fusio.com/phpmyvisites/phpmyvisites.js"></script>
+<noscript>
+<p>
+phpMyVisites : logiciel gratuit de mesure d'audience et de statistiques de sites Internet (licence libre GPL, logiciel en php/MySQL)
+<img src="http://www.in-fusio.com/phpmyvisites/phpmyvisites.php?nojs=1&amp;site=1" alt="phpMyVisites" style="border:0" />
+</p>
+</noscript>
+</a>
+<!-- /phpmyvisites --></td>
   </tr>
 </table>
-
-<p><br>
-  <br>
-  <br>
-  <br>
-</p>
-</body>
-</html>
+</BODY>
+</HTML>

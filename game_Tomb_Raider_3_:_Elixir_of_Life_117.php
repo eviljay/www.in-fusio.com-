@@ -233,7 +233,7 @@ MM_preloadImages('images/bd_if_05b.gif');
               <blockquote>
               <p>            <a href="#" onClick="MM_openBrWindow('game_demo.php?id_jeu=117','','width=250,height=250')">  <img src="images/playdemo.gif" width="149" height="26" border=0>   </a>         <br>
                 <br>
-								                 </p>
+                <!--<a href="howtodownload.php"><img src="images/howto.gif" width="149" height="49" border="0"></a>--> </p>
               </blockquote></td>
             <td width="5%">&nbsp;</td>
             </tr>
@@ -394,11 +394,11 @@ MM_preloadImages('images/bd_if_05b.gif');
 
             <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" id="menu_mysql2" width="276" height="638" align="top">
               <param name="allowScriptAccess" value="sameDomain" />
-              <param name="movie" value="menu_mysql2.swf?animation=roller.swf" />
+              <param name="movie" value="menu_mysql2.swf?animation=flynn.swf" />
               <param name="quality" value="high" />
               <param name="scale" value="exactfit" />
               <param name="bgcolor" value="#1d5586" />
-              <embed src="menu_mysql2.swf?animation=roller.swf" quality="high" scale="exactfit" bgcolor="#1d5586" width="276" height="638" swLiveConnect=true id="menu_mysql2" name="menu_mysql2" align="top" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />            
+              <embed src="menu_mysql2.swf?animation=flynn.swf" quality="high" scale="exactfit" bgcolor="#1d5586" width="276" height="638" swLiveConnect=true id="menu_mysql2" name="menu_mysql2" align="top" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />            
 </object></TD>
       </TR>
       <TR>
@@ -417,23 +417,24 @@ MM_preloadImages('images/bd_if_05b.gif');
 <a href="http://www.moonda.com/" target="_blank" class="liensmoonda">R&eacute;alisation, Cr&eacute;ation du site web:  MOONDA</a></TD>
       </TR>
     </TABLE>
-    <p class="infusio">&nbsp;</p><!-- phpmyvisites -->
-<a href="http://www.phpmyvisites.net/" title="phpMyVisites : logiciel gratuit de mesure d'audience et de statistiques de sites Internet (licence libre GPL, logiciel en php/MySQL)" onclick="window.open(this.href);return(false);">
-<script type="text/javascript">
+    <p class="infusio">&nbsp;</p><div id="Layer1" style="position:absolute; width:1px; height:1px; z-index:1; visibility: hidden; left: -1; top: -1; overflow: hidden;"><a href="http://www.xiti.com/xiti.asp?s=159070" TARGET="_top">
+<script language="JavaScript1.1">
 <!--
-var phpmyvisitesSite = 1;
-var phpmyvisitesURL = "http://www.in-fusio.com/phpmyvisites/phpmyvisites.php";
+hsh = new Date();
+hsd = document;
+hsr = hsd.referrer.replace(/[<>]/g, '');
+hsi = '<img width="39" height="25" border=0 ';
+hsi += 'src="http://logv25.xiti.com/hit.xiti?s=159070';
+hsi += '&p=Game_Page-Tomb+Raider+%3A+Elixir+of+Life';
+hsi += '&hl=' + hsh.getHours() + 'x' + hsh.getMinutes() + 'x' + hsh.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xiti_s=screen;hsi += '&r=' + Xiti_s.width + 'x' + Xiti_s.height + 'x' + Xiti_s.pixelDepth + 'x' + Xiti_s.colorDepth;}
+hsd.writeln(hsi + '&ref=' + hsr.replace(/&/g, '$') + '" title="Mesurez votre audience"><\!--');
 //-->
 </script>
-<script type="text/javascript" src="http://www.in-fusio.com/phpmyvisites/phpmyvisites.js"></script>
 <noscript>
-<p>
-phpMyVisites : logiciel gratuit de mesure d'audience et de statistiques de sites Internet (licence libre GPL, logiciel en php/MySQL)
-<img src="http://www.in-fusio.com/phpmyvisites/phpmyvisites.php?nojs=1&amp;site=1" alt="phpMyVisites" style="border:0" />
-</p>
-</noscript>
-</a>
-<!-- /phpmyvisites --></td>
+analyse mesure frequentation internet par <img width="39" height="25" border=0 src="http://logv25.xiti.com/hit.xiti?s=159070&p=Game_Page-Tomb+Raider+%3A+Elixir+of+Life&" title="Mesurez votre audience">
+</noscript><!--//--></a></div></td>
   </tr>
 </table>
 <map name="mappy" id="mappy">

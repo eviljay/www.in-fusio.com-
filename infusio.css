@@ -1,20 +1,8 @@
-a {
-
-	color: #37526C;
-	text-decoration: none;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	font-weight: bold;
-}
-a:hover {
-
-	text-decoration: underline;
-}
 .liens {
 
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 9px;
-	color: #0046AE;
+	color: 98C1FF;
 }
 .text {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -139,11 +127,3 @@ a:hover {
 	font-size: 11px;
 	color: #9B0000;
 	}
-.liensmoonda {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 8px;
-	color: #003F9D;
-	font-style: normal;
-	font-weight: normal;
-
-}

@@ -236,7 +236,7 @@ MM_preloadImages('images/bd_if_05b.gif');
               <blockquote>
               <p>            <a href="#" onClick="MM_openBrWindow('game_demo.php?id_jeu=94','','width=250,height=250')">  <img src="images/playdemo.gif" width="149" height="26" border=0>   </a>         <br>
                 <br>
-								                 </p>
+                <!--<a href="howtodownload.php"><img src="images/howto.gif" width="149" height="49" border="0"></a>--> </p>
               </blockquote></td>
             <td width="5%">&nbsp;</td>
             </tr>
@@ -472,7 +472,7 @@ MM_preloadImages('images/bd_if_05b.gif');
       </tr>
 	  <tr>
         <td><blockquote>
-        <div align="center" class="copyright">© 2005 Microsoft Corporation. All Rights Reserved. Microsoft, the Microsoft Game Studios logo, Windows, the Windows logo, and Zoo Tycoon® are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries and are used under license. Portions © 2004 Microsoft Corporation. All rights reserved. Microsoft, Midtown Madness and the Microsoft Games Studios logo, are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries and are used under license. © 2005 Microsoft Corporation. All Rights Reserved. Microsoft, the Microsoft Game Studios logo, Banjo&Kazooie ® are either trademarks or registered trademarks of Microsoft Corporation or Rare limited in the United States and/or other countries. Rare limited is a subsidiary of Microsoft Corporation - © IN-FUSIO 2004 <br><a href='#' onClick=MM_openBrWindow('microsoft_eula/eula_zoo_tycoon_2_mobile_game.php','eula','width=550,height=250') >END-USER LICENSE AGREEMENT</a></div>
+        <div align="center" class="copyright">© 2005 Microsoft Corporation. All Rights Reserved. Microsoft, the Microsoft Game Studios logo, Windows, the Windows logo, and Zoo Tycoon® are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries and are used under license.</div>
         <br>
 &nbsp;</blockquote></td>
     </tr>
